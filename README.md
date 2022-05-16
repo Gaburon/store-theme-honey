@@ -1,61 +1,68 @@
-[[It Globers]]
-
-# Estandarizacón de proyectos
+# Estandarización de proyectos
 
 En este repositorio reposa la documentación necesaria para la creacion de proyectos en IT Globers, bajo los estandares establecidos por la compañia, no cerrandonos a mejoras continuas y sugerencia por parte de nuestros desarrolladores.
 
 ## Historias de usuarios
 
-Las historias de usuario son levantadas por parte de los PM, TL de IT Globers con lo PO del proyecto.
+Las historias de usuario son levantadas por parte de los PM, TL de IT Globers con lo PO (customer) del proyecto.
 
-- Los requerimientos deben tener la mayor descripción tanto en funcionalidad como aspecto, es necesario especificar lo mayormente posible y no dejar ningun requerimiento a interpretacion subjetiva.
+- Los requerimientos deben tener la mayor descripción tanto en funcionalidad como aspecto, es necesario especificar lo mayormente posible y no dejar ningun requerimiento a interpretacion **subjetiva**.
 - Tiempo en las entregas, estos tiempos deben ser evaluados con el team técnico, PM y Líder técnico. Buscando la mayor acertividad en complejidad en el desarrollo del requerimiento planteado por el cliente
-- Siempre debe existir componentes de guia o apoyo visual a lo que busca como resultado final el Cliente, (usuarios o dueño del producto).
-- En caso de que se levanten nuevas Historias de usuario durante el desarrollo del proyecto estas deben cumplir con las mismas especificaciónes anteriomente nombradas, y seguir la linea de la estandarización.
+- Siempre debe existir componentes de guia o apoyo visual a lo que busca como resultado final al Cliente, (usuarios o dueño del producto).
+- En caso de que se levanten nuevas Historias de usuario durante el desarrollo del proyecto, estas deben cumplir con las mismas especificaciónes anteriomente nombradas, y seguir la linea de la estandarización.
+- Siempre aclarar al cliente que los tiempos de entrega podrian sufrir cambios si se agregan historias de Usuario adicionales.
 
-### RFC
+### RFC (request for commits)
 
-Documento donde se plasmara los componentes a usar dentro del proyecto, claridad de la ruta a seguir de cada componente o elemento.
+Documento donde se plasmara los componentes a usar dentro del proyecto, dando claridad de la ruta a seguir de cada componente o elemento.
 
-- Name del proyecto
+- Nombre del proyecto
 - Tecnologias/componentes a usar y por qué.
 - Con una descripcion detallada del componente y la forma de implementarlo.
 
 Ejemplo:
-<span style=" color: red">Header</span>: se usara un <span style=" color: red">header-row</span> como contenedor general del header y ya cada sub-header sera con un `flex-layout.row` etc... Porque de esta manera sera mas practico al momento de darle styles etc...
+`Header`: se usara un `header-row` como contenedor general del header y ya cada sub-header sera con un `flex-layout.row` etc... Porque de esta manera sera mas practico al momento de darle styles etc...
 
-### ADR
+## Tareas en Jira
 
-Realizado por el lider tecnico despues de tener claro el RFC, documento donde reposara todo el work flow de proyecto con los requerimientos o historias de usurario, seran los insumos para alimentar el Jira.
-
-- Definir si los commit, PR, merge, documentacion etc... definir el idioma desde el inicio, Ingles, español.
-
-## Taks en Jira
-
-Las tareas en Jira se crearan a partir del <span style=" color: red">RFC</span> que compartira el líder técnico al PM para su respectiva trazabilidad.
+Dentro de las tareas de Jira debe reposar la informacion de historias de usuario mas la documentación del RFC, para un facil abordaje por parte del desarrollador.
 
 ## Inicialización del proyecto
 
 #### Solicitud de permisos a VTEX
 
-El TL en base al ADR debe hacer la solicitud de los permisos de las apps que sean necesarias a VTEX, tambien la creación del/los ambientes necesarios y permisos a los desarrolladores que estaran en el proyecto.
+El TL debe hacer la solicitud de los permisos de la siguiente aplicación:
 
-#### Configuración de Repositorios y WorskSapace
+```json
+{vendor}.backend-services
+Esta aplicación tendrá acceso a los builders
+"graphql": "{version}.x",
+ "node": "{version}.x"
+```
+
+[Link form de solicitud](<[https://docs.google.com/forms/d/e/1FAIpQLSfhuhFxvezMhPEoFlN9yFEkUifGQlGP4HmJQgx6GP32WZchBw/viewform](https://docs.google.com/forms/d/e/1FAIpQLSfhuhFxvezMhPEoFlN9yFEkUifGQlGP4HmJQgx6GP32WZchBw/viewform?authuser=3)>)
+En esta Aplicación se alojaran los servicios backend.
+Por otro lado, se deberá configurar un repositorio dedicado a los componentes custom desde el lado front-end con la aplicación
+
+```json
+{account}.frontend-applications
+```
+
+Tambien la creación del/los ambientes necesarios y asignar permisos a los desarrolladores que estaran en el proyecto.
+
+#### Configuración de Repositorios y WorkSpace
 
 Crear los repositorios necesarios para el proyecto y gestionar los WorkSpace necesarios para las pruebas y views, además los WS de cada desarrollador (a criterio del líder técnico si lo hace el, o cada desarrollador )
 
-Nota: Pedir de ante mano a vtex la aprobacion del servicio : <span style=" color: red"> vendor.backend-services@0.x </span> que tenga builder _`node`_, _`graphql`_
-[Link form de solicitud](<[https://docs.google.com/forms/d/e/1FAIpQLSfhuhFxvezMhPEoFlN9yFEkUifGQlGP4HmJQgx6GP32WZchBw/viewform](https://docs.google.com/forms/d/e/1FAIpQLSfhuhFxvezMhPEoFlN9yFEkUifGQlGP4HmJQgx6GP32WZchBw/viewform?authuser=3)>)
-
 #### Configuraciones Iniciales al Store Theme
 
-En el archivo de styles.json <span style=" color: red"> styles/configs/style.json </span> se puede configurar colores, fuentes, tamaños, espacios, etc. De manera directa al theme. Lo cual es el primer lugar que debemos adptar a los requerimientos del proyecto.
+En el archivo de styles.json `styles/configs/style.json` se puede configurar colores, fuentes, tamaños, espacios, etc. De manera directa al theme. Lo cual es el primer lugar que debemos adaptar a los requerimientos del proyecto.
 
-<img src= "./assets/img/img-readme/img1.png" />
+<img src="assets/img/img-readme/img1.png">
 
 ### Variables en los file.css
 
-En la carpeta Global de css podemos crear un file de nombre <span style=" color: red">vtex.store.css</span> y poner variables que necesitemos como colores, tamaños, fuentes etc que no se permitan configurar el el <span style=" color: red">styles.json</span> , pero es mayormente usado para variables de colores.
+En la carpeta Global de css podemos crear un file de nombre `vtex.store.css` y poner variables que necesitemos como colores, tamaños, fuentes etc que no se permitan configurar el el `styles.json` , pero es mayormente usado para variables de colores.
 
 Algunos ejemplos:
 
@@ -72,24 +79,22 @@ Algunos ejemplos:
 
 De esta manera las variables van a estar disponibles en toda la app para su uso, esto es extendible a variables de fuentes, tamaños etc.
 
-## Structure Foldres
+## Estructura de carpetas
 
-Tener un ordenamiento simetrico y constante nos ayuda a mantener proyectos limpios y escalables, sobre todo a que otras personas lo puedan entender en custion de un par de horas.
+Tener un ordenamiento simetrico y constante nos ayuda a mantener proyectos limpios y escalables, sobre todo a que otras personas lo puedan entender en un tiempo menor.
 
-Por lo cual tenemos que pensar en los project VTEX IO como un organismo que no muta si no se extiende como las clases en POO.
+Por lo cual tenemos que pensar en los proyectos VTEX IO como un organismo que no muta si no que se extiende como las clases en POO.
 Para ello debemos pensar en la construcción del esquema de los folders con 4 puntos de partida
 
 1- Desktop
-
-2- Mobile
-
+2- Mobile o phone (Según requiera)
 3- Tablet
-
 4- Global
 
-Porque desde estos cuatro puntos de partida? Bueno porque son las vistas generales en que el cliente ve nuestro producto, Global seria para los file que no se modifican según su vista.
+Por qué desde estos cuatro puntos de partida?
+Porque son las vistas generales en que el cliente ve nuestro producto, Global seria para los file que no se modifican según su vista.
 
-<img src= "./assets/img/img-readme/Screenshot_1.png" />
+<img src="assets/img/img-readme/Screenshot_1.png">
 
 #### Estructura interna de cada carpeta.
 
@@ -99,23 +104,50 @@ Desktop
 => Components: Contendra todos los componentes que pueda requerir la vista.
 => screen: Contiene los componentes principales que conforman páginas o la página en si misma.
 
-En el foldres componentes cada file debe ir con el nombre de su elemento padre, como se ve en la imagen `header-menu.jsonc` es el componente hijo de `header` asi podemos relacionar un componente con el su children.
+En los folders componentes cada file debe ir con el nombre de su elemento padre, como se ve en la imagen `header-menu.jsonc` es el componente hijo de `header` asi podemos relacionar un componente con el su children.
 
-![[image (1).png]]
+<img src="assets/img/img-readme/Screenshot_2.png">
 
 ### Folder Global
 
-En este folder iran todos los elementos que son igual para las view (phone, tablet, desktop), con las mismas dos carpetas internas, `components`, `screen` con la modificacion de que en los blockClass se manejara una class para cada vista:
+En este folder iran todos los elementos que son igual para las vistas (phone, tablet, desktop), con las mismas dos carpetas internas, `components`, `screen`.
+En el caso que se desee usar un componente global, pero se necesite hacer una extensión de estilos CSS, se agregará una clase adicional en un array del nuevo componente, agregando los estilos CSS adicionales requeridos.
 
 ```json
 
-"flex-layout.row#header":{
-  "children":[],
-  "props":{
-	"blockClass"[ "header__phone", "header__tablet", "header__desktop"]
-  }
+/.json - info card se usa en el home
+{
+    "flex-layout.row#global__info-card": {
+        "children": [...],
+        "props": {
+            "blockClass": "global__info-card"
+        }
+    }
 }
 
+//vtex.flex-layout.css
+.global__info-card {
+    background-color: blue;
+    color: white;
+    font-size: 18px;
+    width: 100%;
+}
+
+//.json - info card se usa en la página de producto pero tiene un cambio a su color de fondo
+
+{
+    "flex-layout.row#global__info-card--pdp": {
+        "children": [...],
+        "props": {
+            "blockClass": ["global__info-card", "global__info-card--pdp"]
+        }
+    }
+}
+
+//vtex.flex-layout.css
+.global__info-card--pdp {
+    background-color: orange;
+}
 ```
 
 Por qué? porque asi evitamos chocar con las media querys nativas del navegador.
@@ -124,15 +156,17 @@ Por qué? porque asi evitamos chocar con las media querys nativas del navegador.
 
 Se crearan folders por componentes de el proyectos, es decir si tenemos en el home un slider-layout, tendriamos una carpeta que diga home en su interior uno con el nombre del slider-layout.
 Ejemplo:
-![[Pasted image 20220405174036.png]]
 
-## Folders files y fonts
+<img src="assets/img/img-readme/img3.png">
 
-- Para los folders `files` y `fonts` no se requiere crear la estructura de las carpetas por vista ya contiene files unicos del proyecto y que sirven a todas las vistas. Pero sin cerrarse a que pueda existir esa discriminación por vista.
-- Para `img` se van a subir a arquivos. El nombramiento de cada imagen se llevará de la misma manera que los de componentes padres a hijos, ejemplo:
+## Carpetas files y fonts
 
-`header__logo-marca.png`
-`header__icon-cart.png` etc.
+- Para los carpetas `files` y `fonts` no se requiere crear la estructura de las carpetas por vista ya contiene files unicos del proyecto y que sirven a todas las vistas. Pero sin cerrarse a que pueda existir esa discriminación por vista.
+- Para `imagenes` se van a subir a arquivos. El nombramiento de cada imagen se llevará de la misma manera que los de componentes padres a hijos, ejemplo:
+  `header__logo-marca.png`
+  `header__icon-cart.png` etc.
+
+* Para los `svg` se manejaran dentro de la carpeta assets del proyecto.
 
 #### Hay dos "Principios o estándares" Para iniciar un proyecto:
 
@@ -141,7 +175,7 @@ b- Desktop first
 
 En ITGlobers si es un project responsive iniciamos con Mobile first, por qué? porque +70% del trafico en internet se hace desde un dispositivo mobile.
 
-Para esto debemos usar el respondive layout, quien nos permetira manejar elementos diferentes en cada vista, ya sea que cambien el componente por completo o en su orden.
+Para esto debemos usar el responsive layout, quien nos permetira manejar elementos diferentes en cada vista, ya sea que cambien el componente por completo o en su orden.
 
 ## Nombre a los archivos y clases.css de los proyecto con la metodologia BEM
 
