@@ -1,37 +1,81 @@
 # Estandarización de proyectos
 
-En este repositorio reposa la documentación necesaria para la creacion de proyectos en IT Globers, bajo los estandares establecidos por la compañia, no cerrandonos a mejoras continuas y sugerencia por parte de nuestros desarrolladores.
+En este repositorio reposa la documentación necesaria para la creacion de proyectos en IT Globers, bajo los estándares establecidos por la compañia, en los que se invita a participar en mejoras continuas y sugerencias por parte del equipo de desarrollo.
+
+Para lograr un desarrollo óptimo, se debe solicitar al **Project Manager y al Tech Lead** encargados, con el cumplimiento puntual de los siguientes puntos para un trabajo armónico y eficiente por el equipo de desarrolladores involucrados en el proyecto.
 
 ## Historias de usuarios
 
-Las historias de usuario son levantadas por parte de los PM, TL de IT Globers con lo PO (customer) del proyecto.
+Las historias de usuario son levantadas por parte de el(los) Project Manager, Tech Lead de IT Globers en un trabajo conjunto con el(la) Product Owner del proyecto, cumpliendo con los siguientes puntos:
 
-- Los requerimientos deben tener la mayor descripción tanto en funcionalidad como aspecto, es necesario especificar lo mayormente posible y no dejar ningun requerimiento a interpretacion **subjetiva**.
-- Tiempo en las entregas, estos tiempos deben ser evaluados con el team técnico, PM y Líder técnico. Buscando la mayor acertividad en complejidad en el desarrollo del requerimiento planteado por el cliente
-- Siempre debe existir componentes de guia o apoyo visual a lo que busca como resultado final al Cliente, (usuarios o dueño del producto).
-- En caso de que se levanten nuevas Historias de usuario durante el desarrollo del proyecto, estas deben cumplir con las mismas especificaciónes anteriomente nombradas, y seguir la linea de la estandarización.
+- Los requerimientos deben tener la mayor descripción posible, tanto en funcionalidad como aspecto visual que tendrá la historia de usuario, en caso de ser una vista. No se deberá dejar bajo ningun motivo, requerimientos a interpretacion **subjetiva** por parte de cualquiera de los involucrados.
+- Tiempo en las entregas, estos tiempos deben ser evaluados con el equipo técnico, Project Manager y Líder técnico. Buscando la mayor acertividad en complejidad en el desarrollo del requerimiento planteado por el cliente
+- Siempre deben existir componentes de guia o apoyo visual, referentes a lo que busca como resultado final el Product Owner y Usuario Final.
+- En caso de que se levanten nuevas Historias de usuario durante el desarrollo del proyecto, éstas deben cumplir con las mismas especificaciónes anteriomente nombradas, y seguir la linea de la estandarización mencionada.
 - Siempre aclarar al cliente que los tiempos de entrega podrian sufrir cambios si se agregan historias de Usuario adicionales.
 
-### RFC (request for commits)
+- La historia de usuario deberá tener el siguiente formato:
 
-Documento donde se plasmara los componentes a usar dentro del proyecto, dando claridad de la ruta a seguir de cada componente o elemento.
+### RFC (Request For Commits)
+
+Es un documento donde se plasmarán los componentes (custom o nativos) a usar dentro del proyecto, dando claridad de cuál ruta seguir para cada historia de usuario establecida con el siguiente formato.
 
 - Nombre del proyecto
-- Tecnologias/componentes a usar y por qué.
-- Con una descripcion detallada del componente y la forma de implementarlo.
+- Tecnologías/componentes a usar y por qué.
+- Una descripcion detallada del componente y la forma de implementarlo o una documentación acertada de cómo hacerlo.
 
-Ejemplo:
-`Header`: se usara un `header-row` como contenedor general del header y ya cada sub-header sera con un `flex-layout.row` etc... Porque de esta manera sera mas practico al momento de darle styles etc...
+**Ejemplo:**
+`Header`: se usara un `header-row` como contenedor general del header y ya cada sub-header sera con un `flex-layout.row` etc... Porque de esta manera sera mas practico al momento de darle estilos etc...
 
 ## Tareas en Jira
 
-Dentro de las tareas de Jira debe reposar la informacion de historias de usuario mas la documentación del RFC, para un facil abordaje por parte del desarrollador.
+Dentro de las tareas de Jira debe reposar la siguiente información para un fácil abordaje por parte del desarrollador.
+
+- Historia de usuario
+- Documentación del RFC
+- Apoyo visual en resoluciones `phone, tablet, desktop`, (Figma o imágenes)
+- Link de referencia en caso de estar emulando un sitio.
 
 ## Inicialización del proyecto
 
-#### Solicitud de permisos a VTEX
+Los proyectos realizados por ITGlobers manejarán un estándar basado en cuatro repositorios base que se trabajarán de la siguiente manera:
 
-El TL debe hacer la solicitud de los permisos de la siguiente aplicación:
+- {vendor}.store-theme (Tema base)
+- {vendor}.frontend-applications (Apps custom frontend)
+- {vendor}.backend-services (Servicios y middlewares)
+- {vendor}.checkout (App para checkout)
+
+## {vendor}.store-theme
+
+Para realizar la inicialización del proyecto, contamos con los siguientes repositorios que se deberán emular mediante la opción de plantilla.
+
+- [ITG Store theme inglés](https://github.com/ITGlobers/itglobers-store-theme-en)
+- [ITG Store theme español](https://github.com/ITGlobers/itglobers-store-theme-es)
+
+La ventaja de usar los mismos es la optimización que se ha hecho en cuanto a aplicaciones nativas usadas, y la organización base de la estructura de carpetas estándar de la empresa que hablaremos más adelante.
+
+Se deberá nombrar desde `manifest.json` de la siguiente forma
+
+```json
+{vendor}.store-theme
+
+```
+
+### {vendor}.frontend-applications
+
+El Tech Lead del proyecto deberá crear un repositorio basado en [VTEX React App Template](https://github.com/vtex-apps/react-app-template), en el que se alojarán todas las apps front end customizadas del proyecto.
+
+Se deberá nombrar desde `manifest.json` de la siguiente forma
+
+```json
+{vendor}.frontend-applications
+```
+
+### {vendor}.backend-services
+
+El Tech Lead del proyecto debe hacer la solicitud de los permisos de la siguiente aplicación
+
+Se deberá nombrar desde `manifest.json` de la siguiente forma y se pedirán los siguientes builders:
 
 ```json
 {vendor}.backend-services
@@ -40,25 +84,25 @@ Esta aplicación tendrá acceso a los builders
  "node": "{version}.x"
 ```
 
-[Link form de solicitud](<[https://docs.google.com/forms/d/e/1FAIpQLSfhuhFxvezMhPEoFlN9yFEkUifGQlGP4HmJQgx6GP32WZchBw/viewform](https://docs.google.com/forms/d/e/1FAIpQLSfhuhFxvezMhPEoFlN9yFEkUifGQlGP4HmJQgx6GP32WZchBw/viewform?authuser=3)>)
+[Link para hacer la solicitud](<[https://docs.google.com/forms/d/e/1FAIpQLSfhuhFxvezMhPEoFlN9yFEkUifGQlGP4HmJQgx6GP32WZchBw/viewform](https://docs.google.com/forms/d/e/1FAIpQLSfhuhFxvezMhPEoFlN9yFEkUifGQlGP4HmJQgx6GP32WZchBw/viewform?authuser=3)>)
+
 En esta Aplicación se alojaran los servicios backend.
-Por otro lado, se deberá configurar un repositorio dedicado a los componentes custom desde el lado front-end con la aplicación
+
+### {vendor}.checkout-ui-settings
+
+El Tech Lead del proyecto deberá crear un repositorio basado en [VTEX Checkout](https://github.com/vtex-apps/checkout-ui-settings), en el que se alojarán todos los scripts y estilos base del checkout que se programan con css y Vanilla JS (No se aconseja el uso de JQuery).
+
+Se deberá nombrar desde `manifest.json` de la siguiente forma
 
 ```json
-{account}.frontend-applications
+{vendor}.checkout-ui-settings
 ```
-
-Tambien la creación del/los ambientes necesarios y asignar permisos a los desarrolladores que estaran en el proyecto.
-
-#### Configuración de Repositorios y WorkSpace
-
-Crear los repositorios necesarios para el proyecto y gestionar los WorkSpace necesarios para las pruebas y views, además los WS de cada desarrollador (a criterio del líder técnico si lo hace el, o cada desarrollador )
 
 #### Configuraciones Iniciales al Store Theme
 
 En el archivo de styles.json `styles/configs/style.json` se puede configurar colores, fuentes, tamaños, espacios, etc. De manera directa al theme. Lo cual es el primer lugar que debemos adaptar a los requerimientos del proyecto.
 
-<img src="assets/img/img-readme/img1.png">
+<img src="./assets/img/root-structure.png">
 
 ### Variables en los file.css
 
@@ -94,7 +138,7 @@ Para ello debemos pensar en la construcción del esquema de los folders con 4 p
 Por qué desde estos cuatro puntos de partida?
 Porque son las vistas generales en que el cliente ve nuestro producto, Global seria para los file que no se modifican según su vista.
 
-<img src="assets/img/img-readme/Screenshot_1.png">
+<img src="./assets/img/blocks.png">
 
 #### Estructura interna de cada carpeta.
 
@@ -106,11 +150,11 @@ Desktop
 
 En los folders componentes cada file debe ir con el nombre de su elemento padre, como se ve en la imagen `header-menu.jsonc` es el componente hijo de `header` asi podemos relacionar un componente con el su children.
 
-<img src="assets/img/img-readme/Screenshot_2.png">
+<img src="./assets/img/Screenshot_2.png">
 
 ### Folder Global
 
-En este folder iran todos los elementos que son igual para las vistas (phone, tablet, desktop), con las mismas dos carpetas internas, `components`, `screen`.
+En este folder irán los elementos que son iguales en todas las vistas (phone, tablet, desktop), con las mismas dos carpetas internas, `components`, `screen`.
 En el caso que se desee usar un componente global, pero se necesite hacer una extensión de estilos CSS, se agregará una clase adicional en un array del nuevo componente, agregando los estilos CSS adicionales requeridos.
 
 ```json
@@ -154,14 +198,16 @@ Por qué? porque asi evitamos chocar con las media querys nativas del navegador.
 
 ## Folders de css
 
-Se crearan folders por componentes de el proyectos, es decir si tenemos en el home un slider-layout, tendriamos una carpeta que diga home en su interior uno con el nombre del slider-layout.
+Se crearan folders por componentes de el proyectos, es decir si tenemos en el footer un fqa, tendriamos una carpeta que diga footer en su interior uno con el nombre del fqa.
 Ejemplo:
 
-<img src="assets/img/img-readme/img3.png">
+<img src="assets/img/img3.png">
+
+Para de esta manera el elemento footer-fqa sera un componente reutilizable en cualquier proyecto sin importar las reglas de negocio o cliente.
 
 ## Carpetas files y fonts
 
-- Para los carpetas `files` y `fonts` no se requiere crear la estructura de las carpetas por vista ya contiene files unicos del proyecto y que sirven a todas las vistas. Pero sin cerrarse a que pueda existir esa discriminación por vista.
+- Para los carpetas `files` y `fonts` no se requiere crear la estructura de las carpetas por vista ya que contiene files unicos del proyecto y que sirven a todas las vistas. Pero sin cerrarse a que pueda existir esa discriminación por vista.
 - Para `imagenes` se van a subir a arquivos. El nombramiento de cada imagen se llevará de la misma manera que los de componentes padres a hijos, ejemplo:
   `header__logo-marca.png`
   `header__icon-cart.png` etc.
@@ -262,7 +308,10 @@ El nombramiento de los file `.jsonc` es de igual manera simple y práctico, si h
 # Nota:
 
 - Todo elemento en el .jsonc debe llevar el `title` con el fin de facilitar el manejo del back office.
+  <img src="./assets/img/title-components.png" >
+  <img src="./assets/img/site-editor.png" style="height: 400px">
 - Para los componentes que manejan mucha informacion de manera plana, como lo TyC, debemos manejar los archivos markdown.
+  <img src="./assets/img/markdown.png">
 
 ## Commits, Pull Request and Merge
 
@@ -330,13 +379,17 @@ export default CardsCatalogos;
 #### Configuration
 
 <hr>
-Importe _`tiendasjumboqaio.jumbo-general-apps`_ en las dependencias del tema _`manifest.json`_
+
+Importe `tiendasjumboqaio.jumbo-general-apps`_ en las dependencias del tema _`manifest.json`
+
 ```json
 "dependencies": {
 "tiendasjumboqaio.jumbo-general-apps"
 }
 ```
+
 Adicione el bloque de _`"cards-catalogos"`_ en cualquier plantilla de su tema.
+
 ```json
  "flex-layout.row#catalogos__body": {
  "children": ["cards-catalogos"]

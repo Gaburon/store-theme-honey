@@ -3,12 +3,13 @@
     "blocks": ["header-layout.desktop", "header-layout.mobile"]
   },
   "header.full": {
-    "blocks": ["header-layout.desktop", "header-layout.mobile"]
-  },
-  "header-layout.desktop": {
-    "children": [
-      "sticky-layout#desktop"
+    "blocks": [
+      "header-layout.desktop#desktop__header",
+      "header-layout.mobile#mobile__header"
     ]
+  },
+  "header-layout.desktop#desktop__header": {
+    "children": ["sticky-layout#desktop"]
   },
   "sticky-layout#desktop": {
     "props": {
@@ -52,7 +53,7 @@
       "width": "80"
     }
   },
-  "header-layout.mobile": {
+  "header-layout.mobile#mobile__header": {
     "children": ["sticky-layout#mobile"]
   },
   "sticky-layout#mobile": {
