@@ -81,7 +81,8 @@ Se deberá nombrar desde `manifest.json` de la siguiente forma y se pedirán los
 {vendor}.backend-services
 Esta aplicación tendrá acceso a los builders
 "graphql": "{version}.x",
- "node": "{version}.x"
+ "node": "{version}.x",
+ ".NET": "{version}.x",
 ```
 
 [Link para hacer la solicitud](<[https://docs.google.com/forms/d/e/1FAIpQLSfhuhFxvezMhPEoFlN9yFEkUifGQlGP4HmJQgx6GP32WZchBw/viewform](https://docs.google.com/forms/d/e/1FAIpQLSfhuhFxvezMhPEoFlN9yFEkUifGQlGP4HmJQgx6GP32WZchBw/viewform?authuser=3)>)
@@ -342,7 +343,7 @@ example:
 #### Merge
 
 - Antes de cualquier merge el PR debe tener como minimo la revicion del TL.
-- Para los mege de cada proyecto el responsable será el TL o quien a criterio del TL sea el encargado.
+- Para los merge de cada proyecto el responsable será el TL o quien a criterio del TL sea el encargado.
 
 ## Readme
 
