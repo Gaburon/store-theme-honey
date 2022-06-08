@@ -415,6 +415,24 @@ Del lado del cliente se rendieriza en un landing de catalogos disponibles.
 
 # Apps Custom
 
+Deberan vivir en un monorepo, con esto buscamos que se mas facil su almacenamiento y manejo de los componentes. Además de que se pueda agregar a la aplicación de manera mas sencilla.
+
+Para la creación de sus componentes se debera usar en primera intancia los [Style-guide](https://styleguide.vtex.com/#/Introduction) de Vtex IO, de no estar el componente o elemento en los style-guide se procedera a general de manera manual, dejando su correcta documentacion y uso.
+
+Ejemplos de impementacion:
+
+<img src="./assets/img/styleguide.png">
+
+Renderizado:
+
+<img src="./assets/img/img34.png">
+
+<hr>
+
 ### Css de las app custom
 
-Cada app custom debe mantener sus propios archivos de css de manera independiente al theme. con el fin de que sea reutilizable en diferentes proyectos.
+Cada app custom debe mantener sus propios archivos de css usando el CSS Modules, de manera independiente al theme. con el fin de que sea reutilizable en diferentes proyectos.
+
+Elemplo:
+
+<img src="./assets/img/cssmodule.png">

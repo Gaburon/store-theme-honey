@@ -3,7 +3,7 @@
     "blocks": ["flex-layout.row#desktop__home"]
   },
   "flex-layout.row#desktop__home": {
-    "children": ["rich-text", "box-style", "box-style2"]
+    "children": ["rich-text", "box-style", "box-style2", "input-text"]
   },
   "rich-text": {
     "props": {
