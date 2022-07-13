@@ -105,24 +105,109 @@ En el archivo de styles.json `styles/configs/style.json` se puede configurar col
 
 <img src="./assets/img/root-structure.png">
 
-### Variables en los file.css
 
-En la carpeta Global de css podemos crear un file de nombre `vtex.store.css` y poner variables que necesitemos como colores, tamaños, fuentes etc que no se permitan configurar el el `styles.json` , pero es mayormente usado para variables de colores.
+## Estandarización de CSS
 
-Algunos ejemplos:
+### Estructura Inicial
+ 
+Para que los nuevos estándares y el proyecto funcionen correctamente, es necesario crear un nuevo archivo en la raíz de la Carpeta Global CSS, como sigue:
 
-```css
+- Crea un nuevo archivo llamado ```vtex.store.css``` en la carpeta CSS
+
+![VTEX Store CSS](https://user-images.githubusercontent.com/46954736/169902398-c0a21be5-9b5b-4924-9bb4-d520eb5732df.png)
+
+- Y a continuación, añade las variables deseadas dentro del archivo
+
+```
 :global(.vtex-store__template) {
-  --yellowMetro: #ffed00;
-  --greenTelefonos: #289e36;
-  --greenOfertas: #7ac537;
-  --puntosCenco: #843a8d;
-  --titlesValores-page: #c47373;
-  --ParrafosValores-page: #525252;
+  --promotions-color: #ffed00;
+  --green-offers: #289e36;
+  --discounts: #7ac537;
+  --dynamic-texts: #843a8d;
+  --card-descriptions: #c47373;
+  --promotion-flags: #525252;
 }
 ```
 
-De esta manera las variables van a estar disponibles en toda la app para su uso, esto es extendible a variables de fuentes, tamaños etc.
+Aquí podemos poner variables que necesitemos como colores, tamaños, fuentes, etc. que no se permitan configurar en el `styles.json` , el cual es mayormente usado para variables de colores. De esta forma, las variables quedan disponibles en toda la app para su uso.
+
+_Como ``vtex-store__template`` es una clase global, podemos usar variables CSS para casos específicos y mejores personalizaciones de nuestros estilos_
+
+## Estructura del Código
+
+Para la implementación del código, utilizaremos la [Metodología BEM](https://en.bem.info/methodology/)
+
+<p align="center">
+  <img align="center" style="margin: 0 auto; width: 450px" src="https://user-images.githubusercontent.com/46954736/169904084-5512beb2-8850-4aed-b214-7295599d63c0.png" />
+</p>
+
+## Bloques y Nombres de Clases
+
+Como ya estamos utilizando la Metodología BEM dentro de los bloques VTEX IO, esta es la forma que utilizaremos para implementar la metodología pero en las clases CSS. e,i:
+
+Si un bloque nativo se llama ``"header-row#desktop__container-header"`` simplemente debemos nombrar la clase CSS basada en el alias del bloque. 
+
+_bloque principal:_
+
+```json
+"header-row#desktop__container-header": {
+    "children": [
+      "image#header__contact--logo",
+      "rich-text#header__contact--title"
+    ]
+  }
+```
+_bloque principal con clase css (``` "blockClass": "desktop__container-header"```):_
+
+```json
+"header-row#desktop__container-header": {
+    "children": [
+      "image#header__contact--logo",
+      "rich-text#header__contact--title"
+    ],
+    "props": {
+      "blockClass": "desktop__container-header"
+    }
+  }
+```
+
+_Nota: En el caso de que sea necesario utilizar más clases dentro del mismo bloque, puedes utilizar un array en la propiedad ``blockClass``, pero recuerda nombrar la clase utilizando la Metodología BEM:_
+
+```json
+"header-row#desktop__container-header": {
+    "children": [
+      "image#header__contact--logo",
+      "rich-text#header__contact--title"
+    ],
+    "props": {
+      "blockClass": [
+        "desktop__container-header", 
+        "example__example", 
+        "example__example--example"
+      ]
+    }
+  }
+```
+
+## Formato del Código
+
+
+Así como es importante tener un estándar sólido en la estructura del código, también es importante que se vea bien y esté correctamente formateado a través de todos los cambios que el equipo hace.
+
+Por esta razón, es necesario instalar [Formate: CSS/LESS/SCSS formatter](https://marketplace.visualstudio.com/items?itemName=MikeBovenlander.formate), un plugin de VSCode para formatear tus archivos CSS / LESS y SCSS que puede alinear verticalmente las propiedades.
+
+<p align="center">
+  <img 
+    align="center" 
+    style="margin: 0 auto; width: 450px !important;" 
+    src="https://user-images.githubusercontent.com/46954736/169911661-66d35cde-0625-4b0b-8feb-60815d864bc3.gif" 
+   />
+</p>
+
+![image](https://user-images.githubusercontent.com/46954736/169913102-0374e5c0-1cd2-4e3a-9883-9d8fd525ec4c.png)
+
+De esta manera, podemos ver fácilmente nuestro código y hacer cambios a medida que aparecen nuevas características.
+
 
 ## Estructura de carpetas
 
