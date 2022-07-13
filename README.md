@@ -99,7 +99,7 @@ Se deberá nombrar desde `manifest.json` de la siguiente forma
 {vendor}.checkout-ui-settings
 ```
 
-#### Configuraciones Iniciales al Store Theme
+# Configuraciones Iniciales al Store Theme
 
 En el archivo de styles.json `styles/configs/style.json` se puede configurar colores, fuentes, tamaños, espacios, etc. De manera directa al theme. Lo cual es el primer lugar que debemos adaptar a los requerimientos del proyecto.
 
@@ -397,7 +397,9 @@ El nombramiento de los file `.jsonc` es de igual manera simple y práctico, si h
 - Para los componentes que manejan mucha informacion de manera plana, como lo TyC, debemos manejar los archivos markdown.
   <img src="./assets/img/markdown.png">
 
-## Commits, Pull Request and Merge
+## Commits, Pull Request, Merge and Create Branch
+
+Creacion de Ramas en github se hara desde la parte de Jira de crear branch para tener el nombre.
 
 #### Estandar en los commits <a href="https://gist.github.com/joshbuchea/6f47e86d2510bce28f8e7f42ae84c716">DOCS</a>
 
@@ -407,6 +409,15 @@ El nombramiento de los file `.jsonc` es de igual manera simple y práctico, si h
 example:
 		   <feat>(<header>): <create header with drop-down menu > <-- add drop-down menu for categories wite redirect -->
 ```
+
+### Ejemlos de Socpe
+
+<hr>
+
+Feat,
+Fix,
+style,
+Chore.
 
 #### Pull request => que muestres que brach es la que entra y a cual elemplo:
 
@@ -492,7 +503,7 @@ Del lado del cliente se rendieriza en un landing de catalogos disponibles.
 
 <hr>
 
-**CSS Handles**
+**CSS Modules**
 
 - containerBanner
 - containerTitle
