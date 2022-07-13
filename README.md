@@ -105,14 +105,13 @@ En el archivo de styles.json `styles/configs/style.json` se puede configurar col
 
 <img src="./assets/img/root-structure.png">
 
-
 ## Estandarización de CSS
 
 ### Estructura Inicial
- 
+
 Para que los nuevos estándares y el proyecto funcionen correctamente, es necesario crear un nuevo archivo en la raíz de la Carpeta Global CSS, como sigue:
 
-- Crea un nuevo archivo llamado ```vtex.store.css``` en la carpeta CSS
+- Crea un nuevo archivo llamado `vtex.store.css` en la carpeta CSS
 
 ![VTEX Store CSS](https://user-images.githubusercontent.com/46954736/169902398-c0a21be5-9b5b-4924-9bb4-d520eb5732df.png)
 
@@ -131,7 +130,7 @@ Para que los nuevos estándares y el proyecto funcionen correctamente, es necesa
 
 Aquí podemos poner variables que necesitemos como colores, tamaños, fuentes, etc. que no se permitan configurar en el `styles.json` , el cual es mayormente usado para variables de colores. De esta forma, las variables quedan disponibles en toda la app para su uso.
 
-_Como ``vtex-store__template`` es una clase global, podemos usar variables CSS para casos específicos y mejores personalizaciones de nuestros estilos_
+_Como `vtex-store__template` es una clase global, podemos usar variables CSS para casos específicos y mejores personalizaciones de nuestros estilos_
 
 ## Estructura del Código
 
@@ -145,7 +144,7 @@ Para la implementación del código, utilizaremos la [Metodología BEM](https://
 
 Como ya estamos utilizando la Metodología BEM dentro de los bloques VTEX IO, esta es la forma que utilizaremos para implementar la metodología pero en las clases CSS. e,i:
 
-Si un bloque nativo se llama ``"header-row#desktop__container-header"`` simplemente debemos nombrar la clase CSS basada en el alias del bloque. 
+Si un bloque nativo se llama `"header-row#desktop__container-header"` simplemente debemos nombrar la clase CSS basada en el alias del bloque.
 
 _bloque principal:_
 
@@ -157,7 +156,8 @@ _bloque principal:_
     ]
   }
 ```
-_bloque principal con clase css (``` "blockClass": "desktop__container-header"```):_
+
+_bloque principal con clase css (` "blockClass": "desktop__container-header"`):_
 
 ```json
 "header-row#desktop__container-header": {
@@ -171,7 +171,7 @@ _bloque principal con clase css (``` "blockClass": "desktop__container-header"``
   }
 ```
 
-_Nota: En el caso de que sea necesario utilizar más clases dentro del mismo bloque, puedes utilizar un array en la propiedad ``blockClass``, pero recuerda nombrar la clase utilizando la Metodología BEM:_
+_Nota: En el caso de que sea necesario utilizar más clases dentro del mismo bloque, puedes utilizar un array en la propiedad `blockClass`, pero recuerda nombrar la clase utilizando la Metodología BEM:_
 
 ```json
 "header-row#desktop__container-header": {
@@ -181,8 +181,8 @@ _Nota: En el caso de que sea necesario utilizar más clases dentro del mismo blo
     ],
     "props": {
       "blockClass": [
-        "desktop__container-header", 
-        "example__example", 
+        "desktop__container-header",
+        "example__example",
         "example__example--example"
       ]
     }
@@ -190,7 +190,6 @@ _Nota: En el caso de que sea necesario utilizar más clases dentro del mismo blo
 ```
 
 ## Formato del Código
-
 
 Así como es importante tener un estándar sólido en la estructura del código, también es importante que se vea bien y esté correctamente formateado a través de todos los cambios que el equipo hace.
 
@@ -207,7 +206,6 @@ Por esta razón, es necesario instalar [Formate: CSS/LESS/SCSS formatter](https:
 ![image](https://user-images.githubusercontent.com/46954736/169913102-0374e5c0-1cd2-4e3a-9883-9d8fd525ec4c.png)
 
 De esta manera, podemos ver fácilmente nuestro código y hacer cambios a medida que aparecen nuevas características.
-
 
 ## Estructura de carpetas
 
@@ -487,7 +485,12 @@ Del lado del cliente se rendieriza en un landing de catalogos disponibles.
 | Prop name | Type | Description   | Default value |
 | --------- | ---- | ------------- | ------------- |
 
+<br>
+<br>
+
 ### Handles
+
+<hr>
 
 **CSS Handles**
 
@@ -501,7 +504,7 @@ Del lado del cliente se rendieriza en un landing de catalogos disponibles.
 
 # Apps Custom
 
-Deberan vivir en un monorepo, con esto buscamos que se mas facil su almacenamiento y manejo de los componentes. Además de que se pueda agregar a la aplicación de manera mas sencilla.
+Deberan vivir en un monorepo todas las apps pequeñas que no requieran una integracion muy compleja o peerdependecies, con esto buscamos que se mas facil su almacenamiento y manejo de los componentes. Además de que se pueda agregar a la aplicación de manera mas sencilla.
 
 Para la creación de sus componentes se debera usar en primera intancia los [Style-guide](https://styleguide.vtex.com/#/Introduction) de Vtex IO, de no estar el componente o elemento en los style-guide se procedera a general de manera manual, dejando su correcta documentacion y uso.
 
@@ -514,10 +517,14 @@ Renderizado:
 <img src="./assets/img/img34.png">
 
 <hr>
+<br>
+<br>
 
-### Css de las app custom
+# Estilos de las app custom
 
-Cada app custom debe mantener sus propios archivos de css usando el CSS Modules, de manera independiente al theme. con el fin de que sea reutilizable en diferentes proyectos.
+Cada app custom debe mantener estilos base, es decir estilos de espaciados, position animaciones, funcionalidad etc. usando CSS Modules pero los estilos de look and feel de la aplicaciones deben ir en los archivos de estilos de el store theme.
+
+Esto con el fin de mantener las apps custom agnosticas a cada logica de negocio y proyecto en particular, con el fin de que sea reutilizable en diferentes proyectos.
 
 Elemplo:
 
