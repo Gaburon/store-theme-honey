@@ -1,6 +1,6 @@
 # Estandarización de proyectos
 
-En este repositorio reposa la documentación necesaria para la creacion de proyectos en IT Globers, bajo los estándares establecidos por la compañia, en los que se invita a participar en mejoras continuas y sugerencias por parte del equipo de desarrollo.
+En este repositorio reposa la documentación necesaria para la creación de proyectos en IT Globers, bajo los estándares establecidos por la compañía, en los que se invita a participar en mejoras continuas y sugerencias por parte del equipo de desarrollo.
 
 Para lograr un desarrollo óptimo, se debe solicitar al **Project Manager y al Tech Lead** encargados, con el cumplimiento puntual de los siguientes puntos para un trabajo armónico y eficiente por el equipo de desarrolladores involucrados en el proyecto.
 
@@ -8,11 +8,11 @@ Para lograr un desarrollo óptimo, se debe solicitar al **Project Manager y al T
 
 Las historias de usuario son levantadas por parte de el(los) Project Manager, Tech Lead de IT Globers en un trabajo conjunto con el(la) Product Owner del proyecto, cumpliendo con los siguientes puntos:
 
-- Los requerimientos deben tener la mayor descripción posible, tanto en funcionalidad como aspecto visual que tendrá la historia de usuario, en caso de ser una vista. No se deberá dejar bajo ningun motivo, requerimientos a interpretacion **subjetiva** por parte de cualquiera de los involucrados.
+- Los requerimientos deben tener la mayor descripción posible, tanto en funcionalidad como aspecto visual que tendrá la historia de usuario, en caso de ser una vista. No se deberá dejar bajo ningún motivo, requerimientos a interpretación **subjetiva** por parte de cualquiera de los involucrados.
 - Tiempo en las entregas, estos tiempos deben ser evaluados con el equipo técnico, Project Manager y Líder técnico. Buscando la mayor acertividad en complejidad en el desarrollo del requerimiento planteado por el cliente
-- Siempre deben existir componentes de guia o apoyo visual, referentes a lo que busca como resultado final el Product Owner y Usuario Final.
-- En caso de que se levanten nuevas Historias de usuario durante el desarrollo del proyecto, éstas deben cumplir con las mismas especificaciónes anteriomente nombradas, y seguir la linea de la estandarización mencionada.
-- Siempre aclarar al cliente que los tiempos de entrega podrian sufrir cambios si se agregan historias de Usuario adicionales.
+- Siempre deben existir componentes de guía o apoyo visual, referentes a lo que busca como resultado final el Product Owner y Usuario Final.
+- En caso de que se levanten nuevas Historias de usuario durante el desarrollo del proyecto, éstas deben cumplir con las mismas especificaciones anteriormente nombradas, y seguir la linea de la estandarización mencionada.
+- Siempre aclarar al cliente que los tiempos de entrega podrían sufrir cambios si se agregan historias de Usuario adicionales.
 
 - La historia de usuario deberá tener el siguiente formato:
 
@@ -22,7 +22,7 @@ Es un documento donde se plasmarán los componentes (custom o nativos) a usar de
 
 - Nombre del proyecto
 - Tecnologías/componentes a usar y por qué.
-- Una descripcion detallada del componente y la forma de implementarlo o una documentación acertada de cómo hacerlo.
+- Una descripción detallada del componente y la forma de implementarlo o una documentación acertada de cómo hacerlo.
 
 **Ejemplo:**
 `Header`: se usara un `header-row` como contenedor general del header y ya cada sub-header sera con un `flex-layout.row` etc... Porque de esta manera sera mas practico al momento de darle estilos etc...
@@ -209,10 +209,10 @@ De esta manera, podemos ver fácilmente nuestro código y hacer cambios a medida
 
 ## Estructura de carpetas
 
-Tener un ordenamiento simetrico y constante nos ayuda a mantener proyectos limpios y escalables, sobre todo a que otras personas lo puedan entender en un tiempo menor.
+Tener un ordenamiento simétrico y constante nos ayuda a mantener proyectos limpios y escalables, sobre todo a que otras personas lo puedan entender en un tiempo menor.
 
 Por lo cual tenemos que pensar en los proyectos VTEX IO como un organismo que no muta si no que se extiende como las clases en POO.
-Para ello debemos pensar en la construcción del esquema de los folders con 4 puntos de partida
+Para ello debemos pensar en la construcción del esquema de los folders con 4 puntos de partida
 
 1- Desktop
 2- Mobile o phone (Según requiera)
@@ -232,7 +232,7 @@ Desktop
 => Components: Contendra todos los componentes que pueda requerir la vista.
 => screen: Contiene los componentes principales que conforman páginas o la página en si misma.
 
-En los folders componentes cada file debe ir con el nombre de su elemento padre, como se ve en la imagen `header-menu.jsonc` es el componente hijo de `header` asi podemos relacionar un componente con el su children.
+En los folders componentes cada file debe ir con el nombre de su elemento padre, como se ve en la imagen `header-menu.jsonc` es el componente hijo de `header` asi podemos relacionar un componente con su children.
 
 <img src="./assets/img/Screenshot_2.png">
 
@@ -261,7 +261,7 @@ En el caso que se desee usar un componente global, pero se necesite hacer una ex
     width: 100%;
 }
 
-//.json - info card se usa en la página de producto pero tiene un cambio a su color de fondo
+//.json - info card se usa en la página de producto, pero tiene un cambio a su color de fondo
 
 {
     "flex-layout.row#global__info-card--pdp": {
@@ -278,11 +278,11 @@ En el caso que se desee usar un componente global, pero se necesite hacer una ex
 }
 ```
 
-Por qué? porque asi evitamos chocar con las media querys nativas del navegador.
+¿Por qué? porque así evitamos chocar con las media querys nativas del navegador.
 
 ## Folders de css
 
-Se crearan folders por componentes de el proyectos, es decir si tenemos en el footer un fqa, tendriamos una carpeta que diga footer en su interior uno con el nombre del fqa.
+Se crearán folders por componentes de el proyectos, es decir, si tenemos en el footer un fqa, tendriamos una carpeta que diga footer en su interior uno con el nombre del fqa.
 Ejemplo:
 
 <img src="assets/img/img3.png">
@@ -291,7 +291,7 @@ Para de esta manera el elemento footer-fqa sera un componente reutilizable en cu
 
 ## Carpetas files y fonts
 
-- Para los carpetas `files` y `fonts` no se requiere crear la estructura de las carpetas por vista ya que contiene files unicos del proyecto y que sirven a todas las vistas. Pero sin cerrarse a que pueda existir esa discriminación por vista.
+- Para los carpetas `files` y `fonts` no se requiere crear la estructura de las carpetas por vista, ya que contiene files únicos del proyecto y que sirven a todas las vistas. Pero sin cerrarse a que pueda existir esa discriminación por vista.
 - Para `imagenes` se van a subir a arquivos. El nombramiento de cada imagen se llevará de la misma manera que los de componentes padres a hijos, ejemplo:
   `header__logo-marca.png`
   `header__icon-cart.png` etc.
@@ -303,27 +303,26 @@ Para de esta manera el elemento footer-fqa sera un componente reutilizable en cu
 a- Mobile first  
 b- Desktop first
 
-En ITGlobers si es un project responsive iniciamos con Mobile first, por qué? porque +70% del trafico en internet se hace desde un dispositivo mobile.
+En ITGlobers si es un project responsive iniciamos con Mobile first, ¿por qué? porque +70% del tráfico en internet se hace desde un dispositivo mobile.
 
-Para esto debemos usar el responsive layout, quien nos permetira manejar elementos diferentes en cada vista, ya sea que cambien el componente por completo o en su orden.
+Para esto debemos usar el responsive layout, quien nos permitirá manejar elementos diferentes en cada vista, ya sea que cambien el componente por completo o en su orden.
 
 ## Nombre a los archivos y clases.css de los proyecto con la metodologia BEM
 
 `Block-element-modifier`
 
-Por qué hacerlo con BEM?
-Bueno BEM es una metodología usada en las hojas de styles para manejar mucho mejor la especificidad, lo cual aprovecharemos en IT Globers para nombrar componentes de VTEX IO y evitar que se repitan nombres o se pisen, igualmente para los file además de su uso en el CSS.
+¿Por qué hacerlo con BEM? Bueno BEM es una metodología usada en las hojas de styles para manejar mucho mejor la especificidad, lo cual aprovecharemos en IT Globers para nombrar componentes de VTEX IO y evitar que se repitan nombres o se pisen, igualmente para los files además de su uso en el CSS.
 
 #### Nombrando bloques
 
-Bloques de VTEX IO como `header-row`, `flex-layout.row`, `flex-layout.row`, `store.coustom`, `store.home` etc. Son nombres nativos en VTEX IO y les podemos agregar alias poniendo después de nombre por defecto un #, `flex-layout.row#{alias}`
+Bloques de VTEX IO como `header-row`, `flex-layout.row`, `flex-layout.row`, `store.custom`, `store.home`, etc. Son nombres nativos en VTEX IO y les podemos agregar alias poniendo después de nombre por defecto un #, `flex-layout.row#{alias}`
 
 Y aquí es donde pondremos en uso la metodología BEM para el nombramiento del alias.
 Primero nombramos la vista (desktop, mobile, tablet o global) seguido de `__` nombre del component.
 
 Si el bloque es un children vamos a manejar su nombre:
 
-primero nombramos la vista `flex-layout.row#desktop` seguido de ' ** ' nombre del elemento padre `flex-layout.row#desktop**header`y por ultimo el del componente hijo que estás creando`flex-layout.row#desktop\_\_header--contact`
+Primero nombramos la vista `flex-layout.row#desktop` seguido de ' __ ' nombre del elemento padre `flex-layout.row#desktop__header`y por último el del componente hijo que estás creando`flex-layout.row#desktop__header--contact`
 
 ```json
  "header-row#desktop__container-header": {
@@ -334,9 +333,9 @@ primero nombramos la vista `flex-layout.row#desktop` seguido de ' ** ' nombre de
  },
 ```
 
-Que pasa tiene muchos componentes anidados, para el 3er nivel de anidamiento se toma ya el elemento padre como principal y no la vista, ejemplo:
+Que pasa si tienes muchos componentes anidados, para el 3er nivel de anidamiento se toma ya el elemento padre como principal y no la vista, ejemplo:
 
-`flex-layout.row#desktop__header--contact` y este elemento tiene un children, seria asi:
+`flex-layout.row#desktop__header--contact` y este elemento tiene un children, seria así:
 
 ```json
  "flex-layout.row#desktop__header--contact": {
@@ -349,7 +348,7 @@ Que pasa tiene muchos componentes anidados, para el 3er nivel de anidamiento se 
 
 #### Nombrando clases
 
-Con las clases en los bloques es más práctico porque simple mente es ponerle el mismo alias del bloque como class en el css.
+Con las clases en los bloques es más práctico porque simplemente es ponerle el mismo alias del bloque como class en el css.
 
 ```json
  "header-row#desktop__container-header": {
@@ -364,7 +363,7 @@ Con las clases en los bloques es más práctico porque simple mente es ponerle e
  },
 ```
 
-Tambien tener en cuenta que en algunos proyectos es necesario reutilizar componentes con unas pequeñas variaciones en los styles, lo cual podemos hacer uso del array de classes que se puede manejar en Vtex.
+También tener en cuenta que en algunos proyectos es necesario reutilizar componentes con unas pequeñas variaciones en los styles, lo cual podemos hacer uso del array de classes que se puede manejar en Vtex.
 
 ```json
  "header-row#desktop__container-header": {
@@ -385,7 +384,7 @@ Tambien tener en cuenta que en algunos proyectos es necesario reutilizar compone
 
 #### Nombrando files
 
-El nombramiento de los file `.jsonc` es de igual manera simple y práctico, si hablamos de un bloque principal como `'header', 'footer', 'home', 'product-page'` etc. El nombre del file solo llevará el mismo nombre con la extensión 'header.jsonc', `'footer.jsonc', 'home.jsonc', 'product-page.jsonc'`, Si el file es un componente hijo como:
+El nombramiento de los files `.jsonc` es de igual manera simple y práctico, si hablamos de un bloque principal como `'header', 'footer', 'home', 'product-page'` etc. El nombre del file solo llevará el mismo nombre con la extensión 'header.jsonc', `'footer.jsonc', 'home.jsonc', 'product-page.jsonc'`, Si el file es un componente hijo como:
 
 `header.jsonc` tiene un componente hijo que es el `menu`entonces el file del menú se llamara `header-menu.jsonc`.
 
@@ -399,18 +398,18 @@ El nombramiento de los file `.jsonc` es de igual manera simple y práctico, si h
 
 ## Commits, Pull Request, Merge and Create Branch
 
-Creacion de Ramas en github se hara desde la parte de Jira de crear branch para tener el nombre.
+Creación de Ramas en github se hará desde la parte de Jira de crear branch para tener el nombre.
 
-#### Estandar en los commits <a href="https://gist.github.com/joshbuchea/6f47e86d2510bce28f8e7f42ae84c716">DOCS</a>
+#### Estándar en los commits <a href="https://gist.github.com/joshbuchea/6f47e86d2510bce28f8e7f42ae84c716">DOCS</a>
 
 ```json
 	<type>(<scope>): <subject> <-- description -->
 
 example:
-		   <feat>(<header>): <create header with drop-down menu > <-- add drop-down menu for categories wite redirect -->
+		   <feat>(<header>): <create header with drop-down menu > <-- add drop-down menu for categories with redirect -->
 ```
 
-### Ejemlos de Socpe
+### Ejemplos de Scope
 
 <hr>
 
@@ -419,7 +418,7 @@ Fix,
 style,
 Chore.
 
-#### Pull request => que muestres que brach es la que entra y a cual elemplo:
+#### Pull request => que muestres que branch es la que entra y a cual ejemplo:
 
 ```json
 
@@ -436,18 +435,18 @@ example:
 
 #### Merge
 
-- Antes de cualquier merge el PR debe tener como minimo la revicion del TL.
+- Antes de cualquier merge el PR debe tener como mínimo la revisión del TL.
 - Para los merge de cada proyecto el responsable será el TL o quien a criterio del TL sea el encargado.
 
 ## Readme
 
-Cada proyecto debe tener su readme.md al detalle de que hace su componente, elemento o aplicación. Con el fin de ayudar a los demas a entender su uso y comportamiento.
+Cada proyecto debe tener su readme.md al detalle de que hace su componente, elemento o aplicación. Con el fin de ayudar a los demás a entender su uso y comportamiento.
 
-Elemplo:
+Ejemplo:
 
 #### CardsCatalogos
 
-Es una app que recibe un script de tiendeo.com.co el cual contiene toda la informacion del catalogo de tiendas Jumbo.
+Es una app que recibe un script de tiendeo.com.co el cual contiene toda la información del catálogo de tiendas Jumbo.
 
 ```tsx
 import React, { useEffect } from 'react';
@@ -491,9 +490,9 @@ Adicione el bloque de _`"cards-catalogos"`_ en cualquier plantilla de su tema.
  },
 ```
 
-Del lado del cliente se rendieriza en un landing de catalogos disponibles.
+Del lado del cliente se renderiza en un landing de catálogos disponibles.
 
-| Prop name | Type | Description   | Default value |
+| Prop name | Type | Description   | Default value |
 | --------- | ---- | ------------- | ------------- |
 
 <br>
@@ -515,11 +514,11 @@ Del lado del cliente se rendieriza en un landing de catalogos disponibles.
 
 # Apps Custom
 
-Deberan vivir en un monorepo todas las apps pequeñas que no requieran una integracion muy compleja o peerdependecies, con esto buscamos que se mas facil su almacenamiento y manejo de los componentes. Además de que se pueda agregar a la aplicación de manera mas sencilla.
+Deberán vivir en un monorepo todas las apps pequeñas que no requieran una integración muy compleja o peerDependecies, con esto buscamos que se mas fácil su almacenamiento y manejo de los componentes. Además de que se pueda agregar a la aplicación de manera mas sencilla.
 
-Para la creación de sus componentes se debera usar en primera intancia los [Style-guide](https://styleguide.vtex.com/#/Introduction) de Vtex IO, de no estar el componente o elemento en los style-guide se procedera a general de manera manual, dejando su correcta documentacion y uso.
+Para la creación de sus componentes se deberá usar en primera instancia los [Style-guide](https://styleguide.vtex.com/#/Introduction) de Vtex IO, de no estar el componente o elemento en los style-guide se procederá a generar de manera manual, dejando su correcta documentación y uso.
 
-Ejemplos de impementacion:
+Ejemplos de implementación:
 
 <img src="./assets/img/styleguide.png">
 
@@ -533,10 +532,10 @@ Renderizado:
 
 # Estilos de las app custom
 
-Cada app custom debe mantener estilos base, es decir estilos de espaciados, position animaciones, funcionalidad etc. usando CSS Modules pero los estilos de look and feel de la aplicaciones deben ir en los archivos de estilos de el store theme.
+Cada app custom debe mantener estilos base, es decir, estilos de espaciados, position, animaciones, funcionalidad, etc. usando CSS Modules pero los estilos de look and feel de la aplicaciones deben ir en los archivos de estilos de el store theme.
 
-Esto con el fin de mantener las apps custom agnosticas a cada logica de negocio y proyecto en particular, con el fin de que sea reutilizable en diferentes proyectos.
+Esto con el fin de mantener las apps custom agnósticas a cada lógica de negocio y proyecto en particular, con el fin de que sea reutilizable en diferentes proyectos.
 
-Elemplo:
+Ejemplo:
 
 <img src="./assets/img/cssmodule.png">
