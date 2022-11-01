@@ -47,19 +47,7 @@ Los proyectos realizados por ITGlobers manejarán un estándar basado en cuatro 
 
 ## {vendor}.store-theme
 
-Para realizar la inicialización del proyecto, contamos con los siguientes repositorios que se deberán emular mediante la opción de plantilla.
-
-- [ITG Store theme inglés](https://github.com/ITGlobers/itglobers-store-theme-en)
-- [ITG Store theme español](https://github.com/ITGlobers/itglobers-store-theme-es)
-
-La ventaja de usar los mismos es la optimización que se ha hecho en cuanto a aplicaciones nativas usadas, y la organización base de la estructura de carpetas estándar de la empresa que hablaremos más adelante.
-
-Se deberá nombrar desde `manifest.json` de la siguiente forma
-
-```json
-{vendor}.store-theme
-
-```
+Para realizar la inicialización del proyecto, Este repositorio que contien el tema base de la tienda, y se debe renombrar a `vendor.store-theme`, donde `vendor` es el nombre del cliente.
 
 ### {vendor}.frontend-applications
 
@@ -91,7 +79,17 @@ En esta Aplicación se alojaran los servicios backend.
 
 ### {vendor}.checkout-ui-settings
 
-El Tech Lead del proyecto deberá crear un repositorio basado en [VTEX Checkout](https://github.com/vtex-apps/checkout-ui-settings), en el que se alojarán todos los scripts y estilos base del checkout que se programan con css y Vanilla JS (No se aconseja el uso de JQuery).
+El Tech Lead del proyecto deberá crear un repositorio basado en en el "checkout-ui-settings" corriendo en la CLI el comando:
+
+```bash
+vtex init
+```
+
+Y seleccionando la opcion de checkout-ui-settings.
+
+Que nos dara un repo como: [VTEX Checkout](https://github.com/vtex-apps/checkout-ui-settings), en el que se alojarán todos los scripts y estilos base del checkout que se programan con css y Vanilla JS o TypeScript, (No se aconseja el uso de JQuery).
+
+Esto con el fin de mantener los logs y relases de el checkout en un solo lugar. y que sea más facil de escalar.
 
 Se deberá nombrar desde `manifest.json` de la siguiente forma
 
@@ -322,7 +320,7 @@ Primero nombramos la vista (desktop, mobile, tablet o global) seguido de `__` no
 
 Si el bloque es un children vamos a manejar su nombre:
 
-Primero nombramos la vista `flex-layout.row#desktop` seguido de ' __ ' nombre del elemento padre `flex-layout.row#desktop__header`y por último el del componente hijo que estás creando`flex-layout.row#desktop__header--contact`
+Primero nombramos la vista `flex-layout.row#desktop` seguido de ' ** ' nombre del elemento padre `flex-layout.row#desktop**header`y por último el del componente hijo que estás creando`flex-layout.row#desktop\_\_header--contact`
 
 ```json
  "header-row#desktop__container-header": {
@@ -449,24 +447,49 @@ Ejemplo:
 Es una app que recibe un script de tiendeo.com.co el cual contiene toda la información del catálogo de tiendas Jumbo.
 
 ```tsx
-import React, { useEffect } from 'react';
-const CardsCatalogos = () => {
-  useEffect(() => {
-    const script = document.createElement('script');
-    script.src =
-      'https://www.tiendeo.com.co/_integrations/slider.js?origin=jumbo';
-    script.async = true;
-    document.getElementById('tiendeo_container')?.appendChild(script);
-    return () => {
-      document.getElementById('tiendeo_container')?.removeChild(script);
-      const where = document.getElementById('__tiendeoViewerContainer');
-      if (where) {
-        where.style.display = 'none';
-      }
-    };
-  }, []);
-  return <div id='tiendeo_container' />;
-};
+import React, {
+  useEffect,
+} from "react";
+const CardsCatalogos =
+  () => {
+    useEffect(() => {
+      const script =
+        document.createElement(
+          "script"
+        );
+      script.src =
+        "https://www.tiendeo.com.co/_integrations/slider.js?origin=jumbo";
+      script.async =
+        true;
+      document
+        .getElementById(
+          "tiendeo_container"
+        )
+        ?.appendChild(
+          script
+        );
+      return () => {
+        document
+          .getElementById(
+            "tiendeo_container"
+          )
+          ?.removeChild(
+            script
+          );
+        const where =
+          document.getElementById(
+            "__tiendeoViewerContainer"
+          );
+        if (where) {
+          where.style.display =
+            "none";
+        }
+      };
+    }, []);
+    return (
+      <div id="tiendeo_container" />
+    );
+  };
 export default CardsCatalogos;
 ```
 
@@ -492,8 +515,8 @@ Adicione el bloque de _`"cards-catalogos"`_ en cualquier plantilla de su tema.
 
 Del lado del cliente se renderiza en un landing de catálogos disponibles.
 
-| Prop name | Type | Description   | Default value |
-| --------- | ---- | ------------- | ------------- |
+| Prop name | Type | Description | Default value |
+| --------- | ---- | ----------- | ------------- |
 
 <br>
 <br>
@@ -514,7 +537,7 @@ Del lado del cliente se renderiza en un landing de catálogos disponibles.
 
 # Apps Custom
 
-Deberán vivir en un monorepo todas las apps pequeñas que no requieran una integración muy compleja o peerDependecies, con esto buscamos que se mas fácil su almacenamiento y manejo de los componentes. Además de que se pueda agregar a la aplicación de manera mas sencilla.
+Deberán vivir en un monorepo todas las apps pequeñas que no requieran una integración muy compleja o peerDependecies (apps presentacionales), con esto buscamos que se mas fácil su almacenamiento y manejo de los componentes. Además de que se pueda agregar a la aplicación de manera mas sencilla.
 
 Para la creación de sus componentes se deberá usar en primera instancia los [Style-guide](https://styleguide.vtex.com/#/Introduction) de Vtex IO, de no estar el componente o elemento en los style-guide se procederá a generar de manera manual, dejando su correcta documentación y uso.
 
@@ -532,10 +555,14 @@ Renderizado:
 
 # Estilos de las app custom
 
-Cada app custom debe mantener estilos base, es decir, estilos de espaciados, position, animaciones, funcionalidad, etc. usando CSS Modules pero los estilos de look and feel de la aplicaciones deben ir en los archivos de estilos de el store theme.
+Cada app custom debe mantener estilos base, es decir, estilos de espaciados, position, animaciones, funcionalidad, etc. usando estilos en el order de prioridad:
+
+1. **Tachyons** (Libreria que maneja los styles de Vtex IO)
+
+2. **CSS Modules** (para estilos de personalizados de la app, para el nombramiento de el archivo de CSS usaremos el " **style.modules.css** " )
+
+3. **CSS Handles** (para estilos de personalizados de la app que son agregados desde el store theme, esto para agregar el look and feel del store)
+
+Documentación de referemcia: [Reglas de uso](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-5-defining-styles)
 
 Esto con el fin de mantener las apps custom agnósticas a cada lógica de negocio y proyecto en particular, con el fin de que sea reutilizable en diferentes proyectos.
-
-Ejemplo:
-
-<img src="./assets/img/cssmodule.png">
