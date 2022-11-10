@@ -313,7 +313,7 @@ Para esto debemos usar el responsive layout, quien nos permitirá manejar elemen
 
 #### Nombrando bloques
 
-Bloques de VTEX IO como `header-row`, `flex-layout.row`, `flex-layout.row`, `store.custom`, `store.home`, etc. Son nombres nativos en VTEX IO y les podemos agregar alias poniendo después de nombre por defecto un #, `flex-layout.row#{alias}`
+Bloques de VTEX IO como `header-row`, `flex-layout.row`, `flex-layout.col`, `store.custom`, `store.home`, etc. Son nombres nativos en VTEX IO y les podemos agregar alias poniendo después de nombre por defecto un #, `flex-layout.row#{alias}`
 
 Y aquí es donde pondremos en uso la metodología BEM para el nombramiento del alias.
 Primero nombramos la vista (desktop, mobile, tablet o global) seguido de `__` nombre del component.
