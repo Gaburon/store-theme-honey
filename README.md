@@ -320,7 +320,7 @@ Primero nombramos la vista (desktop, mobile, tablet o global) seguido de `__` no
 
 Si el bloque es un children vamos a manejar su nombre:
 
-Primero nombramos la vista `flex-layout.row#desktop` seguido de ' ** ' nombre del elemento padre `flex-layout.row#desktop**header`y por último el del componente hijo que estás creando`flex-layout.row#desktop\_\_header--contact`
+Primero nombramos la vista `flex-layout.row#desktop` seguido de `__` nombre del elemento padre `flex-layout.row#desktop__header` y por último el del componente hijo que estás creando `flex-layout.row#desktop__header--contact`
 
 ```json
  "header-row#desktop__container-header": {
