@@ -1,16 +1,5 @@
 {
   "store.home": {
     "blocks": ["flex-layout.row#desktop__home"]
-  },
-  "flex-layout.row#desktop__home": {
-    "children": ["rich-text", "box-style", "box-style2", "input-text"]
-  },
-  "rich-text": {
-    "props": {
-      "text": "VTEX Store Framework",
-      "textAlignment": "CENTER",
-      "textPosition": "CENTER",
-      "font": "t-heading-1"
-    }
   }
 }
