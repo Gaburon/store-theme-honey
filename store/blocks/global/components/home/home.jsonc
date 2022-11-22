@@ -1,5 +1,9 @@
 {
-  "flex-layout.row#desktop__home": {
+  "responsive-layout.mobile#phone__and__tablet": {
+    "title": "Home Section 1 Mobile",
+    "children": ["flex-layout.row#mobile__home"]
+  },
+  "flex-layout.row#mobile__home": {
     "children": ["rich-text", "box-style", "box-style2", "input-text"]
   },
   "rich-text": {

@@ -1,0 +1,18 @@
+{
+  "flex-layout.row#tablet__home__section-1": {
+    "title": "TABLET Row with img and slider",
+    "children": [
+      "rich-text#tablet__section-1"
+    ]
+  },
+  "rich-text#tablet__section-1": {
+    "title": "Text Favorites",
+    "props": {
+      "blockClass": "",
+      "text": "FAVORITOS",
+      "font": "t-heading-3",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER"
+    }
+  }
+}
