@@ -1,0 +1,18 @@
+{
+  "flex-layout.row#home__section-1": {
+    "title": "DESKTOP Row with img and slider",
+    "children": [
+      "rich-text#section-1"
+    ]
+  },
+  "rich-text#section-1": {
+    "title": "Text Favorites",
+    "props": {
+      "blockClass": "",
+      "text": "FAVORITOS",
+      "font": "t-heading-3",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER"
+    }
+  }
+}
