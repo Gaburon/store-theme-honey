@@ -1,17 +1,18 @@
 {
-  "store.orderplaced": {
-    "blocks": ["order-placed"]
+  "responsive-layout.mobile#phone__and__tablet": {
+    "title": "Home Section 1 Mobile",
+    "children": ["flex-layout.row#mobile__home"]
   },
-
-  "store.account": {
-    "blocks": ["my-account"],
-    "parent": {
-      "challenge": "challenge.profile"
+  "flex-layout.row#mobile__home": {
+    "children": ["rich-text", "box-style", "box-style2", "input-text"]
+  },
+  "rich-text": {
+    "props": {
+      "text": "VTEX Store Framework",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "font": "t-heading-1"
     }
-  },
-
-  "store.login": {
-    "blocks": ["login-content#default"]
   },
 
   "login-content#default": {
