@@ -17,7 +17,7 @@
     "props": {
       "blockClass": "",
       "text": "Soy un texto que vive en Desktop, Tablet y Phone :D",
-      "font": "t-heading-2",
+      "font": "t-heading-1",
       "textAlignment": "CENTER",
       "textPosition": "CENTER"
     }
