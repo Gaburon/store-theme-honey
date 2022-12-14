@@ -3,6 +3,7 @@
   "name": "init-store-theme",
   "version": "0.0.1",
   "builders": {
+    "assets": "0.x",
     "styles": "2.x",
     "store": "0.x",
     "docs": "0.x"
@@ -44,8 +45,7 @@
     "vtex.iframe": "0.x",
     "vtex.breadcrumb": "1.x",
     "vtex.sticky-layout": "0.x",
-    "vtex.add-to-cart-button": "0.x",
-    "itgloberspartnercl.apps-test-itg": "0.x"
+    "vtex.add-to-cart-button": "0.x"
   },
   "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
 }

@@ -1,37 +1,25 @@
 {
-  "responsive-layout.mobile#phone__and__tablet": {
-    "title": "Home Section 1 Mobile",
-    "children": ["flex-layout.row#mobile__home"]
-  },
-  "flex-layout.row#mobile__home": {
-    "children": ["rich-text", "box-style", "box-style2", "input-text"]
-  },
-  "rich-text": {
-    "props": {
-      "text": "VTEX Store Framework",
-      "textAlignment": "CENTER",
-      "textPosition": "CENTER",
-      "font": "t-heading-1"
-    }
-  },
-
-  "login-content#default": {
-    "props": {
-      "isInitialScreenOptionOnly": false,
-      "defaultOption": 1,
-      "showPasswordVerificationIntoTooltip": true
-    }
-  },
-
-  "product-summary.shelf": {
+  "flex-layout.row#home__section--global": {
+    "title": "Global Row with text example",
     "children": [
-      "product-summary-add-to-list-button",
-      "product-summary-name",
-      "product-rating-inline",
-      "product-summary-space",
-      "product-summary-price",
-      "product-identifier.summary",
-      "add-to-cart-button"
-    ]
+      "rich-text#home__section--global"
+    ],
+    "props": {
+      "marginTop": 10,
+      "border": ["all"],
+      "borderWidth": 1,
+      "borderColor": "success"
+    }
+  },
+
+  "rich-text#home__section--global": {
+    "title": "Text Favorites",
+    "props": {
+      "blockClass": "",
+      "text": "Soy un texto que vive en Desktop, Tablet y Phone :D",
+      "font": "t-heading-1",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER"
+    }
   }
 }
