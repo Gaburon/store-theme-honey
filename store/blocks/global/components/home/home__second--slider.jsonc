@@ -1,5 +1,6 @@
 {
     "flex-layout.row#global__second--slider": {
+        "title": "Info cards main container",
         "children": [
             "slider-layout#second__slider"
         ],
@@ -10,6 +11,7 @@
     },
 
     "slider-layout#second__slider": {
+        "title": "Info cards container",
         "props": {
             "blockClass": "slider--info--cards",
             "itemsPerPage": {
@@ -36,6 +38,7 @@
     },
 
     "flex-layout.col#second__slider--container": {
+        "title": "Info card",
         "children": [
             "flex-layout.row#slider__first-row",
             "flex-layout.row#slider__second-row",
@@ -48,6 +51,7 @@
     },
 
     "flex-layout.row#slider__first-row": {
+        "title": "Image of the card",
         "children": [
             "image#first__row-image"
         ], 
@@ -64,6 +68,7 @@
     },
 
     "flex-layout.row#slider__second-row": {
+        "title": "Text and trophy image container",
         "children": [
             "flex-layout.col#second__row-text",
             "flex-layout.col#second__row-image"
@@ -77,12 +82,14 @@
     },
 
     "flex-layout.col#second__row-text": {
+        "title": "Text container",
         "children": [
             "rich-text#second__row-title"
         ]
     },
 
     "rich-text#second__row-title": {
+        "title": "Text info card",
         "props": {
             "blockClass": "text-info-card",
             "text": "# Heading\n Builder platform is made by, buildership platform is made by..."
@@ -92,6 +99,7 @@
 
 
     "flex-layout.col#second__row-image": {
+        "title": "Trophy image container",
         "props": {"blockClass":"card--trophy-img"},
         "children": [
             "image#second__row-best-seller"
@@ -99,6 +107,7 @@
     },
 
     "image#second__row-best-seller": {
+        "title": "Trophy image",
       "props": {
         "src": "/arquivos/bestseller-image.png"
         
@@ -106,6 +115,7 @@
     },
 
     "flex-layout.row#slider__third-row": {
+        "title": "Card button container",
         "children": [
             "rich-text#slider__third-row--button"
         ],
@@ -116,6 +126,7 @@
     },
 
     "rich-text#slider__third-row--button": {
+        "title": "Card button text",
         "props": {
             "text": "[Ver precio ](https:)",
             "blockClass": "slider_third-row--button"

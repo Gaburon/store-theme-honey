@@ -1,0 +1,31 @@
+{
+    "flex-layout.row#product-list": {
+        "children": [
+            "list-context.product-list#demo1"
+            ]
+        },
+
+    "product-summary.shelf#demo1": {
+        "children": [
+          "product-summary-name",
+          "product-rating-inline",
+          "product-summary-space",
+          "product-summary-price",
+          "product-summary-buy-button"
+      ]
+        },
+      "list-context.product-list#demo1": {
+        "blocks": ["product-summary.shelf#demo1"],
+        "children": ["slider-layout#product-list"]
+        },
+
+      "slider-layout#product-list": {
+        "props": {
+            "itemsPerPage": {
+                "desktop": 5,
+                "tablet": 3,
+                "phone": 1
+            }
+        }
+      }
+}

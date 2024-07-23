@@ -10,6 +10,7 @@
     },
 
     "list-context.image-list#desktop__main-banner": {
+        "title": "Banner of the page",
         "props": {
             "height": 422,
             "images": [
@@ -27,6 +28,7 @@
     },
 
     "slider-layout#desktop__main-banner-slider": {
+        "title": "config slider of the banner",
         "props": {
             "itemsPerPage": {
                 "desktop": 5,

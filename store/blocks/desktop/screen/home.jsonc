@@ -5,7 +5,9 @@
             // "flex-layout.row#home-section"
             "flex-layout.row#desktop_home-section",
             "rich-text#text-amazing",
-            "flex-layout.row#global__second--slider"
+            "flex-layout.row#global__second--slider",
+            "rich-text#text-amazing",
+            "flex-layout.row#product-list"
             
 
         ]
