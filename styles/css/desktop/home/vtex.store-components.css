@@ -1,0 +1,14 @@
+.logoContainer--logo-img {
+    display: flex;
+    align-items: center;
+}
+
+.logoLink--logo-img {
+    display: flex;
+    align-items: center;
+}
+
+.logoImage--logo-img {
+    width: 32px;
+    height: 16px;
+}

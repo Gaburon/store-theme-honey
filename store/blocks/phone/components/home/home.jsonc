@@ -1,19 +1,34 @@
 {
-  "flex-layout.row#phone__home__section-1": {
-    "title": "PHONE Row with text",
-    "children": [
-      "rich-text#phone__section-1"
-    ]
-  },
+    "flex-layout.row#phone_home-section": {
+        "title": "phone row with text",
+        "children": [
+            "list-context.image-list#phone__main-banner"
+        ]
+    },
 
-  "rich-text#phone__section-1": {
-    "title": "Text Favorites",
-    "props": {
-      "blockClass": "",
-      "text": "Favoritos en PHONE",
-      "font": "t-heading-2",
-      "textAlignment": "CENTER",
-      "textPosition": "CENTER"
+    "list-context.image-list#phone__main-banner": {
+        "props": {
+            "images": [
+                {
+                    "image": "/arquivos/banner-hero.png",
+                    "description": "Main banner image",
+                    "link": {"url": "#"}
+                }
+            ]
+        },
+
+        "children": [
+            "slider-layout#phone__main-banner-slider"
+        ]
+    },
+
+    "slider-layout#phone__main-banner-slider": {
+        "props": {
+            "itemsPerPage": {
+                "desktop": 5,
+                "tablet": 3,
+                "phone": 1
+            }
+        }
     }
-  }
 }

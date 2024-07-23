@@ -1,5 +1,39 @@
-/* Example desktop:
-.flexRow--home__section-2 {
-    margin: 50px auto;
-    max-width: 1200px;
-} */
+.flexRow--hero--desktop {
+    max-width: 1280px;
+    margin: auto;
+}
+
+.flexRow--hero--desktop :global(.vtex-store-components-3-x-container) {
+    padding: 0;
+}
+
+.flexRow--second--slider {
+    max-width: 1280px;
+    margin: auto;
+    padding: 0, 62px;
+}
+
+.flexCol--card--container {
+    max-width: 324px;
+    background-color: #FFFF;
+    border-radius: 12px;
+}
+
+.flexRowContent--card--image {
+    max-width: 324px;
+}
+
+.flexRowContent--card--image :global(.vtex-store-components-3-x-imageElement) {
+    width: 324px;
+}
+
+.flexCol--card--trophy-img {
+    margin: 13.82px;
+
+}
+
+.flexCol--card--trophy-img :global(.vtex-store-components-3-x-imageElement){
+    width: 48px;
+    height: 48px;
+    max-width: none;
+}

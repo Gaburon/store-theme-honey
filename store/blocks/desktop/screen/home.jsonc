@@ -1,6 +1,14 @@
 {
-  "responsive-layout.desktop#home__section-1": {
-    "title": "Home Section 1 Desktop",
-    "children": ["flex-layout.row#home__section-1"]
-  }
+    "responsive-layout.desktop#home__section": {
+        "title": "Home section desktop",
+        "children": [
+            // "flex-layout.row#home-section"
+            "flex-layout.row#desktop_home-section",
+            "rich-text#text-amazing",
+            "flex-layout.row#global__second--slider"
+            
+
+        ]
+
+    }
 }

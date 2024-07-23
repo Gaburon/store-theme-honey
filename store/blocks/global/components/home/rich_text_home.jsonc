@@ -1,0 +1,12 @@
+{
+    "rich-text#text-amazing": {
+        "props": {
+          "text": "An amazing product.",
+          "font": "t-heading-5",
+          "textAlignment": "LEFT",
+          "textPosition": "LEFT",
+          "blockClass": "text-amazing"
+    
+        }
+      }
+}

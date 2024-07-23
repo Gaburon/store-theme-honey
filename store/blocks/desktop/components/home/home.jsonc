@@ -1,19 +1,38 @@
 {
-  "flex-layout.row#home__section-1": {
-    "title": "DESKTOP Row with text",
-    "children": [
-      "rich-text#section-1"
-    ]
-  },
+    "flex-layout.row#desktop_home-section": {
+        "title": "Main banner of the page",
+        "children": [
+            "list-context.image-list#desktop__main-banner"
+        ],
+        "props": {
+            "blockClass": "hero--desktop"
+        }
+    },
 
-  "rich-text#section-1": {
-    "title": "Text Favorites at desktop",
-    "props": {
-      "blockClass": "",
-      "text": "Favoritos en DESKTOP",
-      "font": "t-heading-2",
-      "textAlignment": "CENTER",
-      "textPosition": "CENTER"
+    "list-context.image-list#desktop__main-banner": {
+        "props": {
+            "height": 422,
+            "images": [
+                {
+                    "image": "/arquivos/banner-hero-dekstop.png",
+                    "description": "Main banner image",
+                    "link": {"url": "#"}
+                }
+            ]
+        },
+
+        "children": [
+            "slider-layout#desktop__main-banner-slider"
+        ]
+    },
+
+    "slider-layout#desktop__main-banner-slider": {
+        "props": {
+            "itemsPerPage": {
+                "desktop": 5,
+                "tablet": 3,
+                "phone": 1
+            }
+        }
     }
-  }
 }

@@ -1,6 +1,6 @@
 {
   "vendor": "itgloberspartnercl",
-  "name": "init-store-theme",
+  "name": "honey-store-theme",
   "version": "0.0.1",
   "builders": {
     "assets": "0.x",
@@ -12,6 +12,7 @@
     "postreleasy": "vtex publish --verbose"
   },
   "dependencies": {
+    "vtex.store-image": "0.x",
     "vtex.store": "2.x",
     "vtex.store-header": "2.x",
     "vtex.product-summary": "2.x",
