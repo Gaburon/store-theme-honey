@@ -1,6 +1,6 @@
 {
     "flex-layout.row#global__second--slider": {
-        "title": "Info cards main container",
+        "title": "Info card main container",
         "children": [
             "slider-layout#second__slider"
         ],
