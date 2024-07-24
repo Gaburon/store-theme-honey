@@ -1,5 +1,5 @@
 {
-    "rich-text#text-amazing": {
+    "rich-text#global__text-amazing": {
       "title": "An amazing product text",
         "props": {
           "text": "An amazing product.",

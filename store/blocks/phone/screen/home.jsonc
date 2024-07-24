@@ -3,7 +3,7 @@
         "title": "Home section desktop",
         "children": [
             "flex-layout.row#phone_home-section",
-            "rich-text#text-amazing",
+            "rich-text#global__text-amazing",
             "flex-layout.row#global__second--slider"
         ]
 
