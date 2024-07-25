@@ -1,19 +1,44 @@
 @font-face{
-    font-family: "Roboto-Bold";
-    src: url(assets/fonts/Roboto-Bold.ttf); 
+    font-family: "Lexend-Black";
+    src: url(assets/fonts/Lexend-Black.ttf); 
 }
 
 @font-face{
-    font-family: "Roboto-Light";
-    src: url(assets/fonts/Roboto-Light.ttf); 
+    font-family: "Lexend-Bold";
+    src: url(assets/fonts/Lexend-Bold.ttf); 
 }
 
 @font-face{
-    font-family: "Roboto-Medium";
-    src: url(assets/fonts/Roboto-Medium.ttf); 
+    font-family: "Lexend-ExtraBold";
+    src: url(assets/fonts/Lexend-ExtraBold.ttf); 
 }
 
 @font-face{
-    font-family: "Roboto-Regular";
-    src: url(assets/fonts/Roboto-Regular.ttf); 
+    font-family: "Lexend-ExtraLight";
+    src: url(assets/fonts/Lexend-ExtraLight.ttf); 
+}
+
+@font-face{
+    font-family: "Lexend-Light";
+    src: url(assets/fonts/Lexend-Light.ttf); 
+}
+
+@font-face{
+    font-family: "Lexend-Medium";
+    src: url(assets/fonts/Lexend-Medium.ttf); 
+}
+
+@font-face{
+    font-family: "Lexend-Regular";
+    src: url(assets/fonts/Lexend-Regular.ttf); 
+}
+
+@font-face{
+    font-family: "Lexend-SemiBold";
+    src: url(assets/fonts/Lexend-SemiBold.ttf); 
+}
+
+@font-face{
+    font-family: "Lexend-Thin";
+    src: url(assets/fonts/Lexend-Thin.ttf); 
 }
