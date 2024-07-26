@@ -1,0 +1,67 @@
+{
+    "flex-layout.col#header__link--first-col": {
+        "title": "Header first link",
+        "children": [
+            "rich-text#header__information--bar--one"
+        ]
+    },
+    "flex-layout.col#header__link--second-col": {
+        "title": "Header second link",
+        "children": [
+            "rich-text#header__information--bar--two"
+        ]
+    },
+    "flex-layout.col#header__link--third-col": {
+        "title": "Header third link",
+        "children": [
+            "rich-text#header__information--bar--three"
+        ]
+    },
+    "flex-layout.col#header__link--fourth-col": {
+        "title": "Header fourth link",
+        "children": [
+            "rich-text#header__information--bar--four"
+        ]
+    },
+    "flex-layout.col#header__link--fifth-col": {
+        "title": "Header fifth link",
+        "children": [
+            "rich-text#header__information--bar--five"
+        ]
+    },
+    "rich-text#header__information--bar--one": {
+        "title": "Menu header search one",
+        "props": {
+            "text": "[Tendencias de ITGlobers](https:)",
+            "blockClass": "menu__header__one"
+        }
+    },
+    "rich-text#header__information--bar--two": {
+        "title": "Menu header search two",
+        "props": {
+            "text": "[Colección del mes](https:)",
+            "blockClass": "menu__header__two"
+        }
+    },
+    "rich-text#header__information--bar--three": {
+        "title": "Menu header search three",
+        "props": {
+            "text": "[Ofertas enero](https:)",
+            "blockClass": "menu__header__three"
+        }
+    },
+    "rich-text#header__information--bar--four": {
+        "title": "Menu header search four",
+        "props": {
+            "text": "[Cyber Monday](https:)",
+            "blockClass": "menu__header__four"
+        }
+    },
+    "rich-text#header__information--bar--five": {
+        "title": "Menu header search five",
+        "props": {
+            "text": "[Never say never](https:)",
+            "blockClass": "menu__header__five"
+        }
+    }
+}

@@ -15,15 +15,8 @@
 
   "header-layout.desktop": {
     "children": [
-      "flex-layout.row#global__first-header--row"
-    ]
-  },
-
-
-  "flex-layout.row#global__first-header--row": {
-    "title": "First header row",
-    "children": [
-      "sticky-layout#4-desktop"
+      "flex-layout.row#1-desktop",
+      "header-row#2-desktop"
     ]
   }
 
