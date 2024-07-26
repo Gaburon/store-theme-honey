@@ -10,6 +10,7 @@
 .flexRow--second--slider {
     max-width: 1280px;
     margin: auto;
+    gap: 24px;
 }
 
 .flexCol--card--container {

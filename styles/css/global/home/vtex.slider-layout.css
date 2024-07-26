@@ -44,3 +44,7 @@
     background-color: #1d2734;
     position: absolute;
 }
+
+.sliderTrack--slider--info--cards {
+    gap: 24px;
+}
