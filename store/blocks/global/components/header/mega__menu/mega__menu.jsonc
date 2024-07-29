@@ -1,13 +1,27 @@
 {
-  "sticky-layout#mega-menu": {
+    "sticky-layout#desktop__sticky--layout": {
       "children": [
-          "flex-layout.row#4-desktop",
-          "flex-layout.row#mega-menu"
+          "flex-layout.row#first__row-desktop",
+          "flex-layout.row#mega-menu",
+          "header-row#2-desktop"
       ]
   },
-  "flex-layout.row#4-desktop": {
+  "flex-layout.row#first__row-desktop": {
+			"props": {
+				"blockClass": "header--first-row",
+				"colSizing": "auto"
+			},
       "children": [
-          "flex-layout.col#trigger-mega-menu"
+          "flex-layout.col#trigger-mega-menu",
+          "logo",
+          "search-bar",
+          "flex-layout.col#header__link--first-col",
+          "flex-layout.col#header__link--second-col",
+          "flex-layout.col#header__link--third-col",
+          "flex-layout.col#header__link--fourth-col",
+          "flex-layout.col#header__link--fifth-col",
+          "minicart.v2",
+          "login"
       ]
   },
   "flex-layout.row#mega-menu": {
