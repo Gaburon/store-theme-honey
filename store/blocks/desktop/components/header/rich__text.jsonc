@@ -1,4 +1,19 @@
 {
+    "flex-layout.row#rich__text--container": {
+        "children": [
+            "flex-layout.col#header__link--first-col",
+            "flex-layout.col#header__link--second-col",
+            "flex-layout.col#header__link--third-col",
+            "flex-layout.col#header__link--fourth-col",
+            "flex-layout.col#header__link--fifth-col"
+        ],
+        "props": {
+            "colSizing": "auto",
+            "blockClass": "rich--text-container"
+        }
+    },
+
+
     "flex-layout.col#header__link--first-col": {
         "title": "Header first link",
         "children": [

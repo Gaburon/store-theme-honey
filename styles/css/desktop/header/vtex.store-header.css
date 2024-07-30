@@ -1,4 +1,11 @@
 .headerRowContentContainer--menu-home-2 {
-    background-color: white;
     height: 56px;
+}
+
+.headerRowBackground--menu-home-2 {
+    background-color: white;
+}
+
+.headerRowContainer--menu-home-2 {
+    gap: 13px;
 }
