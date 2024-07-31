@@ -1,0 +1,17 @@
+.outline {
+    background: url(/arquivos/add-to--favorites.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.wishlistIconContainer--wish-list-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 32px;
+}
+
+.wishlistIconContainer--wish-list-icon :global(.vtex-button__label) {
+    padding-left: 13px;
+    padding-right: 13px;
+}
