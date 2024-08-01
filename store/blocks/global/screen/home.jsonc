@@ -3,12 +3,7 @@
     "blocks": [
       "responsive-layout.desktop#desktop__home--section",
       "responsive-layout.tablet#home__section",
-      "responsive-layout.phone#home__section",
-      "responsive-layout.mobile#home__section"
-      /*"flex-layout.row#main-images-container",
-      "rich-text#text-title",
-      "slider-layout#text-test"
-      */
+      "responsive-layout.phone#home__section"
     ]
   }
 }

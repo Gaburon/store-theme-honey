@@ -51,9 +51,10 @@
               "itemsPerPage": {
                 "desktop": 5,
                 "tablet": 3,
-                "phone": 1
+                "phone": 2
               },
-              "fullWidth": false
+              "fullWidth": false,
+              "showNavigationArrows": "desktopOnly"
             }
           },
           "add-to-list-btn": {

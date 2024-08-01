@@ -17,7 +17,7 @@
             "blockClass": "slider--info--cards",
             "itemsPerPage": {
                 "desktop": 4,
-                "tablet": 2,
+                "tablet": 3,
                 "phone": 2
             },
             "showNavigationArrows": "desktopOnly",
