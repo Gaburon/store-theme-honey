@@ -15,7 +15,7 @@
             "children": [
               "flex-layout.row#listbtn--pricesaving",
               "product-summary-image",
-              "product-summary-description",
+              "product-summary-name",
               "product-summary-space",
               "product-list-price",
               "product-selling-price",

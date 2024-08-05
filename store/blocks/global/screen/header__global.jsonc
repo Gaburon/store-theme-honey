@@ -18,10 +18,4 @@
       "sticky-layout#desktop__sticky--layout"
     ]
   }
-
-  // "header-layout.mobile" : {
-  //   "children": [
-  //   ]
-  // }
-
 }

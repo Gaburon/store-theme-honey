@@ -8,9 +8,11 @@
 
 .paginationDotsContainer{
     bottom: -44px;
+    overflow-x: auto;
 }
 
 .paginationDot {
+    min-width: 44px !important;
     width: 44px !important;
     height: 40px !important;
     border-radius: 0;
