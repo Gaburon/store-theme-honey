@@ -55,8 +55,6 @@
               },
               "fullWidth": false,
               "showNavigationArrows": "desktopOnly"
-              // "centerModeSlidesGap": 6,
-              // "centerMode": "center"
             }
           },
           "add-to-list-btn": {
