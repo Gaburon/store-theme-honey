@@ -1,0 +1,28 @@
+.flexRowContent--mobile__row--header {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    gap: 0;
+}
+
+.flexRow--mobile__row--header {
+    background-color: rgba(255, 255, 255, 1);
+}
+
+.flexRowContent--drawer-logo--container--mobile {
+    display: flex;
+}
+
+.flexRowContent--minicart-login--container {
+    display: flex;
+}
+/* .flexRowContent--mobile__row--header :global(.vtex-store-drawer-0-x-openIconContainer) {
+    width: 44px;
+}
+
+.flexRowContent--mobile__row--header :global(.vtex-flex-layout-0-x-stretchChildrenWidth) {
+    width: 0;
+    margin: 0;
+    padding: 0;
+} */
+/* vtex-flex-layout-0-x-stretchChildrenWidth */

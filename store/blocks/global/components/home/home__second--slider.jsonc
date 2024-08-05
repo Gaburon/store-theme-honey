@@ -13,20 +13,17 @@
     "slider-layout#second__slider": {
         "title": "Info cards container",
         "props": {
+            "fullWidth": false,
             "blockClass": "slider--info--cards",
             "itemsPerPage": {
-                "desktop": 3,
+                "desktop": 4,
                 "tablet": 2,
-                "phone": 1
+                "phone": 2
             },
             "showNavigationArrows": "desktopOnly",
             "infinite": true
         },
         "children": [
-            "flex-layout.col#second__slider--container",
-            "flex-layout.col#second__slider--container",
-            "flex-layout.col#second__slider--container",
-            "flex-layout.col#second__slider--container",
             "flex-layout.col#second__slider--container",
             "flex-layout.col#second__slider--container",
             "flex-layout.col#second__slider--container",

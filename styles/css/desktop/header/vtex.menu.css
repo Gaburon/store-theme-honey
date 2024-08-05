@@ -1,4 +1,36 @@
-/* Example desktop:
+.menuContainer--menu-home {
+    text-align: center;
+
+}
+
+.menuItem {
+    width: 70px;
+}
+
+.menuContainer--menu-home {
+    padding-left: 48px;
+    gap: 4px;
+}
+
+.styledLinkIcon {
+    display: block;
+}
+
 .styledLinkContainer {
-    margin: 0 12px;
-} */
+    margin: 0;
+    padding: 0;
+}
+
+.styledLinkContent {
+    display: block;
+    margin: 0 auto;
+    border: 0 0 1px 0;
+    font-size: 12px;
+    font-family: "Lexend-Light";
+    color: rgba(29, 39, 52, 1);
+    padding: 0;
+}
+
+.menuContainer--menu-home {
+    gap: 0px;
+}

@@ -1,0 +1,36 @@
+{
+	"login": {
+		"props": {
+			"iconLabel": "Login",
+			"hideIconLabel": false,
+			"optionsTitle": "Log in",
+			"emailAndPasswordTitle": "LOG-IN",
+			"accessCodeTitle": "Acess Code LOG-IN",
+			"emailPlaceholder": "e-mail",
+			"passwordPlaceholder": "password",
+			"showPasswordVerificationIntoTooltip": true,
+			"blockClass": "login-button"
+		}
+	},
+	
+	"logo": {
+		"props": {
+			 "width": 32,
+			 "height": 20,
+			 "mobileWidth": 32,
+			 "mobileHeight": 20,
+			 "url": "/arquivos/itg--logo.svg",
+			 "blockClass": [
+				"global--logo"
+			 ]
+		}
+  },
+
+  "search-bar": {
+	"props": {
+		"placeholder": "Search products....",
+		"blockClass": "search--bar",
+		"maxWidth": 280
+	}
+  }
+}

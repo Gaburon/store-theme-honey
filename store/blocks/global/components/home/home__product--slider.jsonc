@@ -1,33 +1,109 @@
 {
-    "flex-layout.row#global__product-list": {
-        "children": [
-            "list-context.product-list#product-list__items-container"
+          "flex-layout.row#global__product-list": {
+            "title": "Product list",
+            "children": [
+              "list-context.product-list#product-list__items-container"
+            ],
+            "props": {
+              "colSizing": "equal",
+              "fullWidth": false,
+              "blockClass": "product--summary__list"
+            }
+          },
+          "product-summary.shelf#product-list__items-container": {
+            "title": "Product summary",
+            "children": [
+              "flex-layout.row#listbtn--pricesaving",
+              "product-summary-image",
+              "product-summary-name",
+              "product-summary-space",
+              "product-list-price",
+              "product-selling-price",
+              "rich-text#product--slider__free--shiping",
+              "add-to-cart-button"
             ]
-        },
+          },
 
-    "product-summary.shelf#product-list__items-container": {
-        "children": [
-          "add-to-list-btn",
-          "product-summary-image",
-          "product-summary-name",
-          "product-rating-inline",
-          "product-summary-space",
-          "product-summary-price",
-          "product-summary-buy-button"
-      ]
-        },
-      "list-context.product-list#product-list__items-container": {
-        "blocks": ["product-summary.shelf#product-list__items-container"],
-        "children": ["slider-layout#product-list"]
-        },
+          "flex-layout.row#listbtn--pricesaving": {
+            "title": "Add to favorites and pricesaving",
+            "props": {
+              "blockClass": "listbtn-pricesaving",
+              "colSizing": "auto"
+            },
+            "children": [
+              "product-price-savings",
+              "add-to-list-btn"
+            ]
+          },
 
-      "slider-layout#product-list": {
-        "props": {
-            "itemsPerPage": {
-                "desktop": 3,
+          "list-context.product-list#product-list__items-container": {
+            "title": "Product list container",
+            "blocks": [
+              "product-summary.shelf#product-list__items-container"
+            ],
+            "children": [
+              "slider-layout#product-list"
+            ]
+          },
+          "slider-layout#product-list": {
+            "title": "Product summary slider",
+            "props": {
+              "itemsPerPage": {
+                "desktop": 5,
                 "tablet": 3,
-                "phone": 1
+                "phone": 2
+              },
+              "fullWidth": false,
+              "showNavigationArrows": "desktopOnly"
+              // "centerModeSlidesGap": 6,
+              // "centerMode": "center"
+            }
+          },
+          "add-to-list-btn": {
+            "title": "Add to favorites button",
+            "props": {
+              "blockClass": "wish-list-icon",
+              "textAlignment": "right"
+            }
+          },
+          "product-summary-image": {
+            "title": "Image to product summary",
+            "props": {
+              "showBadge": false,
+              "height": 140,
+              "width": 178,
+              "blockClass": [
+                "summary-image"
+              ]
+            }
+          },
+          "add-to-cart-button": {
+            "props": {
+              "isOneClickBuy": false,
+              "text": "Comprar",
+              "blockClass": [
+                "summary-button"
+              ]
+            }
+          },
+          "product-selling-price": {
+            "props": {
+        
+            }
+          },
+          "product-price-savings":{
+            "props": {
+              "percentageStyle": "compact",
+              "message": "{savingsPercentage}  OFF"
+              
+            }
+          },
+
+          "rich-text#product--slider__free--shiping": {
+            "title": "Free shiping text",
+            "props": {
+                "text": "Envio gratis ",
+                "blockClass": "free--shiping__text"
             }
         }
-      }
-}
+        }
