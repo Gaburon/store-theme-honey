@@ -13,12 +13,16 @@
     "slider-layout#second__slider": {
         "title": "Info cards container",
         "props": {
+            "centerMode": {
+                "desktop": "to-the-left" 
+        },
+            "centerModeSlidesGap": 10,
             "fullWidth": false,
             "blockClass": "slider--info--cards",
             "itemsPerPage": {
-                "desktop": 4,
+                "desktop": 3,
                 "tablet": 3,
-                "phone": 2
+                "phone": 1
             },
             "showNavigationArrows": "desktopOnly",
             "infinite": true

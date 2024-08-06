@@ -1,0 +1,29 @@
+{
+  "overlay-trigger#header__overlay--mobile": {
+    "children": [
+      "icon#header__search--mobile",
+      "overlay-layout#header__overlayout"
+    ],
+    "props": {
+      "blockClass": "header__overlay--mobile"
+    }
+  },
+  "icon#header__search--mobile": {
+    "props": {
+      "id": "hpa-search",
+      "size": 23,
+      "activeClassName": "vtex-store-components-3-x-searchIcon"
+    }
+  },
+  "overlay-layout#header__overlayout": {
+    "children": [
+      "search-bar#header__search--mobile"
+    ],
+    "props": {
+      "placement": "left",
+      "blockClass": "header__overlayout",
+      "transitionComponent": "fadeInLeft"
+    }
+  },
+  "search-bar#header__search--mobile": {}
+}
