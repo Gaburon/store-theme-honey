@@ -1,0 +1,38 @@
+.link--itglobers--link {
+    text-decoration: none;
+    color: #1D2734;
+    font-family: Lexend-Light;
+    display: inline-flex;
+    font-size: 12px;
+}
+
+.link--itglobers--link::before {
+    content: url(/arquivos/icon__itglobers.png);
+    width: 10px;
+    height: 10px;
+    padding-right: 5px;
+    border-radius: 4px;
+    font-size: 12px;
+}
+
+.link--drawer__menu--item {
+    font-size: 12px;
+    text-decoration: none;
+    color: #1D2734;
+    font-family: Lexend-Light;
+}
+
+.wrapper--itglobers--link {
+    padding-left: 16px;
+}
+
+
+.wrapper--drawer__menu--item {
+    padding-left: 16px;
+}
+
+.wrapper--drawer__menu--space {
+    width: 100%;
+    border: 1px solid #ccc;
+    margin-left: 16px;
+}

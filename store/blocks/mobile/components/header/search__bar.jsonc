@@ -25,5 +25,11 @@
       "transitionComponent": "fadeInLeft"
     }
   },
-  "search-bar#header__search--mobile": {}
+  "search-bar#header__search--mobile": {
+    "props": {
+      "placeholder": "Search",
+      "displayMode": "clear-button"
+
+    }
+  }
 }

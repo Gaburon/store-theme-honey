@@ -51,7 +51,7 @@
               "itemsPerPage": {
                 "desktop": 5,
                 "tablet": 3,
-                "phone": 2
+                "phone": 1
               },
               "fullWidth": false,
               "showNavigationArrows": "desktopOnly"

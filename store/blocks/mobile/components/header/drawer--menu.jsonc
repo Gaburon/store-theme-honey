@@ -1,0 +1,105 @@
+{
+    "menu#drawer": {
+        "children": [
+            "drawer-header#my-drawer",
+            "rich-text#itglobers__link",
+            "rich-text#space-border",
+            "rich-text#mobile__menu--account",
+            "rich-text#mobile__menu--wishlist",
+            "rich-text#mobile__menu--help",
+            "rich-text#space-border",
+            "rich-text#mobile__menu--food",
+            "rich-text#mobile__menu--fitness",
+            "rich-text#mobile__menu--artico",
+            "rich-text#mobile__menu--poolday",
+            "rich-text#mobile__menu--hoteles"
+        ],
+        "props": {
+            "blockClass": "menu-phone",
+            "orientation": "vertical"
+        }
+    },
+
+    "rich-text#itglobers__link": {
+        "title": "itglobers link",
+        "props": {
+            "text": "[ITGlobers+](https:)",
+            "blockClass": "itglobers--link"
+        }
+    },
+
+    "rich-text#mobile__menu--account": {
+        "title": "Mobile drawer menu item",
+        "props": {
+            "text": "[Account](https:)",
+            "blockClass": "drawer__menu--item"
+        }
+    },
+
+    "rich-text#mobile__menu--wishlist": {
+        "title": "Mobile drawer menu item",
+        "props": {
+            "text": "[Wishlist](https:)",
+            "blockClass": "drawer__menu--item"
+        }
+    },
+
+    "rich-text#mobile__menu--help": {
+        "title": "Mobile drawer menu item",
+        "props": {
+            "text": "[Help](https:)",
+            "blockClass": "drawer__menu--item"
+        }
+    },
+
+
+    "rich-text#mobile__menu--food": {
+        "title": "Mobile drawer menu item",
+        "props": {
+            "text": "[Food](https:)",
+            "blockClass": "drawer__menu--item"
+        }
+    },
+
+    "rich-text#mobile__menu--fitness": {
+        "title": "Mobile drawer menu item",
+        "props": {
+            "text": "[Fitness](https:)",
+            "blockClass": "drawer__menu--item"
+        }
+    },
+
+
+    "rich-text#mobile__menu--artico": {
+        "title": "Mobile drawer menu item",
+        "props": {
+            "text": "[En el Ártico](https:)",
+            "blockClass": "drawer__menu--item"
+        }
+    },
+
+
+    "rich-text#mobile__menu--poolday": {
+        "title": "Mobile drawer menu item",
+        "props": {
+            "text": "[Poolday](https:)",
+            "blockClass": "drawer__menu--item"
+        }
+    },
+
+    "rich-text#mobile__menu--hoteles": {
+        "title": "Mobile drawer menu item",
+        "props": {
+            "text": "[Hoteles](https:)",
+            "blockClass": "drawer__menu--item"
+        }
+    },
+
+    "rich-text#space-border": {
+        "title": "Mobile drawer menu item",
+        "props": {
+            "text": "",
+            "blockClass": "drawer__menu--space"
+        }
+    }
+}

@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     gap: 0;
+    background-color: rgba(255, 255, 255, 1);
 }
 
 .flexRow--mobile__row--header {
@@ -24,4 +25,11 @@
 .flexRowContent--mobile__row--container {
     align-items: center;
     display: flex;
+}
+
+
+@media screen and (min-width: 640px ){
+    .flexRow--menu__logo--login {
+        padding-left: 16px;
+    }
 }
