@@ -6,8 +6,71 @@
     display: none;
 }
 
-/* .productImage {
-    width: 515px;
-    height: 650px;
-} */
+.carouselThumbBorder {
+    width: 90px;
+    height: 76px;
+    border: 1px solid;
+    border-radius: 4px;
+    border-color: #E7E7E7;
+}
 
+.thumbImg {
+    width: 90px;
+    height: 76px;
+}
+
+@media screen and (min-width: 1204x ){
+    .productImage {
+        width: 515px;
+        height: 650px;
+    }
+}
+
+
+.productImage {
+
+    border: 1px solid;
+    border-radius: 4px;
+    border-color: #E7E7E7;
+}
+
+.productBrand {
+    font-size: 16px;
+    font-family: "Lexend-Light";
+}
+
+.listPrice {
+    font-size: 14px;
+    font-family: "Lexend-Regular";
+}
+
+.listPriceLabel {
+    font-size: 14px;
+    font-family: "Lexend-Regular";
+}
+
+.sellingPrice {
+    font-size: 24px;
+    font-family: "Lexend-SemiBold";
+}
+
+.sellingPriceLabel {
+    font-size: 24px;
+    font-family: "Lexend-SemiBold";
+}
+
+
+.skuSelectorInternalBox {
+    width: 108.07px;
+    height: 40px;
+    border-radius: 4px;
+}
+
+.frameAround {
+    border-color: #1D2734;
+}
+
+.valueWrapper {
+    font-size: 14px;
+    font-family: "Lexend-Light";
+}
