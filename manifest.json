@@ -12,6 +12,8 @@
     "postreleasy": "vtex publish --verbose"
   },
   "dependencies": {
+    "vtex.product-highlights": "2.x",
+    "vtex.product-specifications": "1.x",
     "vtex.overlay-layout": "0.x",
     "vtex.product-price": "1.x",
     "vtex.store-icons": "0.x",

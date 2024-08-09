@@ -3,7 +3,8 @@
       "children": [
         "flex-layout.row#product-breadcrumb",
         "flex-layout.row#product-main",
-        "shelf.relatedProducts"
+        "shelf.relatedProducts",
+        "product-specification-group"
       ]
     },
     "flex-layout.row#product-breadcrumb": {
@@ -41,16 +42,12 @@
         "rowGap": 0
       },
       "children": [
+        "vtex.product-highlights@2.x:product-highlights",
         "product-name",
-        "product-rating-summary",
         "product-price#product-details",
-        "product-separator",
-        "product-quantity",
-        "product-identifier.product",
+        "product-separator",       
         "sku-selector",
-        "flex-layout.row#buy-button",
-        "availability-subscriber",
-        "shipping-simulator",
+        "flex-layout.row#buy--quantity-row",
         "share#default"
       ]
     },
@@ -60,12 +57,12 @@
         "showSavings": true
       }
     },
-    "flex-layout.row#buy-button": {
-      "props": {
-        "marginTop": 4,
-        "marginBottom": 7
-      },
-      "children": ["buy-button"]
+
+    "flex-layout.row#buy--quantity-row": {
+      "children": [
+        "product-quantity",
+        "add-to-cart-button#pdp"
+      ]
     },
   
     "share#default": {
@@ -76,6 +73,56 @@
           "Twitter": false,
           "Pinterest": true
         }
+      }
+    },
+
+    "product-quantity": {
+      "props": {
+        "showLabel": false,
+        "blockClass": "quantity--selectors"
+      }
+    },
+
+    "add-to-cart-button#pdp": {
+    "props": {
+      "text": "Agregar al carrito"
+    }
+  },
+
+    "vtex.product-highlights@2.x:product-highlights": {
+      "children": ["product-highlight-text"]
+    },
+    "product-highlight-text": {
+      "props": {
+        "message": "{highlightName}"
+      }
+    },
+
+    "product-specification-group": {
+      "children": ["product-specification-text#group", "product-specification"]
+    },
+    "product-specification": {
+      "children": [
+        "product-specification-text#specification",
+        "product-specification-values"
+      ]
+    },
+    "product-specification-values": {
+      "children": ["product-specification-text#value"]
+    },
+    "product-specification-text#group": {
+      "props": {
+        "message": "{groupName}"
+      }
+    },
+    "product-specification-text#specification": {
+      "props": {
+        "message": "{specificationName}"
+      }
+    },
+    "product-specification-text#value": {
+      "props": {
+        "message": "{specificationValue}"
       }
     }
   }
