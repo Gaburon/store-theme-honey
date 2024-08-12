@@ -1,0 +1,8 @@
+:global(.vtex-mega-menu-2-x-menuItem:has(.vtex-mega-menu-2-x-accordionIconContainer--isOpen)) {
+    background-color: rgba(255, 131, 36, 0.2);
+    border-left: 4px solid #FF8324;
+}
+
+/* :global(.menuContainer h3::before){
+    content: url(arquivos/mega__menu--icon-itg.svg);
+} */
