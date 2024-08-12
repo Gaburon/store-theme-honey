@@ -1,18 +1,12 @@
 {
     "store.product": {
       "children": [
-        "flex-layout.row#product-breadcrumb",
         "flex-layout.row#product-main",
         "shelf.relatedProducts",
         "product-specification-group"
       ]
     },
-    "flex-layout.row#product-breadcrumb": {
-      "props": {
-        "marginTop": 4
-      },
-      "children": ["breadcrumb"]
-    },
+
     "flex-layout.row#product-main": {
       "props": {
         "colGap": 7,
@@ -53,8 +47,8 @@
     },
     "product-price#product-details": {
       "props": {
-        "showInstallments": true,
-        "showSavings": true
+        "showInstallments": false,
+        "showSavings": false
       }
     },
 
