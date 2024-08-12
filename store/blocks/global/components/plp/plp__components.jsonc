@@ -1,0 +1,38 @@
+{
+    "store.orderplaced": {
+      "blocks": ["order-placed"]
+    },
+  
+    "store.account": {
+      "blocks": ["my-account"],
+      "parent": {
+        "challenge": "challenge.profile"
+      }
+    },
+    
+    "flex-layout.row#product-summary-plp": {
+      "children": [
+        "flex-layout.col#image-plp",
+          "flex-layout.col#name-price-plp"
+      ]
+    },
+  
+    "flex-layout.col#name-price-plp": {
+      "children": [
+        "product-summary-name",
+        "product-summary-price"
+      ]
+    },
+  
+    "flex-layout.col#image-plp": {
+      "children": [
+        "product-summary-image"
+      ]
+    },
+  
+    "product-summary.shelf": {
+      "children": [
+        "flex-layout.row#product-summary-plp"
+      ]
+    }
+  }
