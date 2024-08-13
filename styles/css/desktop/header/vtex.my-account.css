@@ -3,6 +3,22 @@
     border-left: 4px solid #FF8324;
 }
 
-/* :global(.menuContainer h3::before){
-    content: url(arquivos/mega__menu--icon-itg.svg);
-} */
+:global(.vtex-mega-menu-2-x-menuContainer) :global(h3)::before{
+    content: "";
+    background-image: url("/arquivos/menu--itg__icon.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    display: inline-block;
+    width: 12.68px;
+    height: 12.68px;
+}
+
+:global(.vtex-mega-menu-2-x-menuContainer) :global(h3){
+    font-size: 14px;
+    line-height: 17px;
+    font-family: Lexend-SemiBold;
+    display: inline-flex;
+    align-items: center;
+}
+

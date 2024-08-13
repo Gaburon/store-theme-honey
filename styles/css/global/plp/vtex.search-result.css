@@ -1,0 +1,49 @@
+.filter__container--selectedFilters {
+    display: none;
+}
+
+.filter__container--brand {
+    display: none;
+}
+
+.filters--layout {
+    width: 184px;
+}
+
+.filter__container--title {
+    display: none;
+}
+
+.galleryItem--grid {
+    width: 290px !important;
+    height: 106px !important;
+    padding: 0;
+}
+
+.filterIsOpen {
+    width: 184px;
+    height: 36px;
+    border: 1px solid #ccc;
+    border-radius: 40px;
+    padding: 8px 16px;
+    background-color: #1D27341A;
+}
+
+.filterTitleSpan {
+    font-family: "Lexend-Regular";
+    font-size: 14px;
+}
+
+.filterAvailable {
+    width: 184px;
+    height: 36px;
+    border: 1px solid #ccc;
+    border-radius: 40px;
+    padding: 8px 16px;
+    background-color: #1D27341A;
+}
+
+.galleryTitle--layout {
+    font-size: 20px;
+    font-family: "Lexend-SemiBold";
+}

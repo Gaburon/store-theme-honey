@@ -3,7 +3,10 @@
     "flex-layout.row#mega-menu": {
         "children": [
             "mega-menu#desktop"
-        ]
+        ],
+        "props": {
+            "blockClass": "mega--menu-row"
+        }
     },
     "mega-menu#desktop": {
         "props": {

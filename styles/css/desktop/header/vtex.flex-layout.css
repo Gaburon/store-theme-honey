@@ -20,3 +20,7 @@
 .flexRowContent--drawer-logo--container{
     gap: 8px;
 }
+
+.flexRowContent--mega--menu-row {
+    position: relative;
+}
