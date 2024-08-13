@@ -1,0 +1,70 @@
+.galleryItem--grid {
+    width: 290px !important;
+    height: 106px !important;
+    padding: 0;
+}
+
+.filterItem {
+    font-size: 12px;
+    font-family: "Lexend-Light";
+    padding: 10px;
+}
+
+
+.galleryTitle--layout {
+    font-size: 20px;
+    font-family: "Lexend-SemiBold";
+    margin: 0 0 16px 0;
+}
+
+.totalProducts--layout {
+    text-align: left;
+    padding: 0 0 40px 0;
+    font-size: 14px;
+    font-family: "Lexend-Light";
+    text-transform: lowercase;
+    color: #1D2734;
+}
+
+.totalProductsMessage {
+    color: #1D2734;
+}
+
+.filterIsOpen {
+    width: 184px;
+    height: 36px;
+    border: 1px solid #ccc;
+    border-radius: 40px;
+    padding: 8px 16px;
+    background-color: #1D27341A;
+}
+
+.filterAvailable {
+    width: 184px;
+    height: 36px;
+    border: 1px solid #ccc;
+    border-radius: 40px;
+    padding: 8px 16px;
+    background-color: #1D27341A;
+}
+
+.filterTitleSpan {
+    font-family: "Lexend-Regular";
+    font-size: 14px;
+}
+
+.filter__container--selectedFilters {
+    display: none;
+}
+
+.filter__container--brand {
+    display: none;
+}
+
+.filters--layout {
+    width: 184px;
+}
+
+.filter__container--title {
+    display: none;
+}

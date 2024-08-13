@@ -1,16 +1,30 @@
 {
-    "store.orderplaced": {
-      "blocks": ["order-placed"]
-    },
-  
-    "store.account": {
-      "blocks": ["my-account"],
-      "parent": {
-        "challenge": "challenge.profile"
-      }
-    },
-    
-"flex-layout.row#product-summary-plp": {
+  "store.orderplaced": {
+    "blocks": [
+      "order-placed"
+    ]
+  },
+  "store.account": {
+    "blocks": [
+      "my-account"
+    ],
+    "parent": {
+      "challenge": "challenge.profile"
+    }
+  },
+  "store.login": {
+    "blocks": [
+      "login-content#default"
+    ]
+  },
+  "login-content#default": {
+    "props": {
+      "isInitialScreenOptionOnly": false,
+      "defaultOption": 1,
+      "showPasswordVerificationIntoTooltip": true
+    }
+  },
+  "flex-layout.row#product-summary-plp": {
     "props": {
       "blockClass": "product-summary-plp"
     },
@@ -29,6 +43,11 @@
       "rich-text#product--slider__free--shiping"
     ]
   },
+  "product-summary-name": {
+    "props": {
+      "blockClass": "name-plp"
+    }
+  },
   "flex-layout.col#image-plp": {
     "props": {
       "blockClass": "image-plp"
@@ -45,4 +64,11 @@
       "flex-layout.row#product-summary-plp"
     ]
   }
-  }
+}
+
+
+
+
+
+
+
