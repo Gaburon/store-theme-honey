@@ -123,7 +123,7 @@
       "children": ["flex-layout.col#productCount", "flex-layout.row#orderByAndSwitcher"]
     },
     "flex-layout.row#orderByAndSwitcher": {
-      "children": ["order-by.v2", "gallery-layout-switcher"],
+      "children": ["order-by.v2"],
       "props": {
         "horizontalAlign": "right",
         "preventHorizontalStretch": true,
@@ -194,8 +194,7 @@
     "flex-layout.row#searchinfomobile": {
       "children": [
         "flex-layout.col#orderByMobile",
-        "flex-layout.col#filterMobile",
-        "flex-layout.col#switcherMobile"
+        "flex-layout.col#filterMobile"
       ],
       "props": {
         "preserveLayoutOnMobile": true,
@@ -224,12 +223,7 @@
         "blockClass": "filterMobileCol"
       }
     },
-    "flex-layout.col#switcherMobile": {
-      "children": ["gallery-layout-switcher"],
-      "props": {
-        "verticalAlign": "middle"
-      }
-    },
+
     "search-not-found-layout": {
       "children": ["flex-layout.row#searchbread", "flex-layout.row#notfound"]
     },
@@ -267,58 +261,6 @@
         ],
         "ListSummary": "product-summary.shelf#product-list__items-container",
         "GridSummary": "product-summary.shelf"
-      }
-    },
-    "gallery-layout-switcher": {
-      "children": [
-        /*
-         * For accessbility to work properly,
-         * It's important to define the options in the same order as the layouts
-         */
-        "gallery-layout-option#grid",
-        "gallery-layout-option#list"
-      ]
-    },
-    "gallery-layout-option#grid": {
-      "props": {
-        "name": "grid"
-      },
-      "children": [
-        "icon-grid",
-        "responsive-layout.desktop#textOptionGrid"
-      ]
-    },
-    "gallery-layout-option#list": {
-      "props": {
-        "name": "list"
-      },
-      "children": [
-        "icon-inline-grid",
-        "responsive-layout.desktop#textOptionList"
-      ]
-    },
-    "responsive-layout.desktop#textOptionGrid": {
-      "children": [
-        "rich-text#option-grid"
-      ]
-    },
-    "responsive-layout.desktop#textOptionList": {
-      "children": [
-        "rich-text#option-list"
-      ]
-    },
-    "rich-text#option-grid": {
-      "props": {
-        "text": "Grid",
-        "textColor": "c-auto",
-        "blockClass": "layout-option"
-      }
-    },
-    "rich-text#option-list": {
-      "props": {
-        "text": "List",
-        "textColor": "c-auto",
-        "blockClass": "layout-option"
       }
     }
   }

@@ -10,29 +10,39 @@
       }
     },
     
-    "flex-layout.row#product-summary-plp": {
-      "children": [
-        "flex-layout.col#image-plp",
-          "flex-layout.col#name-price-plp"
-      ]
+"flex-layout.row#product-summary-plp": {
+    "props": {
+      "blockClass": "product-summary-plp"
     },
-  
-    "flex-layout.col#name-price-plp": {
-      "children": [
-        "product-summary-name",
-        "product-summary-price"
-      ]
+    "children": [
+      "flex-layout.col#image-plp",
+      "flex-layout.col#name-price-plp"
+    ]
+  },
+  "flex-layout.col#name-price-plp": {
+    "props": {
+      "blockClass": "name-price-plp"
     },
-  
-    "flex-layout.col#image-plp": {
-      "children": [
-        "product-summary-image"
-      ]
+    "children": [
+      "product-summary-name",
+      "product-summary-price",
+      "rich-text#product--slider__free--shiping"
+    ]
+  },
+  "flex-layout.col#image-plp": {
+    "props": {
+      "blockClass": "image-plp"
     },
-  
-    "product-summary.shelf": {
-      "children": [
-        "flex-layout.row#product-summary-plp"
-      ]
-    }
+    "children": [
+      "product-summary-image"
+    ]
+  },
+  "product-summary.shelf": {
+    "props": {
+      "blockClass": "product-summary-plp"
+    },
+    "children": [
+      "flex-layout.row#product-summary-plp"
+    ]
+  }
   }
