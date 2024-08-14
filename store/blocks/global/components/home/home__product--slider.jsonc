@@ -14,7 +14,7 @@
             "title": "Product summary",
             "children": [
               "flex-layout.row#listbtn--pricesaving",
-              "product-summary-image",
+              "product-summary-image#home__slider",
               "product-summary-name",
               "product-summary-space",
               "product-list-price",
@@ -64,7 +64,7 @@
               "textAlignment": "right"
             }
           },
-          "product-summary-image": {
+          "product-summary-image#home__slider": {
             "title": "Image to product summary",
             "props": {
               "showBadge": false,
