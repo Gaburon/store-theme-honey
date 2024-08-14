@@ -1,9 +1,9 @@
-.image--summary-image {
+/* .image--summary-image {
     width: 135px !important;
     height: 106px !important;
-}
+} */
 
-.price_installmentContainer {
+/* .price_installmentContainer {
     display: none;
 }
 
@@ -14,9 +14,9 @@
 
 .brandName--name-plp {
     font-size: 12px;
-}
+} */
 
-.nameContainer {
+/* .nameContainer {
     width: 149px;
     padding: 0;
 }
@@ -27,8 +27,14 @@
 
 .price_sellingPriceContainer {
     padding: 0;
-} 
+}  */
+
+/* .containerNormal--product-summary-plp {
+    width: 100% !important;
+} */
 
 .containerNormal--product-summary-plp {
-    width: 100% !important;
+    display: flex;
+    max-width: 300px;
+    width: 290px !important;
 }

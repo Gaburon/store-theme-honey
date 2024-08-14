@@ -1,8 +1,8 @@
-.galleryItem--grid {
+/* .galleryItem--grid {
     width: 290px !important;
     height: 106px !important;
     padding: 0;
-}
+} */
 
 .filterItem {
     font-size: 12px;
@@ -67,4 +67,9 @@
 
 .filter__container--title {
     display: none;
+}
+
+.galleryItem--grid {
+    flex-basis: unset !important;
+    padding: 0;
 }

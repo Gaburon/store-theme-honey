@@ -1,0 +1,48 @@
+/* .flexColChild--name-price-plp {
+    display: flex;
+    height: 22px ;
+}
+
+.flexCol--name-price-plp {
+    width: 146px;
+} */
+
+.flexRowContent--product-summary-plp {
+    display: flex;
+}
+
+.flexColChild--name-price-plp :global(.vtex-product-summary-2-x-nameContainer) {
+    padding: 0;
+    justify-content: unset;
+}
+
+.flexColChild--name-price-plp :global(.vtex-product-summary-2-x-priceContainer) {
+    padding: 0;
+
+}
+
+.flexCol--name-price-plp {
+    padding-left: 9px;
+    text-align: left;
+}
+
+.flexCol--image-plp :global(.vtex-product-summary-2-x-imageContainer) {
+    width: 135px;
+    height: 106.3px;
+}
+
+.flexColChild--name-price-plp :global(.vtex-product-price-1-x-sellingPrice) {
+    font-size: 20px;
+    line-height: 20px;
+}
+
+.flexColChild--name-price-plp :global(.vtex-rich-text-0-x-container--free--shiping__text) {
+    height: 21px;
+}
+
+.flexCol--name-price-plp :global(.vtex-product-summary-2-x-brandName--name-plp) {
+    font-family: Lexend-Regular;
+    line-height: 12px;
+    font-size: 12.76px;
+    color: rgba(29, 39, 52, 0.6);
+}

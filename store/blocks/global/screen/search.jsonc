@@ -60,7 +60,7 @@
         "simulationBehavior": "skip",
         "orderByField": "OrderByNameASC",
         "hideUnavailableItems": true,
-        "maxItemsPerPage": 10
+        "maxItemsPerPage": 12
       }
     }
   },
