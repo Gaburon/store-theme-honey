@@ -27,7 +27,7 @@
 .filterIsOpen {
     width: 184px;
     height: 36px;
-    border: 1px solid #ccc;
+    border: 1px solid rgba(29, 39, 52, 1);
     border-radius: 40px;
     padding: 8px 16px;
     background-color: #1D27341A;
@@ -36,7 +36,7 @@
 .filterAvailable {
     width: 184px;
     height: 36px;
-    border: 1px solid #ccc;
+    border: 1px solid rgba(29, 39, 52, 1);
     border-radius: 40px;
     padding: 8px 16px;
     background-color: #1D27341A;
@@ -73,10 +73,42 @@
 }
 
 
-.vtex-search-result-3-x-filter__container--priceRange :global(.vtex-slider__selector) {
+.filter__container--priceRange :global(.vtex-slider__selector) {
     background-color: black;
 }
 
+.filter__container--priceRange :global(.vtex-slider__base-internal) {
+    background-color: black;
+}
+
+.filter__container--priceRange :global(.vtex-slider__values-container) {
+    justify-content: center;
+}
+
+.filter__container :global(.vtex-checkbox__box-wrapper) {
+    border: 1px solid black;
+    border-radius: 3px;
+}
+
+.filter__container :global(.vtex-checkbox__label) {
+   color: rgba(29, 39, 52, 1);
+}
+
+.filterIcon {
+    color: black;
+}
+
+.filterPopupTitle {
+    font-size: 12px;
+    font-family: "Lexend-Regular";
+    text-transform: initial;
+}
+
+.orderByButton {
+    padding: 14px, 12px, 14px, 12px;
+    border-radius: 40px;
+    background-color: rgba(231, 231, 231, 1);
+}
 
 @media screen and (min-width: 360px) and (max-width: 640px) {
     .totalProducts--layout {
