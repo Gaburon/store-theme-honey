@@ -21,12 +21,23 @@
 
 }
 
+.flexColChild--name-price-plp :global(.vtex-rich-text-0-x-paragraph--free--shiping__text) {
+    margin: 0;
+}
+
 .flexCol--name-price-plp {
     padding-left: 9px;
     text-align: left;
+    height: 97px;
 }
 
+
 .flexCol--image-plp :global(.vtex-product-summary-2-x-imageContainer) {
+    width: 135px;
+    height: 106.3px;
+}
+
+.flexCol--image-plp :global(.vtex-product-summary-2-x-imageNormal) {
     width: 135px;
     height: 106.3px;
 }
@@ -45,4 +56,11 @@
     line-height: 12px;
     font-size: 12.76px;
     color: rgba(29, 39, 52, 0.6);
+    
 }
+
+.flexCol--name-price-plp :global(.vtex-product-summary-2-x-nameWrapper--name-plp) {
+    height: 39px;
+    text-overflow: ellipsis;
+}
+
