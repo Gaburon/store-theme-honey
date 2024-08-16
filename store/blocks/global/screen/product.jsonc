@@ -37,7 +37,7 @@
       },
       "children": [
         "vtex.product-highlights@2.x:product-highlights",
-        "product-name",
+        "vtex.store-components:product-name",
         "product-price#product-details",
         "product-separator",       
         "sku-selector",
