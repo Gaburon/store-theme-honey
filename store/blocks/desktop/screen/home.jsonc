@@ -1,17 +1,13 @@
 {
-    "responsive-layout.desktop#desktop__home--section": {
+    "responsive-layout.desktop#home__section": {
         "title": "Home section desktop",
         "children": [
             // "flex-layout.row#home-section"
             "flex-layout.row#desktop_home-section",
-            "flex-layout.row#global__text-container",
+            "rich-text#text-amazing",
             "flex-layout.row#global__second--slider",
-            "flex-layout.row#global__text-container",
-            "flex-layout.row#global__product-list",
-            "flex-layout.row#global__text-container",
-            "flex-layout.row#global__second--slider",
-            "flex-layout.row#global__text-container",
-            "flex-layout.row#global__product-list"
+            "rich-text#text-amazing",
+            "flex-layout.row#product-list"
             
 
         ]
