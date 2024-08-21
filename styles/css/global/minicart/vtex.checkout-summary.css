@@ -15,3 +15,15 @@
     border-radius: 4px;
     padding: 24px;
 }
+
+.summarySmallContent--container-total-sub .summaryItemContainer--minicart-totalizers:last-child .summaryItemLabel--minicart-totalizers {
+    font-size: 16px;
+    font-family: "Lexend-SemiBold";
+    color: rgba(227, 22, 22, 1);
+}
+
+.summarySmallContent--container-total-sub .summaryItemContainer--minicart-totalizers:last-child .price--minicart-totalizers {
+    font-size: 16px;
+    font-family: "Lexend-SemiBold";
+    color: rgba(227, 22, 22, 1);
+}

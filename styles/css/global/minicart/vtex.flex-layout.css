@@ -2,3 +2,21 @@
     box-shadow: none;
 }
 
+.flexColChild--empty-state {
+    padding-bottom: 0;
+}
+
+.flexColChild--minicart--row {
+    padding-bottom: 0;
+}
+
+.flexColChild--minicart__description {
+    width: 140.81px;
+    height: 31px;
+}
+
+.flexRow--minicart__product {
+    width: 328px;
+    height: 121px;
+    margin-bottom: 10px;
+}
