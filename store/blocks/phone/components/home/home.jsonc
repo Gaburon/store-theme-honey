@@ -1,13 +1,18 @@
 {
     "flex-layout.row#phone_home-section": {
-        "title": "phone row with text",
+        "title": "phone banner image",
         "children": [
             "list-context.image-list#phone__main-banner"
-        ]
+        ],
+        "props": {
+            "blockClass": "hero--phone"
+        }
     },
 
     "list-context.image-list#phone__main-banner": {
+        "title": "Banner image",
         "props": {
+            "height": 480,
             "images": [
                 {
                     "image": "/arquivos/banner-hero.png",

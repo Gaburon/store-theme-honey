@@ -1,0 +1,26 @@
+.flexRowContent--header--first-row {
+    align-items: center;
+}
+
+.flexRow--header--first-row {
+    padding-top: 8px;
+    padding-left: 48px;
+    padding-right: 48px;
+    padding-bottom: 8px;
+}
+
+.flexRow--header--first-row {
+    background-color: white;
+}
+
+.flexRowContent--rich--text-container {
+    gap: 13px;
+}
+
+.flexRowContent--drawer-logo--container{
+    gap: 8px;
+}
+
+.flexRowContent--mega--menu-row {
+    position: relative;
+}

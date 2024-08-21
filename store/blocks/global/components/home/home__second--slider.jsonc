@@ -1,6 +1,6 @@
 {
     "flex-layout.row#global__second--slider": {
-        "title": "Info cards main container",
+        "title": "Info card main container",
         "children": [
             "slider-layout#second__slider"
         ],
@@ -13,17 +13,21 @@
     "slider-layout#second__slider": {
         "title": "Info cards container",
         "props": {
+            "centerMode": {
+                "desktop": "to-the-left" 
+        },
+            "centerModeSlidesGap": 10,
+            "fullWidth": false,
             "blockClass": "slider--info--cards",
             "itemsPerPage": {
                 "desktop": 3,
-                "tablet": 2,
+                "tablet": 3,
                 "phone": 1
             },
             "showNavigationArrows": "desktopOnly",
             "infinite": true
         },
         "children": [
-            "flex-layout.col#second__slider--container",
             "flex-layout.col#second__slider--container",
             "flex-layout.col#second__slider--container",
             "flex-layout.col#second__slider--container",

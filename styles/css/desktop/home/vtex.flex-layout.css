@@ -10,7 +10,7 @@
 .flexRow--second--slider {
     max-width: 1280px;
     margin: auto;
-    padding: 0, 62px;
+    gap: 24px;
 }
 
 .flexCol--card--container {
@@ -36,4 +36,9 @@
     width: 48px;
     height: 48px;
     max-width: none;
+}
+
+.flexRow--global__text-container {
+    margin: auto;
+    max-width: 1280px;
 }

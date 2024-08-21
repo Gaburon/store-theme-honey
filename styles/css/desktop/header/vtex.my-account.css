@@ -1,0 +1,24 @@
+:global(.vtex-mega-menu-2-x-menuItem:has(.vtex-mega-menu-2-x-accordionIconContainer--isOpen)) {
+    background-color: rgba(255, 131, 36, 0.2);
+    border-left: 4px solid #FF8324;
+}
+
+:global(.vtex-mega-menu-2-x-menuContainer) :global(h3)::before{
+    content: "";
+    background-image: url("/arquivos/menu--itg__icon.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    display: inline-block;
+    width: 12.68px;
+    height: 12.68px;
+}
+
+:global(.vtex-mega-menu-2-x-menuContainer) :global(h3){
+    font-size: 14px;
+    line-height: 17px;
+    font-family: Lexend-SemiBold;
+    display: inline-flex;
+    align-items: center;
+}
+

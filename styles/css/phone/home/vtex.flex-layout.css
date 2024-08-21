@@ -1,5 +1,9 @@
-/* Example Phone:
-.flexRow--home__section-2 {
-    margin: 50px auto;
-    max-width: 1200px;
-} */
+.flexRow--hero--phone {
+    max-width: none;
+    margin: auto;
+    width: 100%;
+}
+
+.flexRow--hero--phone :global(.vtex-store-components-3-x-container) {
+    padding: 0;
+}

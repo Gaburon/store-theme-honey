@@ -12,6 +12,9 @@
     "postreleasy": "vtex publish --verbose"
   },
   "dependencies": {
+    "vtex.overlay-layout": "0.x",
+    "vtex.product-price": "1.x",
+    "vtex.store-icons": "0.x",
     "vtex.store-image": "0.x",
     "vtex.store": "2.x",
     "vtex.store-header": "2.x",
@@ -47,6 +50,10 @@
     "vtex.breadcrumb": "1.x",
     "vtex.sticky-layout": "0.x",
     "vtex.add-to-cart-button": "0.x"
+  },
+  "peerDependencies": {
+    "vtex.wish-list": "1.x",
+    "vtex.mega-menu": "2.x"
   },
   "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
 }

@@ -1,0 +1,58 @@
+.caretIcon {
+    margin: 0px, 8px;
+    max-width: none;
+    width: 20px;
+    height: 14px;
+    
+}
+
+.paginationDotsContainer{
+    bottom: -44px;
+    overflow-x: auto;
+}
+
+.paginationDot {
+    min-width: 44px !important;
+    width: 44px !important;
+    height: 40px !important;
+    border-radius: 0;
+    background-color: transparent;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 2px;
+}
+
+.paginationDot::after {
+    background-color: rgba(29, 39, 52, .4);
+}
+
+.paginationDot--isActive::before {
+    content: "";
+    position: absolute;
+    right: -8px;
+    width: 16px;
+    height: 16px;
+    background-color: #1d2734;
+    border-radius: 50%;
+}
+
+.paginationDot::after {
+    width: 44px;
+    height: 2px;
+    content: "";
+    font-size: 0;
+    background-color: #1d2734;
+    position: absolute;
+}
+
+.slideChildrenContainer--product--slider {
+    width: 212px;
+}
+
+@media screen and (min-width: 1024px ){
+    .sliderLayoutContainer--slider--info--cards {
+        padding: 0 30px;
+    }
+}

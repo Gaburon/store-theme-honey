@@ -1,0 +1,32 @@
+.sellingPrice {
+    text-align: left;
+    font-size: 24px;
+    font-family: "Lexend-SemiBold";
+}
+
+.listPrice {
+    text-align: left;
+    font-size: 14px;
+    font-family: "Lexend-Regular";
+    color: rgba(29, 39, 52, 0.4);
+}
+
+.savings {
+    display: inline-flex; 
+    font-size: 14px;
+    font-family: "Lexend-Regular";
+    background-color: rgba(29, 39, 52, 1);
+    color: rgba(255, 255, 255, 1);
+    border: 1px;
+    border-radius: 4px;
+    justify-content: center;
+    align-items: center;
+}
+
+.savingsPercentage {
+    display: inline-flex; 
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding-right: 4px;
+}

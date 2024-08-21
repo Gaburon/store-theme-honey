@@ -1,0 +1,36 @@
+{
+    "logo#mobile": {
+        "props": {
+            "width": 32,
+            "height": 20,
+            "mobileWidth": 32,
+            "mobileHeight": 16,
+            "url": "/arquivos/itg--logo.svg",
+            "blockClass": "logo--mobile"
+        }
+    },
+
+    "vtex.menu@2.x:menu#mobile": {
+        "props": {
+            "blockClass": [
+                "menu-home-mobile"
+            ]
+        },
+        "title": "Menu websites",
+        "children": [
+            "menu-item#food",
+            "menu-item#fitness",
+            "menu-item#artic",
+            "menu-item#poolday",
+            "menu-item#hotels",
+            "menu-item#house",
+            "menu-item#hotels",
+            "menu-item#natural",
+            "menu-item#closet",
+            "menu-item#playas",
+            "menu-item#alpinism",
+            "menu-item#delivery",
+            "menu-item#beer"
+        ]
+    }
+}

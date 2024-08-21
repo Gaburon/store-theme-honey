@@ -3,8 +3,14 @@
         "title": "Home section desktop",
         "children": [
             "flex-layout.row#phone_home-section",
-            "rich-text#text-amazing",
-            "flex-layout.row#global__second--slider"
+            "flex-layout.row#global__text-container",
+            "flex-layout.row#global__second--slider",
+            "flex-layout.row#global__text-container",
+            "flex-layout.row#global__product-list",
+            "flex-layout.row#global__text-container",
+            "flex-layout.row#global__second--slider",
+            "flex-layout.row#global__text-container",
+            "flex-layout.row#global__product-list"
         ]
 
     }
