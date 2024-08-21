@@ -1,18 +1,34 @@
 {
+	// "login": {
+	// 	"props": {
+	// 		"iconLabel": "Login",
+	// 		"hideIconLabel": false,
+	// 		"optionsTitle": "Log in",
+	// 		"emailAndPasswordTitle": "LOG-IN",
+	// 		"accessCodeTitle": "Acess Code LOG-IN",
+	// 		"emailPlaceholder": "e-mail",
+	// 		"passwordPlaceholder": "password",
+	// 		"showPasswordVerificationIntoTooltip": true,
+	// 		"blockClass": "login-button"
+	// 	}
+	// },
 	"login": {
 		"props": {
-			"iconLabel": "Login",
-			"hideIconLabel": false,
-			"optionsTitle": "Log in",
-			"emailAndPasswordTitle": "LOG-IN",
-			"accessCodeTitle": "Acess Code LOG-IN",
-			"emailPlaceholder": "e-mail",
-			"passwordPlaceholder": "password",
-			"showPasswordVerificationIntoTooltip": true,
-			"blockClass": "login-button"
+		  "iconLabel": "Login",
+		  "optionsTitle": "LOG IN",
+		  "emailPlaceholder":"Enter your e-mail",
+		  "passwordPlaceholder":"Enter your password",
+		  "accessCodePlaceholder": "Enter your access code",
+		  //Code by email
+		  "accessCodeTitle":"Access code by email",
+		  //E-mail and password
+		  "providerPasswordButtonLabel": "password",
+		  "emailAndPasswordTitle": "Continue with e-mail and password",
+		  "blockClass": "view__login"
 		}
-	},
-	
+	  },
+
+
 	"logo": {
 		"props": {
 			 "width": 32,

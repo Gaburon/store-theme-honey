@@ -1,0 +1,54 @@
+{
+  "flex-layout.row#product-summary-plp": {
+    "props": {
+      "blockClass": "product-summary-plp",
+      "fullWidth": true,
+      "colSizing": "equal"
+    },
+    "children": [
+      "flex-layout.col#image-plp",
+      "flex-layout.col#name-price-plp"
+    ]
+  },
+  "flex-layout.col#name-price-plp": {
+    "props": {
+      "blockClass": "name-price-plp"
+    },
+    "children": [
+      "product-summary-name",
+      "product-summary-space",
+      "product-list-price",
+      "product-selling-price",
+      "vtex.product-highlights@2.x:product-highlights#free--shiping"
+    ]
+  },
+
+  "product-summary-name": {
+    "props": {
+      "blockClass": "name-plp"
+    }
+  },
+  "flex-layout.col#image-plp": {
+    "props": {
+      "blockClass": "image-plp"
+    },
+    "children": [
+      "product-summary-image"
+    ]
+  },
+  "product-summary.shelf": {
+    "props": {
+      "blockClass": "product-summary-plp"
+    },
+    "children": [
+      "flex-layout.row#product-summary-plp"
+    ]
+  }
+}
+
+
+
+
+
+
+

@@ -1,3 +1,4 @@
+
 .image--summary-image {
     width: 135px !important;
     height: 106px !important;
@@ -31,4 +32,9 @@
 
 .containerNormal--product-summary-plp {
     width: 100%;
+
+.containerNormal--product-summary-plp {
+    display: flex;
+    max-width: 300px;
+    width: 290px !important;
 }

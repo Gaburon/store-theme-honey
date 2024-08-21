@@ -51,6 +51,14 @@
     width: 212px;
 }
 
+
+
+@media screen and (min-width: 1024px ){
+    .sliderTrack--slider--products {
+        gap: 8px;
+    }
+}
+
 @media screen and (min-width: 1024px ){
     .sliderLayoutContainer--slider--info--cards {
         padding: 0 30px;

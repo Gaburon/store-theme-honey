@@ -1,0 +1,19 @@
+.homeIcon {
+    display: flex;
+    width: 15px;
+    height: 18px;
+}
+
+.homeLink {
+    padding: 0;
+}
+
+.link {
+    font-family: Monserrat;
+    font-size: 14px;
+    line-height: 17px;
+}
+
+.container {
+    padding-left: 4px;
+}
