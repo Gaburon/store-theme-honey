@@ -58,6 +58,7 @@
 
 .filters--layout {
     width: 184px;
+    text-align: unset;
 }
 
 .filter__container--title {
