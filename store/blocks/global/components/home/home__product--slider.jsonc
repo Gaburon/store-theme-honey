@@ -19,7 +19,7 @@
               "product-summary-space",
               "product-list-price",
               "product-selling-price",
-              "rich-text#product--slider__free--shiping",
+              "vtex.product-highlights@2.x:product-highlights#free--shiping",
               "add-to-cart-button"
             ]
           },
@@ -54,7 +54,8 @@
                 "phone": 1
               },
               "fullWidth": false,
-              "showNavigationArrows": "desktopOnly"
+              "showNavigationArrows": "desktopOnly",
+              "blockClass": "slider--products"
             }
           },
           "add-to-list-btn": {
@@ -97,11 +98,43 @@
             }
           },
 
-          "rich-text#product--slider__free--shiping": {
-            "title": "Free shiping text",
-            "props": {
-                "text": "Envio gratis ",
-                "blockClass": "free--shiping__text"
+          "vtex.product-highlights@2.x:product-highlights#free--shiping": {
+            "title": "free shipping",
+            "children": ["product-highlight-wrapper##free_delivery"],
+            "props":{
+              "filter": {
+                "type": "show",
+                "highlightNames": ["Envío Gratis"],
+                "blockClass": "highlight--free__delivery"
+              }
             }
-        }
+          },
+          "product-highlight-wrapper##free_delivery": {
+            "children": [
+              "product-highlight-text#free_delivery",
+              "icon#icon__free-shipping"
+            ],
+            "props":{
+              "blockClass": "wrapper--free__delivery"
+            }
+          },
+        
+          "product-highlight-text#free_delivery": {
+            "props": {
+              "message": "{highlightName}",
+              "blockClass": "free_delivery"
+            }
+          },
+          "icon#icon__free-shipping": {
+            "title": "icon free shipping",
+            "props": {
+              "id": "flash",
+              "width": 15,
+              "height": 15,
+              "size": 15,
+              "viewBox": "0 0 15 15",
+              "overflow": "visible",
+              "blockclass": "icon__free-shipping"
+            }
+          }
         }

@@ -1,0 +1,38 @@
+/* Example desktop:
+.minicartTitle {
+    display: none;
+} */
+
+.minicartCheckoutButton :global(.vtex-button) {
+    border-radius: 40px;
+    background-color: rgba(29, 39, 52, 1);
+    border-color: rgba(29, 39, 52, 1);
+    text-transform: initial;
+    font-size: 14px;
+    font-family: "Lexend-Regular";
+}
+
+.minicartTitle {
+    font-size: 14px;
+    font-family: "Lexend-SemiBold";
+    padding-left: 16px;
+}
+
+.minicartSummary {
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.overlay--visible {
+    opacity: initial !important;
+    backdrop-filter: blur(10px);
+    background-color: initial;
+    transition: filter 0.3s ease;
+
+}
+
+@media screen and (min-with: 360px) {
+    .closeIconContainer {
+        display: none;
+    }
+}

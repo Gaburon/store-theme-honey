@@ -19,7 +19,7 @@
       "product-summary-space",
       "product-list-price",
       "product-selling-price",
-      "rich-text#product--slider__free--shiping"
+      "vtex.product-highlights@2.x:product-highlights#free--shiping"
     ]
   },
 

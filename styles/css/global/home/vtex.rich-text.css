@@ -47,16 +47,6 @@
     color: #1D2734;
 }
 
-.paragraph--free--shiping__text {
-    font-family: Lexend-Regular;
-    color: #FA2080;
-    font-size: 14px;
-}
-
-.paragraph--free--shiping__text::after {
-    content: url(/arquivos/free__shiping.svg);
-}
-
 
 @media screen and (min-width: 1024px ){
     .wrapper--text-amazing {
