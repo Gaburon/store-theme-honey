@@ -110,7 +110,8 @@
       ],
       "props": {
           "preventHorizontalStretch": true,
-          "fullWidth": true
+          "fullWidth": true,
+          "blockClass": "plp--content"
       }
   },
   "flex-layout.col#filter": {

@@ -62,3 +62,7 @@
 .flexRow--search-info-mobile {
     padding-bottom: 16px;
 }
+
+.flexRowContent--plp--content {
+    padding-left: 52px;
+}
