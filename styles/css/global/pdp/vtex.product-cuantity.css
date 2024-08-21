@@ -1,0 +1,3 @@
+.quantitySelectorStepper--quantity--selector :global(.vtex-numeric-stepper__plus-button) {
+    height: 40px;
+}
