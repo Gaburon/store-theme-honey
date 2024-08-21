@@ -1,3 +1,4 @@
+
 .filterItem {
     font-size: 12px;
     font-family: "Lexend-Light";
@@ -62,6 +63,7 @@
 .filter__container--title {
     display: none;
 }
+
 
 .filter__container {
     padding-bottom: 5px;
@@ -133,6 +135,5 @@
     .searchResultContainer {
         padding-left: 52px;
     }
-
 
 }

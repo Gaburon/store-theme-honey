@@ -1,0 +1,50 @@
+.submenuContainer{
+    background-color:#FFE6D3;
+}
+
+.submenuContainerTitle{
+    display: none;
+}
+
+.styledLinkText{
+    font-family: Lexend-SemiBold;
+    font-size: 14px;
+    line-height: 17px;
+}
+
+.styledLinkText--mega__menu--desktop{
+    font-family: Lexend-Light;
+    font-size: 14px;
+    line-height: 15px;
+}
+
+.seeAllLinkContainer{
+    display: none;
+}
+
+.caretIcon--mega__menu--desktop{
+    display: none;
+}
+
+.menuContainer {
+    max-height: none;
+    overflow: hidden;
+}
+
+.menuContainerNav {
+    transform: translateX(72px);
+    max-width: 543px;
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+}
+
+.submenuContainer {
+    max-height: none;
+    border-bottom-right-radius: 16px;
+}
+
+.submenuList{
+    grid-template-columns: 1fr 1fr;
+    
+}
+
