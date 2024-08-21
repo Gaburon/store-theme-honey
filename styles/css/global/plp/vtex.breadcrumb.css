@@ -1,19 +1,8 @@
-.homeIcon {
-    display: flex;
-    width: 15px;
-    height: 18px;
-}
-
-.homeLink {
-    padding: 0;
-}
-
-.link {
-    font-family: Monserrat;
-    font-size: 14px;
-    line-height: 17px;
-}
-
 .container {
-    padding-left: 4px;
+    padding-left: 64px;
+}
+
+.container :global(.vtex-breadcrumb-1-x-link) {
+    font-family: "Montserrat-Light";
+    font-size: 14px;
 }

@@ -6,6 +6,7 @@
     color           : #FA2080;
     text-align: left;
     margin-bottom: 12px;
+    display: inline-flex;
 }
 
 .productHighlightText--free_delivery {

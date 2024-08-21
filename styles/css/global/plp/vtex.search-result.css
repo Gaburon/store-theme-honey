@@ -1,8 +1,8 @@
-
 .filterItem {
     font-size: 12px;
     font-family: "Lexend-Light";
     padding: 10px;
+    padding-left: 20px;
 }
 
 
@@ -10,9 +10,17 @@
     font-size: 20px;
     font-family: "Lexend-SemiBold";
     margin: 0 0 16px 0;
+    padding-left: 64px;
+}
+
+@media screen and (min-width: 360px) and (max-width: 640px) {
+    .galleryTitle--layout {
+        font-size: 14px;
+    }
 }
 
 .totalProducts--layout {
+    margin-left: 64px;
     text-align: left;
     padding: 0 0 40px 0;
     font-size: 14px;
@@ -25,19 +33,10 @@
     color: #1D2734;
 }
 
-.filterIsOpen {
-    width: 184px;
-    height: 36px;
-    border: 1px solid rgba(29, 39, 52, 1);
-    border-radius: 40px;
-    padding: 8px 16px;
-    background-color: #1D27341A;
-}
-
 .filterAvailable {
     width: 184px;
     height: 36px;
-    border: 1px solid rgba(29, 39, 52, 1);
+    border: 1px solid #ccc;
     border-radius: 40px;
     padding: 8px 16px;
     background-color: #1D27341A;
@@ -46,6 +45,8 @@
 .filterTitleSpan {
     font-family: "Lexend-Regular";
     font-size: 14px;
+    padding-bottom: 10px;
+    
 }
 
 .filter__container--selectedFilters {
@@ -58,13 +59,16 @@
 
 .filters--layout {
     width: 184px;
-    text-align: unset;
+    margin-left: 64px;
 }
 
 .filter__container--title {
     display: none;
 }
 
+.orderBy--layout {
+    padding-right: 16px;
+}
 
 .filter__container {
     padding-bottom: 5px;
@@ -72,9 +76,20 @@
 
 .galleryItem--grid {
     flex-basis: unset !important;
-    padding: 0;
+
 }
 
+.filterPopupTitle {
+    font-size: 12px;
+    font-family: "Lexend-Regular";
+    text-transform: initial;
+}
+
+.orderByButton {
+    padding: 14px, 12px, 14px, 12px;
+    border-radius: 40px;
+    background-color: rgba(231, 231, 231, 1);
+}
 
 .filter__container--priceRange :global(.vtex-slider__selector) {
     background-color: black;
@@ -89,52 +104,39 @@
 }
 
 .filter__container :global(.vtex-checkbox__box-wrapper) {
-    border: 1px solid black;
+    border: 1px solid #1D2734;
     border-radius: 3px;
 }
 
 .filter__container :global(.vtex-checkbox__label) {
-   color: rgba(29, 39, 52, 1);
-}
-
-.filterIcon {
-    color: black;
-}
-
-.filterPopupTitle {
-    font-size: 12px;
-    font-family: "Lexend-Regular";
-    text-transform: initial;
-}
-
-.orderByDropdown {
-    padding-right: 72px;
-}
-
-.orderByButton {
-    border-radius: 40px;
-    background-color: rgba(231, 231, 231, 1);
-}
-
-.buttonShowMore :global(.vtex-button) {
-    background-color: black;
-    color: white;
-    border-color: black;
-    border-radius: 40px;
+    color: rgba(29, 39, 52, 1);
 }
 
 @media screen and (min-width: 360px) and (max-width: 640px) {
     .totalProducts--layout {
         display: none;
     }
-
-
 }
 
+.buttonShowMore--fetch-more-button {
+    padding-top: 40.7px;
+}
 
-@media screen and (min-width: 1024px){
-    .searchResultContainer {
-        padding-left: 52px;
-    }
+.buttonShowMore--fetch-more-button :global(.vtex-button) {
+    border-color: #1D2734;
+    border-radius: 40px;
+    background-color: #1D2734;
+    text-transform: initial;
+    text-align: center;
+    width: 150px;
+}
 
+.buttonShowMore--fetch-more-button :global(.vtex-button) :global(.vtex-button__label){
+    font-size: 14px;
+    font-family: "Lexend-Regular";
+}
+
+.buttonShowMore--fetch-more-button :global(.vtex-button)::after {
+    content: url(/arquivos/mpa-plus--line.svg);
+    padding-right: 10px;
 }
