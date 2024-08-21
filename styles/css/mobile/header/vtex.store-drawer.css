@@ -1,0 +1,16 @@
+.closeIconContainer--menu-phone {
+    display: none;
+}
+
+.drawer--menu-phone {
+    min-width: 240px !important;
+    max-width: 240px !important;
+}
+
+.openIconContainer--menu-phone {
+    padding-bottom: 0;
+}
+
+.drawerContent--menu-phone {
+    overflow-y: hidden;
+}

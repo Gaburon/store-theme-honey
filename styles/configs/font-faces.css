@@ -42,3 +42,9 @@
     font-family: "Lexend-Thin";
     src: url(assets/fonts/Lexend-Thin.ttf); 
 }
+
+
+@font-face{
+    font-family: "Monserrat";
+    src: url(assets/fonts/Montserrat-Regular.ttf); 
+}

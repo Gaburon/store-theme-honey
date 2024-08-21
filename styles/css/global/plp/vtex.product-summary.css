@@ -1,0 +1,5 @@
+.containerNormal--product-summary-plp {
+    display: flex;
+    max-width: 300px;
+    width: 290px !important;
+}

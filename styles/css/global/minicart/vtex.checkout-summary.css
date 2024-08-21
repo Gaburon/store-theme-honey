@@ -1,0 +1,17 @@
+.summaryItemContainer {
+    font-size: 14px;
+    font-family: "Lexend-Light";
+    color: rgb(52, 29, 29);
+}
+
+.summarySmallDisclaimer {
+    display: none;
+}
+
+.summarySmallContent--container-total-sub {
+    width: 368px;
+    height: 126px;
+    border: 1px solid rgba(231, 231, 231, 1);
+    border-radius: 4px;
+    padding: 24px;
+}
