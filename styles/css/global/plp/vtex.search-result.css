@@ -5,6 +5,9 @@
     padding-left: 20px;
 }
 
+.buttonShowMore {
+    padding: 0 !important;
+}
 
 .galleryTitle--layout {
     font-size: 20px;
@@ -75,6 +78,7 @@
 
 .galleryItem--grid {
     flex-basis: unset !important;
+    padding-top: 0;
 
 }
 
@@ -219,5 +223,9 @@
 
     .filtersWrapperMobile {
         width: 110px;
+    }
+
+    .galleryItem--grid {
+        padding-top: 12px;
     }
 }
