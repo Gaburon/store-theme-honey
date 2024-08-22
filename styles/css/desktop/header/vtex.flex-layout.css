@@ -19,9 +19,13 @@
 
 .flexRowContent--drawer-logo--container{
     gap: 8px;
+    padding-top: 16px;
 }
 
 .flexRowContent--mega--menu-row {
     position: relative;
 }
 
+.flexRowContent--drawer-logo--container .flexColChild{
+    height: 16px;
+}
