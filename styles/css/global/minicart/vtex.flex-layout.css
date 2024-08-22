@@ -20,3 +20,7 @@
     height: 121px;
     margin-bottom: 10px;
 }
+
+.flexRowContent--minicart__product {
+    display: flex;
+}

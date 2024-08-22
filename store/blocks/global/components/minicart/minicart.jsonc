@@ -1,7 +1,8 @@
 {
     "minicart.v2": {
         "props": {
-            "MinicartIcon": "icon-cart#minicart-icon"
+            "MinicartIcon": "icon-cart#minicart-icon",
+            "variation": "drawer"
         },
         "children": [
             "minicart-base-content"

@@ -27,3 +27,9 @@
     font-family: "Lexend-SemiBold";
     color: rgba(227, 22, 22, 1);
 }
+
+@media screen and (min-width: 360px) and (max-width: 640px) {
+    .summarySmallContent--container-total-sub {
+        width: 328px;
+    }
+}
