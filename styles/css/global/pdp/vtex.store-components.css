@@ -74,3 +74,16 @@
     font-size: 14px;
     font-family: "Lexend-Light";
 }
+
+.skuSelectorContainer{
+    display: grid;
+    grid-auto-rows: auto;
+}
+
+.skuSelectorSubcontainer--color {
+    grid-row: 2;
+}
+
+.carouselGaleryThumbs{
+    display: block;
+}
