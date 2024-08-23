@@ -1,8 +1,26 @@
 .container {
     padding-left: 52px;
+    align-items: center;
 }
 
-.container :global(.vtex-breadcrumb-1-x-link) {
-    font-family: "Montserrat-Light";
+.link {
+    font-family: "Montserrat-Regular";
     font-size: 14px;
+    text-transform: lowercase;
+    height: 15px;
+}
+ 
+.homeIcon {
+    width: 16px;
+    height: 16px;
+}
+
+.homeLink {
+    padding: 0;
+}
+
+@media screen and (min-width: 360px  ) and (max-width:640px){
+    .container {
+        padding-left: 16px;
+    }
 }

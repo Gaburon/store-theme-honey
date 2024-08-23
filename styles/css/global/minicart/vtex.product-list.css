@@ -1,6 +1,6 @@
 .productImage {
     width: 145.19px !important;
-    height: 120.99px;
+    height: 120.99px !important;
     border: 0.95px solid rgba(231, 231, 231, 1);
     border-radius: 3.78px;
 }
@@ -11,6 +11,25 @@
 
 .productVariationsItem {
     display: none;
+}
+
+.inputContainer {
+    width: 61.44px;
+    height: 43.48px;
+    font-family: "Lexend-Regular";
+    font-size: 13.23px;
+}
+
+.quantitySelectorDecrease {
+    width: 37.81px;
+    height: 43.48px;
+    background-color: #1D2734;
+}
+
+.quantitySelectorIncrease {
+    width: 37.81px;
+    height: 43.48px;
+    background-color: #1D2734;
 }
 
 .productName {
@@ -29,4 +48,9 @@
     font-size: 15.12px;
     font-family: "Lexend-SemiBold";
     color: rgba(29, 39, 52, 1);
+}
+
+.productImageContainer {
+    width: 145.19px !important;
+    height: 120.99px !important;
 }

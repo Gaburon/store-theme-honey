@@ -66,3 +66,9 @@
 .flexRowContent--plp--content {
     padding-left: 52px;
 }
+
+@media screen and (min-width: 360px  ) and (max-width:640px){
+    .container {
+        padding-left: 20px;
+    }
+}

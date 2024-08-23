@@ -89,6 +89,8 @@
           "preventRouteChange": false
       }
   },
+
+
   "flex-layout.row#searchbread": {
       "children": [
           "breadcrumb.search"
@@ -202,14 +204,21 @@
           "not-found"
       ]
   },
+
+  "breadcrumb.search": {
+    "props": {
+      "showOnMobile": true
+    }
+  },
+
   "search-result-layout.mobile": {
       "children": [
-          "flex-layout.row#searchinfomobile",
-          "flex-layout.row#searchbread",
-          "flex-layout.row#productCountMobile",
-          "flex-layout.row#fetchprevious",
-          "flex-layout.row#contentmobile",
-          "flex-layout.row#fetchmore"
+        "flex-layout.row#searchbread",
+        "search-title.v2",
+        "flex-layout.row#searchinfomobile",
+        "flex-layout.row#fetchprevious",
+        "flex-layout.row#contentmobile",
+        "flex-layout.row#fetchmore"
       ],
       "props": {
           "pagination": "show-more",
@@ -230,13 +239,12 @@
   "flex-layout.row#searchinfomobile": {
       "children": [
           "flex-layout.col#orderByMobile",
-          "flex-layout.col#filterMobile",
-          "flex-layout.col#switcherMobile"
+          "flex-layout.col#filterMobile"
       ],
       "props": {
           "preserveLayoutOnMobile": true,
           "colSizing": "auto",
-          "colJustify": "around"
+          "colGap": 0
       }
   },
   "flex-layout.col#orderByMobile": {
@@ -261,14 +269,6 @@
       ],
       "props": {
           "blockClass": "filterMobileCol"
-      }
-  },
-  "flex-layout.col#switcherMobile": {
-      "children": [
-          "gallery-layout-switcher"
-      ],
-      "props": {
-          "verticalAlign": "middle"
       }
   },
   "search-not-found-layout": {

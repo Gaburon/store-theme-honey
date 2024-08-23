@@ -5,6 +5,9 @@
     padding-left: 20px;
 }
 
+.buttonShowMore {
+    padding: 0 !important;
+}
 
 .galleryTitle--layout {
     font-size: 20px;
@@ -36,7 +39,7 @@
 .filterAvailable {
     width: 184px;
     height: 36px;
-    border: 1px solid #ccc;
+    border: 1px solid black;
     border-radius: 40px;
     padding: 8px 16px;
     background-color: #1D27341A;
@@ -75,19 +78,50 @@
 
 .galleryItem--grid {
     flex-basis: unset !important;
+    padding-top: 0;
 
 }
 
 .filterPopupTitle {
-    font-size: 12px;
+    display: inline-flex;
+    align-items: center;
+    text-align: center;
+    font-size: 0px;
     font-family: "Lexend-Regular";
     text-transform: initial;
 }
 
+.orderByButton :global(.vtex-search-result-3-x-filterPopupTitle) {
+    padding-bottom: 6px;
+}
+
+.filterPopupArrowIcon :global(.vtex-search-result-3-x-caretIcon) {
+    display: block;
+    width: 12px;
+    height: 12px;
+    padding-left: 5.5px;
+}
+
+.filterPopupArrowIcon {
+    padding-left: 0;
+    padding-right: 0px;
+}
+
+.filterPopupTitle::before {
+    content: url(/arquivos/oder--by.svg);
+    padding-right: 5.5px;
+}
+
 .orderByButton {
-    padding: 14px, 12px, 14px, 12px;
+    padding-left: 14px;
+    padding-right: 14px;
+    padding-top: 12px;
+    height: 40px;
+    width: 147px;
+    padding-bottom: 6px;
     border-radius: 40px;
     background-color: rgba(231, 231, 231, 1);
+    border: 1px solid black;
 }
 
 .filter__container--priceRange :global(.vtex-slider__selector) {
@@ -117,11 +151,11 @@
     }
 }
 
-.buttonShowMore--fetch-more-button {
+.buttonShowMore {
     padding-top: 40.7px;
 }
 
-.buttonShowMore--fetch-more-button :global(.vtex-button) {
+.buttonShowMore :global(.vtex-button) {
     border-color: #1D2734;
     border-radius: 40px;
     background-color: #1D2734;
@@ -130,12 +164,68 @@
     width: 150px;
 }
 
-.buttonShowMore--fetch-more-button :global(.vtex-button) :global(.vtex-button__label){
+.buttonShowMore :global(.vtex-button) :global(.vtex-button__label){
     font-size: 14px;
     font-family: "Lexend-Regular";
 }
 
-.buttonShowMore--fetch-more-button :global(.vtex-button)::after {
+.buttonShowMore :global(.vtex-button)::after {
     content: url(/arquivos/mpa-plus--line.svg);
     padding-right: 10px;
+}
+
+.orderByText {
+    content: "Ordenar por"; 
+    color: #1D2734;
+    width: 72px;
+    font-size: 12px;
+    font-family: "Lexend-Regular";
+    text-transform: initial;
+}
+
+.filtersWrapperMobile :global(.vtex-search-result-3-x-filterPopupTitle) {
+    font-size: 0;
+}
+
+.filtersWrapperMobile :global(.vtex-search-result-3-x-filterPopupTitle)::after{
+    content: "Filtros";
+    font-size: 12px;
+}
+
+.filtersWrapperMobile :global(.vtex-search-result-3-x-filterPopupTitle)::before{
+    content: url("/arquivos/filter--by.svg");
+    padding-right: 5.5px;
+}
+
+.orderByButton .vtex-search-result-3-x-filterPopupTitle {
+    padding-bottom: 6px;
+}
+
+.filterPopupButton {
+    padding-left: 14px;
+    padding-right: 14px;
+    padding-top: 12px;
+    height: 40px;
+    width: 110px;
+    border-radius: 40px;
+    background-color: rgba(231, 231, 231, 1);
+    border: 1px solid black;
+}
+
+@media screen and (min-width: 360px  ) and (max-width:640px){
+    .galleryTitle--layout {
+        padding-left: 16px;
+    }
+
+    .filters {
+        height: 42px;
+    }
+
+    .filtersWrapperMobile {
+        width: 110px;
+    }
+
+    .galleryItem--grid {
+        padding-top: 12px;
+    }
 }

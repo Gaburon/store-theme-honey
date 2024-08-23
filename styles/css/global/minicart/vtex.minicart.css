@@ -1,8 +1,3 @@
-/* Example desktop:
-.minicartTitle {
-    display: none;
-} */
-
 .minicartCheckoutButton :global(.vtex-button) {
     border-radius: 40px;
     background-color: rgba(29, 39, 52, 1);
@@ -13,14 +8,34 @@
 }
 
 .minicartTitle {
+    font-size: 0px;
+    margin-bottom: 12px ;
+    padding: 0 0 0 16px;
+}
+
+.minicartTitle::after {
+    content: "Resumen de tu compra";
     font-size: 14px;
     font-family: "Lexend-SemiBold";
-    padding-left: 16px;
 }
 
 .minicartSummary {
     padding-left: 16px;
     padding-right: 16px;
+    padding-top: 0;
+}
+.closeIconContainer {
+    align-items: center;
+    justify-content: space-between;
+    padding: 34px 16px 26.61px 16px;
+}
+.closeIconContainer::before {
+    content: "" ;
+    width: 50px;
+    height: 25px;
+    display: inline-block;
+    background-image: url(/arquivos/itg--logo.svg);
+    background-repeat: no-repeat;
 }
 
 .overlay--visible {
@@ -31,7 +46,15 @@
 
 }
 
-@media screen and (min-with: 360px) {
+.closeIconButton {
+    padding: 0;
+}
+
+.minicartProductListContainer {
+    padding: 0 0 0 16px;
+}
+
+@media screen and (min-with: 360px) and (max-width: 640px){
     .closeIconContainer {
         display: none;
     }
