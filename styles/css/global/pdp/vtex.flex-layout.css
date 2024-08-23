@@ -39,9 +39,14 @@
 }
 
 
+.flexRowContent--price--row--pdp {
+    margin-top: 16px;
+    margin-bottom: 24px;
+}
+
 .flexRowContent--price--row--pdp :global(.vtex-store-components-3-x-priceContainer){
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 196px 1fr;
 }
 
 .flexRowContent--price--row--pdp :global(.vtex-store-components-3-x-price_listPriceContainer){
@@ -54,20 +59,23 @@
 
 .flexRowContent--price--row--pdp :global(.vtex-store-components-3-x-price_sellingPriceContainer){
     grid-column: 1;
-    width: 195px;
+    width: fit-content;
     font-size: 24px;
 }
 
 .flexRowContent--highlights--row :global(.vtex-product-highlights-2-x-productHighlightText) {
-    padding-top: 6px;
-    padding-bottom: 6px;
-    padding-left: 12px;
-    padding-right: 12px;
-    background-color: #FF832433;
     width: fit-content;
-    margin-right: 10px;
+    font-size: 14px;
+    font-family: 'Lexend-Regular';
+
 }
 
 .flexRowContent--highlights--row .stretchChildrenWidth {
     width: auto !important;
+    padding: 0;
+}
+
+.flexRowContent--highlights--row {
+    display: flex;
+    justify-content: unset;
 }

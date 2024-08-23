@@ -26,6 +26,16 @@
     padding-left: 24px;
 }
 
+:global(.vtex-product-specifications-1-x-specificationValue--last) :global(ul) :global(li):first-child {
+    border-top-left-radius: 12px; 
+    border-top-right-radius: 12px; 
+}
+
+:global(.vtex-product-specifications-1-x-specificationValue--last) :global(ul) :global(li):last-child {
+    border-bottom-left-radius: 12px; 
+    border-bottom-right-radius: 12px; 
+}
+
 @media screen and (min-width: 360px) and (max-width: 640px) {
     :global(.vtex-product-specifications-1-x-specificationValue--last) :global(ul) :global(li):nth-child(odd) {
         width: 328px;
@@ -62,4 +72,27 @@
 :global(.vtex-numeric-stepper__minus-button__text) {
     color: #fff;
     font-size: 12px;
+}
+
+
+
+:global(.vtex-flex-layout-0-x-flexRowContent--highlights--row) :global(div):first-child {
+    background-color: rgba(255, 131, 36, 0.2);
+    border-radius: 4px;
+    color: rgba(255, 131, 36, 1);
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 12px;
+    padding-right: 12px;
+    margin-right: 8px;
+}
+
+:global(.vtex-flex-layout-0-x-flexRowContent--highlights--row) :global(div):last-child {
+    background-color: rgba(233, 255, 234, 1);
+    border-radius: 4px;
+    color: rgba(29, 39, 52, 1);
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 12px;
+    padding-right: 12px;
 }
