@@ -63,3 +63,8 @@
         min-width: 360px !important;
     }
 }
+
+.closeIconButton {
+    border-radius: 40px;
+    background-color: #F5F4F6;
+}
