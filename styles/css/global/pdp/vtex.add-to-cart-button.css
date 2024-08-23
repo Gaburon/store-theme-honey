@@ -1,4 +1,4 @@
-.buttonText {
+.buttonText--cart-pdp {
     text-transform: initial;
     justify-content: center;
     align-items: center;
@@ -7,7 +7,7 @@
     display: flex;
 }
 
-.buttonText::before {
+.buttonText--cart-pdp::before {
     content: url(/arquivos/buy--button--car-white.svg);
     width: 20px;
     height: 20px;
