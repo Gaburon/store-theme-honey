@@ -63,6 +63,10 @@
     padding-right: 0;
 }
 
+.price_listPrice {
+    padding-left: 8px;
+}
+
 .sellingPriceLabel {
     font-size: 0px;
 }
