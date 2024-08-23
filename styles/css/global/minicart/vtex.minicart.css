@@ -54,8 +54,17 @@
     padding: 0 0 0 16px;
 }
 
-@media screen and (min-with: 360px) and (max-width: 640px){
+@media screen and (min-width: 360px) and (max-width: 640px){
     .closeIconContainer {
         display: none;
     }
+
+    .drawer {
+        min-width: 360px !important;
+    }
+}
+
+.closeIconButton {
+    border-radius: 40px;
+    background-color: #F5F4F6;
 }
