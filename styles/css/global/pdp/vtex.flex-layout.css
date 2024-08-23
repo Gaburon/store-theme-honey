@@ -46,7 +46,7 @@
 
 .flexRowContent--price--row--pdp :global(.vtex-store-components-3-x-priceContainer){
     display: grid;
-    grid-template-columns: 196px 1fr;
+    grid-auto-columns: max-content;
 }
 
 .flexRowContent--price--row--pdp :global(.vtex-store-components-3-x-price_listPriceContainer){
@@ -67,7 +67,10 @@
     width: fit-content;
     font-size: 14px;
     font-family: 'Lexend-Regular';
-
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 12px;
+    padding-right: 12px;
 }
 
 .flexRowContent--highlights--row .stretchChildrenWidth {
