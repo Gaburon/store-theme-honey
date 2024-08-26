@@ -29,3 +29,13 @@
 .flexRowContent--minicart__product {
     display: flex;
 }
+
+.flexCol--minicart--row {
+    padding-top: 20px;
+}
+
+@media screen and (min-width: 1024px){
+    .flexCol--minicart--row {
+        margin-bottom: 50px;
+    }
+}
