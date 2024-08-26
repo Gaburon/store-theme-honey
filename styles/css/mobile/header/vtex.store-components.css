@@ -9,17 +9,17 @@
     height: 16px;
 }
 
-.price_listPrice {
-    padding-left: 8px;
-}
+
 
 .searchBarContainer {
     width: 150px;
     padding-top: 0;
     padding-bottom: 0;
 }
+
 @media screen and (min-width: 360px  ) and (max-width:640px){ 
     .searchBarIcon--search {
         display: none;
     }
 }
+
