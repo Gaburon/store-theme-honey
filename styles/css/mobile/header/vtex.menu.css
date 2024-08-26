@@ -1,3 +1,11 @@
 .menuContainer--menu-home-mobile {
     text-align: center;
 }
+
+.menuContainer--menu-phone {
+    padding-top: 24px;
+}
+
+.menuContainer--menu-phone :global(.vtex-store-components-3-x-logoContainer--logo--mobile) {
+    padding-right: 55px;
+}

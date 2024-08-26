@@ -1,0 +1,29 @@
+.buttonText--cart-pdp {
+    text-transform: initial;
+    justify-content: center;
+    align-items: center;
+    font-family: "Lexend-Regular";
+    font-size: 14px;
+    display: flex;
+}
+
+.buttonText--cart-pdp::before {
+    content: url(/arquivos/buy--button--car-white.svg);
+    width: 20px;
+    height: 20px;
+    padding-right: 10px;
+    color: #FFFFFF;
+}
+
+@media screen and (min-width: 360px) and (max-width: 640px) {
+    .buttonText--cart-pdp {
+        font-size: 0;
+    }
+
+    .buttonText--cart-pdp::after {
+        content: "Agregar";
+        font-size: 14px;
+        font-family: "Lexend-Regular";
+
+    }
+}

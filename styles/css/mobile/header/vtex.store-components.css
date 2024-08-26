@@ -1,13 +1,16 @@
 .logoContainer--logo--mobile {
     display: flex;
     align-items: center;
-    padding-right: 55px;
     padding-left: 16px;
 }
 
 .searchIcon  {
     width: 16px;
     height: 16px;
+}
+
+.price_listPrice {
+    padding-left: 8px;
 }
 
 .searchBarContainer {

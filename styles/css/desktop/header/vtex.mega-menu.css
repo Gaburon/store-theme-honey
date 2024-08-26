@@ -6,6 +6,10 @@
     display: none;
 }
 
+.triggerContainer {
+    height: 16px;
+}
+
 .styledLinkText{
     font-family: Lexend-SemiBold;
     font-size: 14px;

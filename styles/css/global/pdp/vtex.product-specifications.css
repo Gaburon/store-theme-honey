@@ -1,0 +1,21 @@
+.specificationName {
+    display: none;
+}
+
+.groupName {
+    font-size: 0;
+    padding-left: 72px;
+}
+
+.groupName::after {
+    content: "Especificaciones del producto";
+    font-size: 16px;
+    font-family: "Lexend-SemiBold";
+    color: #1D2734;
+}
+
+@media screen and (min-width: 360px) and (max-width: 640px) {
+    .groupName {
+        padding-left: 17px;
+    }
+}
