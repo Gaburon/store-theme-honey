@@ -24,12 +24,19 @@
     width: 37.81px;
     height: 43.48px;
     background-color: #1D2734;
+    color: #FFFFFF;
 }
 
 .quantitySelectorIncrease {
     width: 37.81px;
     height: 43.48px;
     background-color: #1D2734;
+    color: #FFFFFF;
+}
+
+.quantitySelectorButton:hover {
+    border-color: unset !important;
+    background-color: #1D2734 !important;
 }
 
 .productName {
