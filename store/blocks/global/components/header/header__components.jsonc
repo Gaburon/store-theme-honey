@@ -1,18 +1,5 @@
 {
-	// "login": {
-	// 	"props": {
-	// 		"iconLabel": "Login",
-	// 		"hideIconLabel": false,
-	// 		"optionsTitle": "Log in",
-	// 		"emailAndPasswordTitle": "LOG-IN",
-	// 		"accessCodeTitle": "Acess Code LOG-IN",
-	// 		"emailPlaceholder": "e-mail",
-	// 		"passwordPlaceholder": "password",
-	// 		"showPasswordVerificationIntoTooltip": true,
-	// 		"blockClass": "login-button"
-	// 	}
-	// },
-	"login": {
+	"login#prueba": {
         "props": {
             "blockClass": "global--login",
             "iconLabel": "Login",
@@ -21,7 +8,7 @@
             "accessCodeTitle": "Acess Code LOG-IN",
             "emailPlaceholder": "e-mail",
             "passwordPlaceholder": "password",
-            "showPasswordVerificationIntoTooltip": true
+            "showPasswordVerificationIntoTooltip": false
 	  }
 
 	},

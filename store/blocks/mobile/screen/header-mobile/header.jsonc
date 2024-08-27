@@ -44,7 +44,7 @@
         "children": [
             "overlay-trigger#header__overlay--mobile",
             "minicart.v2",
-            "login"
+            "login#prueba"
         ],
         "props": {
             "blockClass": "mobile__row--container"
