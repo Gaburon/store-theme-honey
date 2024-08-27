@@ -175,7 +175,8 @@
       "product-specification-group#table"
     ],
     "props": {
-      "blockClass": "global__specifications"
+      "blockClass": "global__specifications",
+      "fullWidth": false
     }
   },
 
