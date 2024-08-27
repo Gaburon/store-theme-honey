@@ -82,3 +82,8 @@
     display: flex;
     justify-content: unset;
 }
+
+.flexRowContent--global__specifications .stretchChildrenWidth {
+    flex-direction: column;
+
+}

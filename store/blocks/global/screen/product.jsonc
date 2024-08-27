@@ -3,7 +3,7 @@
     "children": [
       "flex-layout.row#product-main",
       "shelf.relatedProducts",
-      "product-specification-group#table"
+      "flex-layout.row#global__specifications"
     ]
   },
   "flex-layout.row#product-main": {
@@ -169,6 +169,16 @@
       "message": "{highlightName}"
     }
   },
+
+  "flex-layout.row#global__specifications": {
+    "children": [
+      "product-specification-group#table"
+    ],
+    "props": {
+      "blockClass": "global__specifications"
+    }
+  },
+
   "product-specification-group#table": {
     "children": [
       "product-specification-text#group",
