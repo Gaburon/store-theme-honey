@@ -8,7 +8,8 @@
             "accessCodeTitle": "Acess Code LOG-IN",
             "emailPlaceholder": "e-mail",
             "passwordPlaceholder": "password",
-            "showPasswordVerificationIntoTooltip": false
+            "showPasswordVerificationIntoTooltip": false,
+			"logInButtonBehavior": "popover"
 	  }
 
 	},

@@ -422,6 +422,23 @@
     display: none;
 }
 
+.box {
+    margin-top: -118.5px;
+}
+
+.portalContainer {
+    opacity: initial !important;
+    backdrop-filter: blur(10px);
+    background-color: initial;
+    transition: filter 0.3s ease;
+    bottom: 0 !important;
+    right: 0 !important;
+    position: fixed;
+    top: 128px !important;
+    left: 0px !important;
+    z-index: 2147483647;
+}
+
 @media screen and (min-width: 360px) and (max-width: 640px) {
     .content--emailAndPassword {
         height: auto;
