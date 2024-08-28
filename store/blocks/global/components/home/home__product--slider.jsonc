@@ -50,7 +50,7 @@
             "props": {
               "itemsPerPage": {
                 "desktop": 5,
-                "tablet": 3,
+                "tablet": 2,
                 "phone": 1
               },
               "fullWidth": false,
