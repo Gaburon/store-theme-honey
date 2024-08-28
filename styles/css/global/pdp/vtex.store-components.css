@@ -83,6 +83,7 @@
     width: 108.07px;
     height: 40px;
     border-radius: 4px;
+
 }
 
 .frameAround {
@@ -125,4 +126,27 @@
     font-size: 16px;
     line-height: 16.8px;
     color: #1D2734;
+}
+
+.skuSelectorItemImage {
+    width: 64px;
+    height: 64px;
+    justify-content: center;
+    display: flex;
+}
+
+
+.skuSelectorOptionsList {
+    gap: 8px;
+}
+
+.skuSelectorItemImage .skuSelectorInternalBox {
+    width: 40px;
+    height: 40px;
+}
+
+@media screen and (min-width: 360px  ) and (max-width:640px){
+    .skuSelectorInternalBox {
+        width: 77px;
+    }
 }

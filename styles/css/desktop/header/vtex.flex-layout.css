@@ -1,5 +1,6 @@
 .flexRowContent--header--first-row {
     align-items: center;
+    justify-content: center;
 }
 
 .flexRow--header--first-row {
@@ -28,4 +29,16 @@
 
 .flexRowContent--drawer-logo--container .flexColChild{
     height: 16px;
+}
+
+.flexRow--minicart-login--container {
+    padding-left:40px
+}
+
+.flexRowContent--rich--text-container {
+    padding-left: 58px
+}
+
+.flexRow--drawer-logo--container {
+    padding-right: 16px
 }

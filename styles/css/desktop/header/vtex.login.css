@@ -7,10 +7,11 @@
     display: block;
 }
 
-.container {
-    background-color: #1D2734;
+.container :global(.vtex-button) {
+    background-color: #1D2734 !important;
     width: 80px !important;
     height: 40px !important;
     border-radius: 40px;
     border: 1px;
 }
+

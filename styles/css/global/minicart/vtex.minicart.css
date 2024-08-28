@@ -68,3 +68,8 @@
     border-radius: 40px;
     background-color: #F5F4F6;
 }
+
+
+.drawerContent {
+    overflow-y: hidden;
+}
