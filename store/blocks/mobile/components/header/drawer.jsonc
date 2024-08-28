@@ -18,7 +18,7 @@
     "flex-layout.row#menu__logo--login": {
         "children": [
             "logo#mobile",
-            "login#prueba"
+            "login"
         ],
         "props": {
             "blockClass": "menu__logo--login",

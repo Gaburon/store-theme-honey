@@ -1,5 +1,5 @@
 {
-	"login#prueba": {
+	"login": {
         "props": {
             "blockClass": "global--login",
             "iconLabel": "Login",
@@ -9,7 +9,34 @@
             "emailPlaceholder": "e-mail",
             "passwordPlaceholder": "password",
             "showPasswordVerificationIntoTooltip": false,
-			"logInButtonBehavior": "popover"
+			"logInButtonBehavior": "popover",
+			"accountOptionLinks": [
+                {
+                    "label": "Profile",
+                    "path": "/account#/profile",
+                    "cssClass": "accountProfile"
+                },
+                {
+                    "label": "Addresses",
+                    "path": "/account#/addresses",
+                    "cssClass": "accountAddresses"
+                },
+                {
+                    "label": "Orders",
+                    "path": "/account#/orders",
+                    "cssClass": "accountOrders"
+                },
+                {
+                    "label": "Credit cards",
+                    "path": "/account#/cards",
+                    "cssClass": "accountCard"
+                },
+                {
+                    "label": "Authentication",
+                    "path": "/account#/authentication",
+                    "cssClass": "accountAuthenticacion"
+                }
+            ]
 	  }
 
 	},

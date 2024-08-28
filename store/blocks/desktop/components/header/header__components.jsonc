@@ -23,7 +23,7 @@
     "flex-layout.row#global__minicart--and--login": {
         "children": [
             "minicart.v2",
-            "login#prueba"
+            "login"
         ],
 
         "props": {

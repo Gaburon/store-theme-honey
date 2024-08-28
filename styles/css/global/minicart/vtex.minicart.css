@@ -62,6 +62,12 @@
     .drawer {
         min-width: 360px !important;
     }
+
+    .minicartWrapperContainer {
+        margin-right: 0;
+    }
+    
+
 }
 
 .closeIconButton {

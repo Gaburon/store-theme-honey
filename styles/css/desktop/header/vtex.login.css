@@ -17,7 +17,12 @@
 
 .box {
     top: 55px;
+    right: -55px;
 }
+
+/* .contentContainer {
+    margin-top: 0;
+} */
 
 .arrowUp {
     display: none;
@@ -437,6 +442,188 @@
     top: 128px !important;
     left: 0px !important;
     z-index: 2147483647;
+}
+
+.inputContainerAccessCode {
+    padding: 0px;
+}
+
+.codeConfirmation :global(form) :global(.vtex-login-2-x-formFooter) {
+    border-top: none;
+    padding-top: 0px;
+    margin-top: 16px;
+}
+
+.codeConfirmation :global(form) :global(.vtex-login-2-x-formFooter) :global(.vtex-login-2-x-sendButton) :global(.vtex-button) :global(.vtex-button__label) :global(span) {
+    font-size: 0px;
+}
+
+.codeConfirmation :global(form) :global(.vtex-login-2-x-formFooter) :global(.vtex-login-2-x-sendButton) :global(.vtex-button) :global(.vtex-button__label) :global(span)::after {
+    content: "Verificar";
+    font-size: 14px;
+    font-family: 'Lexend-Regular';
+    color: rgba(255, 255, 255, 1);
+}
+
+.codeConfirmation .formTitle {
+    font-size: 0px;
+}
+
+.codeConfirmation .formTitle::before {
+    content: "VERIFY YOUR E-MAIL";
+    text-transform: uppercase;
+    font-size: 20px;
+    font-family: 'Lexend-Light';
+    color: rgba(12, 35, 64, 1);
+}
+
+.codeConfirmation .formTitle::after {
+    content: "Enter the access code we sent to";
+    text-transform: initial;
+    font-size: 14px;
+    font-family: 'Lexend-Light';
+    color: rgba(94, 99, 110, 1);
+    display: block;
+}
+
+.inputContainerAccessCode :global(.vtex-input) :global(.vtex-input-prefix__group) :global(input) {
+    font-size: 14px;
+    font-family: 'Lexend-Regular';
+}
+
+.profile {
+    font-size: 0px;
+    padding: 0px;
+    display: block;
+    overflow: visible;
+}
+
+.profile::after {
+    content: "Login";
+    text-transform: initial;
+    font-size: 14px;
+    font-family: 'Lexend-Light';
+    color: rgba(255, 255, 255, 1);
+}
+
+.accountOptionsSectionTitle {
+    font-size: 0px;
+}
+
+.accountOptionsSectionTitle::after {
+    font-size: 20px;
+    font-family: 'Lexend-Light';
+    content: "MY ACCOUNT";
+    text-transform: uppercase;
+    color: rgba(12, 35, 64, 1);
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 24px;
+}
+
+.logoutButton {
+    font-size: 0px;
+}
+
+.logoutButton::after {
+    content: "Log out";
+    font-size: 14px;
+    font-family: 'Lexend-Regular';
+    color: rgba(227, 22, 22, 1);
+    margin-bottom: 7px;
+}
+
+.accountOptions :global(div):last-child {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.accountOptions :global(hr) {
+    display: none;
+}
+
+.accountProfile {
+    width: 368px;
+    height: 48px;
+    border: 1px solid rgba(29, 39, 52, 1);
+    border-radius: 40px;
+    background-color: rgba(29, 39, 52, 1);
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    font-family: 'Lexend-Regular';
+    color: rgba(255, 255, 255, 1);
+    margin-bottom: 8px;
+}
+
+.accountProfile:hover {
+    color: rgba(255, 255, 255, 1);
+}
+
+.accountAddresses {
+    width: 368px;
+    height: 48px;
+    border: 1px solid rgba(29, 39, 52, 1);
+    display: flex;
+    border-radius: 40px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    font-family: 'Lexend-Regular';
+    color: rgba(29, 39, 52, 1);
+    margin-bottom: 8px;
+}
+
+.accountOrders {
+    width: 368px;
+    height: 48px;
+    border: 1px solid rgba(29, 39, 52, 1);
+    display: flex;
+    border-radius: 40px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    font-family: 'Lexend-Regular';
+    color: rgba(29, 39, 52, 1);
+    margin-bottom: 8px;
+}
+
+.accountCard {
+    width: 368px;
+    height: 48px;
+    border: 1px solid rgba(29, 39, 52, 1);
+    display: flex;
+    border-radius: 40px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    font-family: 'Lexend-Regular';
+    color: rgba(29, 39, 52, 1);
+    margin-bottom: 8px;
+}
+
+.accountAuthenticacion {
+    width: 368px;
+    height: 48px;
+    border: 1px solid rgba(29, 39, 52, 1);
+    display: flex;
+    border-radius: 40px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    font-family: 'Lexend-Regular';
+    color: rgba(29, 39, 52, 1);
+    margin-bottom: 11px;
 }
 
 @media screen and (min-width: 360px) and (max-width: 640px) {

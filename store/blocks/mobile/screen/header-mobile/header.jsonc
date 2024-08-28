@@ -44,10 +44,11 @@
         "children": [
             "overlay-trigger#header__overlay--mobile",
             "minicart.v2",
-            "login#prueba"
+            "login"
         ],
         "props": {
-            "blockClass": "mobile__row--container"
+            "blockClass": "mobile__row--container",
+            "colSizing": "auto"
         }
     }
 }
