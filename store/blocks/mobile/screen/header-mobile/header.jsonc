@@ -47,7 +47,8 @@
             "login"
         ],
         "props": {
-            "blockClass": "mobile__row--container"
+            "blockClass": "mobile__row--container",
+            "colSizing": "auto"
         }
     }
 }

@@ -1,0 +1,62 @@
+.menuLinks {
+    font-family: 'Lexend-Regular';
+}
+
+.userGreeting {
+    font-family: 'Lexend-Light';
+}
+
+.profile__header :global(.vtex-pageHeader__container) :global(div) :global(.vtex-pageHeader__title) {
+    font-family: 'Lexend-Bold';
+}
+
+.dataEntryLabel {
+    font-family: 'Lexend-Regular';
+}
+
+.dataEntryChildren {
+    font-family: 'Lexend-Regular';
+}
+
+.boxContainerFooter :global(.vtex-button) :global(.vtex-button__label) {
+    font-family: 'Lexend-Regular';
+}
+
+.newsletterContainerTitle {
+    font-family: 'Lexend-Regular';
+}
+
+.newsletterContainerMessage {
+    font-family: 'Lexend-Regular';
+    font-size: 14px;
+}
+
+.passwordBox {
+    font-family: 'Lexend-Regular';
+}
+
+.addressList :global(div) :global(div) :global(span) {
+    font-family: 'Lexend-Regular';
+
+}
+
+.newAddressButton {
+    font-family: 'Lexend-Regular';
+}
+
+.addressList__header :global(div:last-child) :global(.vtex-pageHeader__container ) :global(.vtex-pageHeader-link__container) :global(.vtex-button) :global(div) :global(span) {
+    font-family: 'Lexend-Regular';
+    color: rgba(12, 35, 64, 1);
+}
+
+.addressList__header :global(div:last-child) :global(.vtex-pageHeader__container ) :global(.vtex-pageHeader-link__container) :global(.vtex-button) :global(div) :global(svg) {
+    color: rgba(12, 35, 64, 1);
+}
+
+.addressList__header :global(div:last-child) :global(.vtex-pageHeader__container ) :global(div:last-child) :global(.vtex-pageHeader__title) {
+    font-family: 'Lexend-Bold';
+}
+
+.addressList__header :global(div:last-child) :global(.vtex-pageHeader__container ) :global(div:last-child) :global(.vtex-pageHeader__children) :global(.newAddressButton) :global(.vtex-button) :global(.vtex-button__label) {
+    font-family: 'Lexend-Regular';
+}

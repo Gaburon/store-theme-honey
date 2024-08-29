@@ -1,33 +1,45 @@
 {
-	// "login": {
-	// 	"props": {
-	// 		"iconLabel": "Login",
-	// 		"hideIconLabel": false,
-	// 		"optionsTitle": "Log in",
-	// 		"emailAndPasswordTitle": "LOG-IN",
-	// 		"accessCodeTitle": "Acess Code LOG-IN",
-	// 		"emailPlaceholder": "e-mail",
-	// 		"passwordPlaceholder": "password",
-	// 		"showPasswordVerificationIntoTooltip": true,
-	// 		"blockClass": "login-button"
-	// 	}
-	// },
 	"login": {
-		"props": {
-		  "iconLabel": "Login",
-		  "optionsTitle": "LOG IN",
-		  "emailPlaceholder":"Enter your e-mail",
-		  "passwordPlaceholder":"Enter your password",
-		  "accessCodePlaceholder": "Enter your access code",
-		  //Code by email
-		  "accessCodeTitle":"Access code by email",
-		  //E-mail and password
-		  "providerPasswordButtonLabel": "password",
-		  "emailAndPasswordTitle": "Continue with e-mail and password",
-		  "blockClass": "view__login"
-		}
-	  },
+        "props": {
+            "blockClass": "global--login",
+            "iconLabel": "Login",
+            "optionsTitle": "Log in",
+            "emailAndPasswordTitle": "LOG-IN",
+            "accessCodeTitle": "Acess Code LOG-IN",
+            "emailPlaceholder": "e-mail",
+            "passwordPlaceholder": "password",
+            "showPasswordVerificationIntoTooltip": false,
+			"logInButtonBehavior": "popover",
+			"accountOptionLinks": [
+                {
+                    "label": "Profile",
+                    "path": "/account#/profile",
+                    "cssClass": "accountProfile"
+                },
+                {
+                    "label": "Addresses",
+                    "path": "/account#/addresses",
+                    "cssClass": "accountAddresses"
+                },
+                {
+                    "label": "Orders",
+                    "path": "/account#/orders",
+                    "cssClass": "accountOrders"
+                },
+                {
+                    "label": "Credit cards",
+                    "path": "/account#/cards",
+                    "cssClass": "accountCard"
+                },
+                {
+                    "label": "Authentication",
+                    "path": "/account#/authentication",
+                    "cssClass": "accountAuthenticacion"
+                }
+            ]
+	  }
 
+	},
 
 	"logo": {
 		"props": {

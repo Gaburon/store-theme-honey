@@ -15,3 +15,659 @@
     border: 1px;
 }
 
+.box {
+    top: 55px;
+    right: -55px;
+}
+
+/* .contentContainer {
+    margin-top: 0;
+} */
+
+.arrowUp {
+    display: none;
+}
+
+.content {
+    width: 423px;
+    height: auto;
+    background-color: #000000 25%;
+    border-radius: 0px 0px 8px 8px;
+}
+
+.formTitle {
+    font-family: 'Lexend-Light';
+    text-transform: uppercase;
+    font-size: 20px;
+    line-height: 22.92px;
+    text-align: center;
+    margin-top: 5px;
+}
+
+.optionsList {
+    display: flex;
+    flex-direction: column;
+}
+
+.optionsList :global(li):nth-child(1) {
+    order: 2;
+}
+
+.optionsList :global(li):nth-child(2) {
+    order: 1;
+}
+
+.optionsList :global(li):nth-child(3) {
+    order: 3;
+}
+
+.optionsList :global(li):nth-child(4) {
+    order: 4;
+}
+
+.accessCodeOptionBtn :global(.vtex-button) {
+    background-color: rgba(245, 244, 246, 1);
+    width: 368px;
+    height: 48px;
+    border-radius: 40px;
+    border: solid 1px #1D2734;
+    padding: 10px;
+}
+
+.accessCodeOptionBtn :global(.vtex-button__label) {
+    font-family: 'Lexend-Regular';
+    font-size: 14px;
+    line-height: 17.5px;
+    text-align: center;
+    color: #1D2734;
+    text-transform: lowercase;
+    position: relative;
+}
+
+.accessCodeOptionBtn :global(.vtex-button__label) ::before {
+    text-transform: initial;
+    font-family: 'Lexend-Regular';
+    content: "Receive access code by email";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    color: #1D2734;
+    background-color: rgba(245, 244, 246, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    pointer-events: none;
+}
+
+.emailPasswordOptionBtn :global(.vtex-button) {
+    background-color: rgba(245, 244, 246, 1);
+    width: 368px;
+    height: 48px;
+    border-radius: 40px;
+    border: solid 1px #1D2734;
+    padding: 10px;
+
+}
+
+.emailPasswordOptionBtn :global(.vtex-button__label) {
+    font-size: 0;
+}
+
+.emailPasswordOptionBtn :global(.vtex-button__label)::after {
+    font-family: 'Lexend-Regular';
+    content: "Continue with an e-mail and password";
+    font-size: 14px;
+    line-height: 17.5px;
+    text-align: center;
+    color: rgba(29, 39, 52, 1);
+    text-transform: initial;
+}
+
+.googleOptionBtn :global(.vtex-button) {
+    width: 368px;
+    height: 48px;
+    border-radius: 40px;
+    border: solid 1px #AEBACE 50%;
+    background-color: #FFFFFF;
+}
+
+.googleOptionBtn :global(.vtex-login-2-x-oauthLabel) {
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    color: #5E636E;
+    text-transform: lowercase;
+    font-family: "Lexend-Regular";
+}
+
+.googleOptionBtn :global(.vtex-login-2-x-oauthLabel) ::before {
+    text-transform: initial;
+    content: "Continue with Google";
+    position: absolute;
+    top: 0;
+    left: -40px;
+    background-color: #ffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    pointer-events: none;
+    width: 218px;
+    height: 20px;
+    text-align: center;
+    color: #5E636E; 
+    line-height: 20px;
+}
+
+.googleOptionBtn :global(.vtex-button__label) svg {
+    z-index: 10;
+}
+
+.facebookOptionBtn :global(.vtex-button) {
+    width: 368px;
+    height: 48px;
+    border-radius: 40px;
+    background-color: #1877F2;
+}
+
+.facebookOptionBtn :global(.vtex-login-2-x-oauthLabel) {
+    line-height: 20px;
+    font-size: 16px;
+    text-align: center;
+    color: #FFFFFF;
+    text-transform: lowercase;
+    font-family: 'Lexend-Regular';
+}
+
+.facebookOptionBtn :global(.vtex-login-2-x-oauthLabel)::before {
+    text-transform: initial;
+    content: "Continue with Facebook";
+    position: absolute;
+    top: 0;
+    left: -30px;
+    background-color: rgba(24, 119, 242, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    pointer-events: none;
+    width: 218px;
+    height: 20px;
+    text-align: center;
+    color: #fff;
+}
+
+.facebookOptionBtn :global(.vtex-button) :global(.vtex-button__label) :global(svg) {
+    background-color: #FFFFFF;
+    border-radius: 50%;
+    z-index: 10;
+}
+
+.contentForm :global(.vtex-login-2-x-emailVerification) {
+    position: relative;
+}
+
+.emailAndPasswordForm :global(.vtex-login-2-x-formTitle) {
+    font-family: 'Lexend-Light';
+    text-transform: uppercase;
+    font-size: 20px;
+    color: rgba(12, 35, 64, 1);
+
+}
+
+.inputContainer :global(.vtex-input-prefix__group) {
+    width: 368px;
+    height: 48px;
+    border-radius: 40px;
+    border: solid 1px #1D2734;
+}
+
+.formLinkContainer {
+    justify-content: center;
+}
+
+.forgotPasswordLink {
+    font-family: lexend, sans-serif !important;
+    color: #0C2340;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 20px;
+    text-align: center;
+}
+
+.eyeIcon--invisible {
+    display: none;
+}
+
+.sendButton :global(.vtex-button) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 368px;
+    height: 48px;
+    background-color: #1D2734;
+    border-radius: 40px;
+    border: solid 1px #1D2734;
+    padding: 10px;
+}
+
+.emailAndPasswordForm :global(form) :global(.vtex-login-2-x-formFooter) :global(.vtex-login-2-x-sendButton) :global(button) :global(.vtex-button__label) :global(span) {
+    font-size: 0px;
+}
+
+.emailAndPasswordForm :global(form) :global(.vtex-login-2-x-formFooter) :global(.vtex-login-2-x-sendButton) :global(button) :global(.vtex-button__label) :global(span)::after {
+    content: "Login";
+    font-size: 14px;
+    font-family: 'Lexend-Regular';
+    color: rgba(255, 255, 255, 1);
+    text-transform: initial;
+}
+
+
+
+.backButton :global(.vtex-button__label) {
+    color: #1D2734;
+}
+
+.content--emailAndPassword {
+    height: 350px;
+}
+
+.backButton {
+    position: absolute;
+    top: -10px;
+}
+
+.backButton :global(.vtex-button__label) :global(span) :global(div):last-child {
+    display: none;
+}
+
+.forgotPasswordLink {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.formLinkContainer :global(.vtex-login-2-x-forgotPasswordLink) {
+    font-size: 0;
+    width: 264px;
+}
+
+.formLinkContainer :global(.vtex-login-2-x-forgotPasswordLink)::before{
+    content: "Forgot your password?";
+    font-size: 14px;
+    font-family: 'Lexend-Light';
+    text-align: center;
+    padding-right: 3px;
+    height: 20px;
+    z-index: 1;
+    color: rgba(29, 39, 52, 1);
+}
+
+.formLinkContainer :global(.vtex-login-2-x-forgotPasswordLink)::after {
+    content: "Reset password";
+    font-size: 14px;
+    font-family: 'Lexend-Light';
+    text-decoration: underline;
+    text-align: center;
+    height: 20px;
+    z-index: 1;
+    color: rgba(229, 106, 84, 1);
+}
+
+
+
+.dontHaveAccount {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.dontHaveAccount {
+    font-size: 0px;
+}
+
+
+.dontHaveAccount::after {
+    content: "Create an account";
+    font-family: 'Lexend-Regular';
+    font-size: 14px;
+    color: rgba(29, 39, 52, 1);
+    display: block;
+    text-align: center;
+    background-color: #000000 25%;
+    position: absolute;
+    width: 264px;
+    height: 20px;
+    z-index: 1;
+}
+
+
+
+.formTitle {
+    margin-bottom: 5px;
+    padding-top: 15px;
+}
+
+
+.emailAndPasswordForm :global(.vtex-login-2-x-formTitle) {
+    font-size: 0px;
+}
+
+.emailAndPasswordForm :global(.vtex-login-2-x-formTitle)::before {
+    content: "LOG IN";
+    text-transform: initial;
+    font-family: 'Lexend-Light';
+    font-size: 20px;
+    color: rgba(12, 35, 64, 1);
+    line-height: 22.92px;
+    text-align: center;
+}
+
+
+
+.emailAndPasswordForm :global(.vtex-login-2-x-formTitle)::after {
+    content: "Continue with e-mail and password";
+    text-transform: initial;
+    font-size: 14px;
+    font-family: 'Lexend-Light';
+    color: rgba(94, 99, 110, 1);
+    display: block;
+
+}
+
+.emailVerification :global(.vtex-login-2-x-formSubtitle) {
+    font-family: lexend, sans-serif !important;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+}
+
+.content--emailVerification :global(.vtex-login-2-x-contentForm) :global(.vtex-login-2-x-emailForm) :global(.vtex-login-2-x-formTitle){    
+    font-size: 0;
+}
+
+.content--emailVerification :global(.vtex-login-2-x-contentForm) :global(.vtex-login-2-x-emailForm) :global(.vtex-login-2-x-formTitle)::before{
+    text-align: center;
+    content: "RECUPERAR CLAVE";
+    font-size: 20px;
+    font-family: 'Lexend-Light';
+    color: rgba(12, 35, 64, 1);
+}
+
+.content--emailVerification :global(.vtex-login-2-x-contentForm) :global(.vtex-login-2-x-emailForm) :global(.vtex-login-2-x-formTitle)::after{
+    content: "Receive access code by email";
+    text-transform: initial;
+    font-size: 14px;
+    font-family: 'Lexend-Light';
+    color: rgba(94, 99, 110, 1);
+    display: block;
+}
+
+.content--emailVerification :global(.vtex-login-2-x-contentForm) :global(.vtex-login-2-x-emailForm) :global(form) :global(.vtex-login-2-x-formFooter) :global(.vtex-login-2-x-sendButton) :global(button) :global(.vtex-button__label) :global(span) {
+    font-size: 0px;
+}
+
+.content--emailVerification :global(.vtex-login-2-x-contentForm) :global(.vtex-login-2-x-emailForm) :global(form) :global(.vtex-login-2-x-formFooter) :global(.vtex-login-2-x-sendButton) :global(button) :global(.vtex-button__label) :global(span)::before {
+    content: "Enviar";
+    font-size: 14px;
+    font-family: 'Lexend-Regular';
+    color: rgba(255, 255, 255, 1);
+}
+
+.inputContainerAccessCode :global(.vtex-styleguide-9-x-input) {
+    font-family: lexend, sans-serif !important;
+}
+
+
+.loginOptionsContainer :global(.vtex-login-2-x-formTitle) {
+    display: none;
+}
+
+.box {
+    margin-top: -118.5px;
+}
+
+.portalContainer {
+    opacity: initial !important;
+    backdrop-filter: blur(10px);
+    background-color: initial;
+    transition: filter 0.3s ease;
+    bottom: 0 !important;
+    right: 0 !important;
+    position: fixed;
+    top: 128px !important;
+    left: 0px !important;
+    z-index: 2147483647;
+}
+
+.inputContainerAccessCode {
+    padding: 0px;
+}
+
+.codeConfirmation :global(form) :global(.vtex-login-2-x-formFooter) {
+    border-top: none;
+    padding-top: 0px;
+    margin-top: 16px;
+}
+
+.codeConfirmation :global(form) :global(.vtex-login-2-x-formFooter) :global(.vtex-login-2-x-sendButton) :global(.vtex-button) :global(.vtex-button__label) :global(span) {
+    font-size: 0px;
+}
+
+.codeConfirmation :global(form) :global(.vtex-login-2-x-formFooter) :global(.vtex-login-2-x-sendButton) :global(.vtex-button) :global(.vtex-button__label) :global(span)::after {
+    content: "Verificar";
+    font-size: 14px;
+    font-family: 'Lexend-Regular';
+    color: rgba(255, 255, 255, 1);
+}
+
+.codeConfirmation .formTitle {
+    font-size: 0px;
+}
+
+.codeConfirmation .formTitle::before {
+    content: "VERIFY YOUR E-MAIL";
+    text-transform: uppercase;
+    font-size: 20px;
+    font-family: 'Lexend-Light';
+    color: rgba(12, 35, 64, 1);
+}
+
+.codeConfirmation .formTitle::after {
+    content: "Enter the access code we sent to";
+    text-transform: initial;
+    font-size: 14px;
+    font-family: 'Lexend-Light';
+    color: rgba(94, 99, 110, 1);
+    display: block;
+}
+
+.inputContainerAccessCode :global(.vtex-input) :global(.vtex-input-prefix__group) :global(input) {
+    font-size: 14px;
+    font-family: 'Lexend-Regular';
+}
+
+.profile {
+    font-size: 0px;
+    padding: 0px;
+    display: block;
+    overflow: visible;
+}
+
+.profile::after {
+    content: url(/arquivos/user-manage.svg);
+    text-transform: initial;
+    font-size: 14px;
+    font-family: 'Lexend-Light';
+    color: rgba(255, 255, 255, 1);
+}
+
+.accountOptionsSectionTitle {
+    font-size: 0px;
+}
+
+.accountOptionsSectionTitle::after {
+    font-size: 20px;
+    font-family: 'Lexend-Light';
+    content: "MY ACCOUNT";
+    text-transform: uppercase;
+    color: rgba(12, 35, 64, 1);
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 24px;
+}
+
+.logoutButton {
+    font-size: 0px;
+}
+
+.logoutButton::after {
+    content: "Log out";
+    font-size: 14px;
+    font-family: 'Lexend-Regular';
+    color: rgba(227, 22, 22, 1);
+    margin-bottom: 7px;
+}
+
+.accountOptions :global(div):last-child {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.accountOptions :global(hr) {
+    display: none;
+}
+
+.accountProfile {
+    width: 368px;
+    height: 48px;
+    border: 1px solid rgba(29, 39, 52, 1);
+    border-radius: 40px;
+    background-color: rgba(29, 39, 52, 1);
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    font-family: 'Lexend-Regular';
+    color: rgba(255, 255, 255, 1);
+    margin-bottom: 8px;
+}
+
+.accountProfile:hover {
+    color: rgba(255, 255, 255, 1);
+}
+
+.accountAddresses {
+    width: 368px;
+    height: 48px;
+    border: 1px solid rgba(29, 39, 52, 1);
+    display: flex;
+    border-radius: 40px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    font-family: 'Lexend-Regular';
+    color: rgba(29, 39, 52, 1);
+    margin-bottom: 8px;
+}
+
+.accountOrders {
+    width: 368px;
+    height: 48px;
+    border: 1px solid rgba(29, 39, 52, 1);
+    display: flex;
+    border-radius: 40px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    font-family: 'Lexend-Regular';
+    color: rgba(29, 39, 52, 1);
+    margin-bottom: 8px;
+}
+
+.accountCard {
+    width: 368px;
+    height: 48px;
+    border: 1px solid rgba(29, 39, 52, 1);
+    display: flex;
+    border-radius: 40px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    font-family: 'Lexend-Regular';
+    color: rgba(29, 39, 52, 1);
+    margin-bottom: 8px;
+}
+
+.accountAuthenticacion {
+    width: 368px;
+    height: 48px;
+    border: 1px solid rgba(29, 39, 52, 1);
+    display: flex;
+    border-radius: 40px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    font-family: 'Lexend-Regular';
+    color: rgba(29, 39, 52, 1);
+    margin-bottom: 11px;
+}
+
+@media screen and (min-width: 360px) and (max-width: 640px) {
+    .content--emailAndPassword {
+        height: auto;
+    }
+
+    .content {
+        width: 359px;
+    }
+
+    .inputContainer :global(.vtex-input-prefix__group)  {
+        width: 340px;
+    }
+
+    .accessCodeOptionBtn :global(.vtex-button) {
+        width: 340px;
+    }
+
+    .sendButton :global(.vtex-button) {
+        width: 340px;
+    }
+
+    .facebookOptionBtn :global(.vtex-button) {
+        width: 340px;
+    }
+
+    .googleOptionBtn :global(.vtex-button) {
+        width: 340px;
+    }
+
+    .emailPasswordOptionBtn :global(.vtex-button){
+        width: 340px;
+    }
+
+    .accessCodeOptionBtn :global(.vtex-button) {
+        width: 340px;
+    }
+
+    .backButton {
+        display: none;
+    }
+
+    .inputContainerPassword .pa2 {
+        display: none;
+    }
+}
