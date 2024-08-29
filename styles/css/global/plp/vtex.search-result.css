@@ -175,6 +175,7 @@
 }
 
 .orderByText {
+    display: block;
     content: "Ordenar por"; 
     color: #1D2734;
     width: 72px;
@@ -210,6 +211,16 @@
     border-radius: 40px;
     background-color: rgba(231, 231, 231, 1);
     border: 1px solid black;
+}
+
+.orderByOptionItem {
+    font-size: 12px;
+    font-family: "Lexend-Light";
+    color: #1D2734;
+}
+
+.orderByOptionItem--selected {
+    background-color: rgba(255, 131, 36, 0.2);
 }
 
 @media screen and (min-width: 360px  ) and (max-width:640px){
