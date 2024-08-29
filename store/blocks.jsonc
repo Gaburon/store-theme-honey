@@ -17,7 +17,7 @@
 
      "rich-text#global__tendencias": {
         "props": {
-            "text": "Tendencias de ITGlobers",
+            "text": "¡Tendencias de ITGlobers!",
             "font": "t-heading-1",
             "blockClass":["tendencias--itg"]
         }
@@ -42,7 +42,7 @@
 
      "rich-text#global__coleccion": {
         "props": {
-            "text": "Coleccion del mes",
+            "text": "¡Coleccion del mes!",
             "font": "t-heading-1",
             "blockClass":["tendencias--itg"]
         }
@@ -67,7 +67,7 @@
 
      "rich-text#global__ofertas": {
         "props": {
-            "text": "Ofertas enero",
+            "text": "¡Ofertas enero!",
             "font": "t-heading-1",
             "blockClass":["tendencias--itg"]
         }
@@ -91,7 +91,7 @@
 
      "rich-text#global__cyber-monday": {
         "props": {
-            "text": "Cyber monday",
+            "text": "¡Cyber monday!",
             "font": "t-heading-1",
             "blockClass":["tendencias--itg"]
         }
@@ -116,7 +116,7 @@
 
      "rich-text#global__never": {
         "props": {
-            "text": "Never say never",
+            "text": "¡Never say never!",
             "font": "t-heading-1",
             "blockClass":["tendencias--itg"]
         }
