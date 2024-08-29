@@ -48,6 +48,7 @@
 			 "mobileWidth": 32,
 			 "mobileHeight": 20,
 			 "url": "/arquivos/itg--logo.svg",
+			 "href": "/#",
 			 "blockClass": [
 				"global--logo"
 			 ]

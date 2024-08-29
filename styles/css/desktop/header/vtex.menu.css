@@ -1,16 +1,13 @@
 .menuContainer--menu-home {
     text-align: center;
-
+    padding-left: 56px;
+    gap: 0px;
 }
 
 .menuItem {
     width: 70px;
 }
 
-.menuContainer--menu-home {
-    padding-left: 48px;
-    gap: 4px;
-}
 
 .styledLinkIcon {
     display: block;
@@ -31,9 +28,7 @@
     padding: 0;
 }
 
-.menuContainer--menu-home {
-    gap: 0px;
-}
+
 
 .submenuContainer{
     background-color:#FFE6D3;

@@ -16,7 +16,16 @@
     
 }
 
+.suffixWrapper--search--bar {
+    width: 24px;
+    height: 24px;
+}
+
 .searchBarInnerContainer--search--bar :global(.vtex-styleguide-9-x-input) {
     font-family: Lexend-Light;
     color: black;
+}
+
+.container {
+    max-width: 1280px;
 }

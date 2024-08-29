@@ -9,4 +9,6 @@
 
 .trigger--header__overlay--mobile {
     width: 16px;
-}
+
+.container--header__overlayout :global(.vtex-input-prefix__group) {
+    align-items: center;
