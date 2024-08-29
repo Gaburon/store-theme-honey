@@ -15,7 +15,7 @@
     color: #FFFFFF;
 }
 
-@media screen and (min-width: 360px) and (max-width: 640px) {
+@media screen and (min-width: 360px) and (max-width: 750px) {
     .buttonText--cart-pdp {
         font-size: 0;
     }
