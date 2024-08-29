@@ -15,3 +15,11 @@
     margin-top: 16px;
     margin-bottom: 16px;
 }
+
+
+@media screen and (min-width: 350px  ) and (max-width:640px){
+    .paragraph--tendencias--itg {
+        font-size: 20px  
+    }
+    
+}
