@@ -1,0 +1,124 @@
+{
+    "store.custom#tendencias--itg": {
+        "blocks": [  
+            "flex-layout.row#global__title",
+            "flex-layout.row#global__product-list"
+        ]
+     },
+
+     "flex-layout.row#global__title": {
+        "children": [
+            "rich-text#global__tendencias"
+        ],
+        "props": {
+            "blockClass": "title--row"
+        }
+     },
+
+     "rich-text#global__tendencias": {
+        "props": {
+            "text": "Tendencias de ITGlobers",
+            "font": "t-heading-1",
+            "blockClass":["tendencias--itg"]
+        }
+     },
+
+
+     "store.custom#coleccion--itg": {
+        "blocks": [  
+            "flex-layout.row#global__title--collection",
+            "flex-layout.row#global__product-list"
+        ]
+     },
+
+     "flex-layout.row#global__title--collection": {
+        "children": [
+            "rich-text#global__coleccion"
+        ],
+        "props": {
+            "blockClass": "title--row"
+        }
+     },
+
+     "rich-text#global__coleccion": {
+        "props": {
+            "text": "Coleccion del mes",
+            "font": "t-heading-1",
+            "blockClass":["tendencias--itg"]
+        }
+     },
+
+
+     "store.custom#ofertas--itg": {
+        "blocks": [  
+            "flex-layout.row#global__title--ofertas",
+            "flex-layout.row#global__product-list"
+        ]
+     },
+
+     "flex-layout.row#global__title--ofertas": {
+        "children": [
+            "rich-text#global__ofertas"
+        ],
+        "props": {
+            "blockClass": "title--row"
+        }
+     },
+
+     "rich-text#global__ofertas": {
+        "props": {
+            "text": "Ofertas enero",
+            "font": "t-heading-1",
+            "blockClass":["tendencias--itg"]
+        }
+     },
+
+     "store.custom#cyber-monday--itg": {
+        "blocks": [  
+            "flex-layout.row#global__title--cyber",
+            "flex-layout.row#global__product-list"
+        ]
+     },
+
+     "flex-layout.row#global__title--cyber": {
+        "children": [
+            "rich-text#global__cyber-monday"
+        ],
+        "props": {
+            "blockClass": "title--row"
+        }
+     },
+
+     "rich-text#global__cyber-monday": {
+        "props": {
+            "text": "Cyber monday",
+            "font": "t-heading-1",
+            "blockClass":["tendencias--itg"]
+        }
+     },
+
+
+     "store.custom#never--itg": {
+        "blocks": [  
+            "flex-layout.row#global__title--never",
+            "flex-layout.row#global__product-list"
+        ]
+     },
+
+     "flex-layout.row#global__title--never": {
+        "children": [
+           "rich-text#global__never"
+        ],
+        "props": {
+            "blockClass": "title--row"
+        }
+     },
+
+     "rich-text#global__never": {
+        "props": {
+            "text": "Never say never",
+            "font": "t-heading-1",
+            "blockClass":["tendencias--itg"]
+        }
+     }
+}

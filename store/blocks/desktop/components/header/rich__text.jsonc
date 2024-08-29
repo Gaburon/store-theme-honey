@@ -47,35 +47,35 @@
     "rich-text#header__information--bar--one": {
         "title": "Menu header search one",
         "props": {
-            "text": "[Tendencias de ITGlobers](https:)",
+            "text": "[Tendencias de ITGlobers](https://devjesushoney--itgloberspartnercl.myvtex.com/tendencias-itg)",
             "blockClass": "menu__header__one"
         }
     },
     "rich-text#header__information--bar--two": {
         "title": "Menu header search two",
         "props": {
-            "text": "[Colección del mes](https:)",
+            "text": "[Colección del mes](https://devjesushoney--itgloberspartnercl.myvtex.com/coleccion-del-mes)",
             "blockClass": "menu__header__two"
         }
     },
     "rich-text#header__information--bar--three": {
         "title": "Menu header search three",
         "props": {
-            "text": "[Ofertas enero](https:)",
+            "text": "[Ofertas enero](https://devjesushoney--itgloberspartnercl.myvtex.com/ofertas)",
             "blockClass": "menu__header__three"
         }
     },
     "rich-text#header__information--bar--four": {
         "title": "Menu header search four",
         "props": {
-            "text": "[Cyber Monday](https:)",
+            "text": "[Cyber Monday](https://devjesushoney--itgloberspartnercl.myvtex.com/cyber-monday)",
             "blockClass": "menu__header__four"
         }
     },
     "rich-text#header__information--bar--five": {
         "title": "Menu header search five",
         "props": {
-            "text": "[Never say never](https:)",
+            "text": "[Never say never](https://devjesushoney--itgloberspartnercl.myvtex.com/never-say-never)",
             "blockClass": "menu__header__five"
         }
     }

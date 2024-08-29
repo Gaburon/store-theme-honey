@@ -1,0 +1,22 @@
+{
+    "store.custom#tendencias--itg": {
+        "path": "/tendencias-itg"
+    },
+
+    "store.custom#coleccion--itg": {
+        "path": "/coleccion-del-mes"
+    },
+
+    "store.custom#ofertas--itg": {
+        "path": "/ofertas"
+    },
+
+    "store.custom#cyber-monday--itg": {
+        "path": "/cyber-monday"
+    },
+
+    "store.custom#never--itg": {
+        "path": "/never-say-never"
+    }
+    
+}
