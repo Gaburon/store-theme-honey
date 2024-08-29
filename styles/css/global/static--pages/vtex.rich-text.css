@@ -1,0 +1,17 @@
+.paragraph--tendencias--itg {
+    font-family: "Lexend-SemiBold";
+    font-size: 40px;
+    margin: 0;
+    color: #FF8324;
+    text-transform: uppercase;
+}
+
+.container--tendencias--itg {
+    justify-content: center;
+}
+
+.wrapper--tendencias--itg {
+    height: 70px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
