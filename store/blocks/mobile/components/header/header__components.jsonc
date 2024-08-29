@@ -5,6 +5,7 @@
             "height": 20,
             "mobileWidth": 32,
             "mobileHeight": 16,
+            "href": "/#",
             "url": "/arquivos/itg--logo.svg",
             "blockClass": "logo--mobile"
         }
