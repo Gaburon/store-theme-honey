@@ -1,29 +1,29 @@
 .logoImage--global--logo {
-    width: 32px;
+    width : 32px;
     height: 16px;
 }
 
-.logoContainer--global--logo{
-    padding: 0;
+.logoContainer--global--logo {
+    padding  : 0;
     min-width: 0;
-    width: 32px;
+    width    : 32px;
 }
 
-.searchBarInnerContainer--search--bar :global(.vtex-input-prefix__group){
+.searchBarInnerContainer--search--bar :global(.vtex-input-prefix__group) {
     border-radius: 40px;
-    border: 0px;
-    height: 40px;
-    
+    border       : 0px;
+    height       : 40px;
+
 }
 
 .suffixWrapper--search--bar {
-    width: 24px;
+    width : 24px;
     height: 24px;
 }
 
 .searchBarInnerContainer--search--bar :global(.vtex-styleguide-9-x-input) {
     font-family: Lexend-Light;
-    color: black;
+    color      : black;
 }
 
 .container {

@@ -102,7 +102,7 @@
 
     "flex-layout.row#price-row": {
       "children": [
-        "product-price#product-details"
+        "price-custom"
       ],
 
       "props" :{
@@ -111,12 +111,19 @@
 
     },
 
-    "product-price#product-details": {
+    "price-custom": {
       "props": {
-        "showInstallments": false,
-        "showSavings": false
+        "textPrice": "Now"
       }
     },
+
+    // "product-price#product-details": {
+    //   "props": {
+    //     "showInstallments": false,
+    //     "showSavings": false
+    //   }
+    // },
+
   "share#default": {
     "props": {
       "social": {

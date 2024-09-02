@@ -1,48 +1,50 @@
 .minicartCheckoutButton :global(.vtex-button) {
-    border-radius: 40px;
+    border-radius   : 40px;
     background-color: rgba(29, 39, 52, 1);
-    border-color: rgba(29, 39, 52, 1);
-    text-transform: initial;
-    font-size: 14px;
-    font-family: "Lexend-Regular";
+    border-color    : rgba(29, 39, 52, 1);
+    text-transform  : initial;
+    font-size       : 14px;
+    font-family     : "Lexend-Regular";
 }
 
 .minicartTitle {
-    font-size: 0px;
-    margin-bottom: 12px ;
-    padding: 0 0 0 16px;
+    font-size    : 0px;
+    margin-bottom: 12px;
+    padding      : 0 0 0 16px;
 }
 
 .minicartTitle::after {
-    content: "Resumen de tu compra";
-    font-size: 14px;
+    content    : "Resumen de tu compra";
+    font-size  : 14px;
     font-family: "Lexend-SemiBold";
 }
 
 .minicartSummary {
-    padding-left: 16px;
+    padding-left : 16px;
     padding-right: 16px;
-    padding-top: 0;
+    padding-top  : 0;
 }
+
 .closeIconContainer {
-    align-items: center;
+    align-items    : center;
     justify-content: space-between;
-    padding: 34px 16px 26.61px 16px;
+    padding        : 34px 16px 26.61px 16px;
 }
+
 .closeIconContainer::before {
-    content: "" ;
-    width: 50px;
-    height: 25px;
-    display: inline-block;
-    background-image: url(/arquivos/itg--logo.svg);
+    content          : "";
+    width            : 50px;
+    height           : 25px;
+    display          : inline-block;
+    background-image : url(/arquivos/itg--logo.svg);
     background-repeat: no-repeat;
 }
 
 .overlay--visible {
-    opacity: initial !important;
-    backdrop-filter: blur(10px);
+    opacity         : initial !important;
+    backdrop-filter : blur(10px);
     background-color: initial;
-    transition: filter 0.3s ease;
+    transition      : filter 0.3s ease;
 
 }
 
@@ -54,7 +56,7 @@
     padding: 0 0 0 16px;
 }
 
-@media screen and (min-width: 360px) and (max-width: 1024px){
+@media screen and (min-width: 360px) and (max-width: 1024px) {
     .closeIconContainer {
         display: none;
     }
@@ -66,12 +68,12 @@
     .minicartWrapperContainer {
         margin-right: 0;
     }
-    
+
 
 }
 
 .closeIconButton {
-    border-radius: 40px;
+    border-radius   : 40px;
     background-color: #F5F4F6;
 }
 

@@ -2,19 +2,19 @@
     content: url("/arquivos/arrow-button.svg");
 }
 
-.link--slider_third-row--button{
+.link--slider_third-row--button {
     background-color: #1D2734;
-    color: #fff;
-    font-family: Lexend-Regular;
-    text-decoration: none;
-    font-size: 12px;
-    border-radius: 40px;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    width: 134px;
-    height: 43px;
-    gap: 9px;
+    color           : #fff;
+    font-family     : Lexend-Regular;
+    text-decoration : none;
+    font-size       : 12px;
+    border-radius   : 40px;
+    display         : inline-flex;
+    align-items     : center;
+    justify-content : center;
+    width           : 134px;
+    height          : 43px;
+    gap             : 9px;
 }
 
 .wrapper--text-info-card {
@@ -23,32 +23,32 @@
 
 .heading-level-1 {
     font-family: Lexend-Bold;
-    font-size: 16px;
+    font-size  : 16px;
 }
 
 .paragraph--text-info-card {
     font-family: Lexend-Medium;
-    font-size: 12px;
+    font-size  : 12px;
 }
 
 .container--slider_third-row--button {
-    align-items: center;
-    display: flex;
+    align-items    : center;
+    display        : flex;
     justify-content: center;
 }
 
 .wrapper--text-amazing {
-    font-family: Lexend-SemiBold;
-    line-height: 16px;
-    font-size: 16px;
-    margin-top: 40px;
+    font-family  : Lexend-SemiBold;
+    line-height  : 16px;
+    font-size    : 16px;
+    margin-top   : 40px;
     margin-bottom: 16px;
-    display: inline-flex;
-    color: #1D2734;
+    display      : inline-flex;
+    color        : #1D2734;
 }
 
 
-@media screen and (min-width: 1024px ){
+@media screen and (min-width: 1024px) {
     .wrapper--text-amazing {
         margin-left: 32px;
     }

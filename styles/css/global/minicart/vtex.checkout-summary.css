@@ -1,7 +1,7 @@
 .summaryItemContainer {
-    font-size: 14px;
+    font-size  : 14px;
     font-family: "Lexend-Light";
-    color: rgb(52, 29, 29);
+    color      : rgb(52, 29, 29);
 }
 
 .summarySmallDisclaimer {
@@ -9,23 +9,23 @@
 }
 
 .summarySmallContent--container-total-sub {
-    width: 368px;
-    height: 126px;
-    border: 1px solid rgba(231, 231, 231, 1);
+    width        : 368px;
+    height       : 126px;
+    border       : 1px solid rgba(231, 231, 231, 1);
     border-radius: 4px;
-    padding: 24px;
+    padding      : 24px;
 }
 
 .summarySmallContent--container-total-sub .summaryItemContainer--minicart-totalizers:last-child .summaryItemLabel--minicart-totalizers {
-    font-size: 16px;
+    font-size  : 16px;
     font-family: "Lexend-SemiBold";
-    color: rgba(227, 22, 22, 1);
+    color      : rgba(227, 22, 22, 1);
 }
 
 .summarySmallContent--container-total-sub .summaryItemContainer--minicart-totalizers:last-child .price--minicart-totalizers {
-    font-size: 16px;
+    font-size  : 16px;
     font-family: "Lexend-SemiBold";
-    color: rgba(227, 22, 22, 1);
+    color      : rgba(227, 22, 22, 1);
 }
 
 @media screen and (min-width: 360px) and (max-width: 640px) {

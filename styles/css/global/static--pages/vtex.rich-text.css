@@ -1,8 +1,8 @@
 .paragraph--tendencias--itg {
-    font-family: "Lexend-SemiBold";
-    font-size: 40px;
-    margin: 0;
-    color: #1D2734;
+    font-family   : "Lexend-SemiBold";
+    font-size     : 40px;
+    margin        : 0;
+    color         : #1D2734;
     text-transform: uppercase;
 }
 
@@ -11,15 +11,15 @@
 }
 
 .wrapper--tendencias--itg {
-    height: 70px;
-    margin-top: 16px;
+    height       : 70px;
+    margin-top   : 16px;
     margin-bottom: 16px;
 }
 
 
-@media screen and (min-width: 350px  ) and (max-width:640px){
+@media screen and (min-width: 350px) and (max-width:640px) {
     .paragraph--tendencias--itg {
-        font-size: 20px  
+        font-size: 20px
     }
-    
+
 }

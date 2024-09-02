@@ -1,11 +1,11 @@
 .productImage {
-    width: 145.19px !important;
-    height: 120.99px !important;
-    border: 0.95px solid rgba(231, 231, 231, 1);
+    width        : 145.19px !important;
+    height       : 120.99px !important;
+    border       : 0.95px solid rgba(231, 231, 231, 1);
     border-radius: 3.78px;
 }
 
-.productBrandName{
+.productBrandName {
     display: none;
 }
 
@@ -14,55 +14,55 @@
 }
 
 .inputContainer {
-    width: 61.44px;
-    height: 43.48px;
+    width      : 61.44px;
+    height     : 43.48px;
     font-family: "Lexend-Regular";
-    font-size: 13.23px;
+    font-size  : 13.23px;
 }
 
 .quantitySelectorDecrease {
-    width: 37.81px;
-    height: 43.48px;
+    width           : 37.81px;
+    height          : 43.48px;
     background-color: #1D2734;
-    color: #FFFFFF;
+    color           : #FFFFFF;
 }
 
 .quantitySelectorIncrease {
-    width: 37.81px;
-    height: 43.48px;
+    width           : 37.81px;
+    height          : 43.48px;
     background-color: #1D2734;
-    color: #FFFFFF;
+    color           : #FFFFFF;
 }
 
 .quantitySelectorButton:hover {
-    border-color: unset !important;
+    border-color    : unset !important;
     background-color: #1D2734 !important;
 }
 
 .productName {
-    font-size: 11.34px;
+    font-size  : 11.34px;
     font-family: "Lexend-Light";
-    color: rgba(29, 39, 52, 1);
-    display: block;
-    height: 50px;
-    overflow: hidden;
+    color      : rgba(29, 39, 52, 1);
+    display    : block;
+    height     : 50px;
+    overflow   : hidden;
     font-weight: 300;
 }
 
 .productPriceCurrency {
-    font-size: 11.34px;
+    font-size  : 11.34px;
     font-family: "Lexend-Regular";
-    color: rgba(29, 39, 52, 0.4);
+    color      : rgba(29, 39, 52, 0.4);
 }
 
 .price {
-    font-size: 15.12px;
+    font-size  : 15.12px;
     font-family: "Lexend-SemiBold";
-    color: rgba(29, 39, 52, 1);
+    color      : rgba(29, 39, 52, 1);
 }
 
 .productImageContainer {
-    width: 145.19px !important;
+    width : 145.19px !important;
     height: 120.99px !important;
 }
 

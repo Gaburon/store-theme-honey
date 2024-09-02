@@ -1,6 +1,6 @@
 .flexRowContent--product-main {
     margin-bottom: 40px;
-    padding: 0;
+    padding      : 0;
 }
 
 .flexRow--product-main :global(.vtex-store-components-3-x-container) {
@@ -19,7 +19,7 @@
 
 .flexRow--quantity-buy :global(.vtex-button) {
     background-color: #492A77;
-    border: 0;
+    border          : 0;
 }
 
 .flexCol--right-col {
@@ -40,46 +40,46 @@
 
 
 .flexRowContent--price--row--pdp {
-    margin-top: 16px;
+    margin-top   : 16px;
     margin-bottom: 24px;
 }
 
-.flexRowContent--price--row--pdp :global(.vtex-store-components-3-x-priceContainer){
-    display: grid;
+.flexRowContent--price--row--pdp :global(.vtex-store-components-3-x-priceContainer) {
+    display          : grid;
     grid-auto-columns: max-content;
 }
 
-.flexRowContent--price--row--pdp :global(.vtex-store-components-3-x-price_listPriceContainer){
+.flexRowContent--price--row--pdp :global(.vtex-store-components-3-x-price_listPriceContainer) {
     grid-column: 2;
-    grid-row: 1;
+    grid-row   : 1;
     align-items: center;
-    display: flex;
+    display    : flex;
 }
 
 
-.flexRowContent--price--row--pdp :global(.vtex-store-components-3-x-price_sellingPriceContainer){
+.flexRowContent--price--row--pdp :global(.vtex-store-components-3-x-price_sellingPriceContainer) {
     grid-column: 1;
-    width: fit-content;
-    font-size: 24px;
+    width      : fit-content;
+    font-size  : 24px;
 }
 
 .flexRowContent--highlights--row :global(.vtex-product-highlights-2-x-productHighlightText) {
-    width: fit-content;
-    font-size: 14px;
-    font-family: 'Lexend-Regular';
-    padding-top: 6px;
+    width         : fit-content;
+    font-size     : 14px;
+    font-family   : 'Lexend-Regular';
+    padding-top   : 6px;
     padding-bottom: 6px;
-    padding-left: 12px;
-    padding-right: 12px;
+    padding-left  : 12px;
+    padding-right : 12px;
 }
 
 .flexRowContent--highlights--row .stretchChildrenWidth {
-    width: auto !important;
+    width  : auto !important;
     padding: 0;
 }
 
 .flexRowContent--highlights--row {
-    display: flex;
+    display        : flex;
     justify-content: unset;
 }
 

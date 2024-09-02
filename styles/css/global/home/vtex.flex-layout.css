@@ -1,5 +1,5 @@
 .flexRowContent--listbtn-pricesaving :global(.vtex-flex-layout-0-x-stretchChildrenWidth) {
-    width: 87px;
+    width      : 87px;
     align-items: center;
 }
 
@@ -9,13 +9,13 @@
 
 .flexRowContent--listbtn-pricesaving :global(.vtex-product-price-1-x-savings) {
     height: 32px;
-    width: 84px;
+    width : 84px;
 }
 
 .flexRowContent--product--summary__list :global(.vtex-button) {
-   background-color: transparent;
-   border: 1px solid #1D2734;
-   border-radius: 8px;
+    background-color: transparent;
+    border          : 1px solid #1D2734;
+    border-radius   : 8px;
 }
 
 .flexRowContent--listbtn-pricesaving {

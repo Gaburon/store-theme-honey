@@ -3,17 +3,17 @@
 }
 
 .groupName {
-    font-size: 0;
+    font-size   : 0;
     padding-left: 72px;
-    max-width: 1280px !important;
-    width: auto !important;
+    max-width   : 1280px !important;
+    width       : auto !important;
 }
 
 .groupName::after {
-    content: "Especificaciones del producto";
-    font-size: 16px;
+    content    : "Especificaciones del producto";
+    font-size  : 16px;
     font-family: "Lexend-SemiBold";
-    color: #1D2734;
+    color      : #1D2734;
 }
 
 @media screen and (min-width: 360px) and (max-width: 640px) {

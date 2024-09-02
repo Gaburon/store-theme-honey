@@ -1,7 +1,7 @@
 .filterItem {
-    font-size: 12px;
-    font-family: "Lexend-Light";
-    padding: 10px;
+    font-size   : 12px;
+    font-family : "Lexend-Light";
+    padding     : 10px;
     padding-left: 20px;
 }
 
@@ -10,9 +10,9 @@
 }
 
 .galleryTitle--layout {
-    font-size: 20px;
-    font-family: "Lexend-SemiBold";
-    margin: 0 0 16px 0;
+    font-size   : 20px;
+    font-family : "Lexend-SemiBold";
+    margin      : 0 0 16px 0;
     padding-left: 52px;
 }
 
@@ -23,13 +23,13 @@
 }
 
 .totalProducts--layout {
-    margin-left: 52px;
-    text-align: left;
-    padding: 0 0 40px 0;
-    font-size: 14px;
-    font-family: "Lexend-Light";
+    margin-left   : 52px;
+    text-align    : left;
+    padding       : 0 0 40px 0;
+    font-size     : 14px;
+    font-family   : "Lexend-Light";
     text-transform: lowercase;
-    color: #1D2734;
+    color         : #1D2734;
 }
 
 .totalProductsMessage {
@@ -37,19 +37,19 @@
 }
 
 .filterAvailable {
-    width: 184px;
-    height: 36px;
-    border: 1px solid black;
-    border-radius: 40px;
-    padding: 8px 16px;
+    width           : 184px;
+    height          : 36px;
+    border          : 1px solid black;
+    border-radius   : 40px;
+    padding         : 8px 16px;
     background-color: #1D27341A;
 }
 
 .filterTitleSpan {
-    font-family: "Lexend-Regular";
-    font-size: 14px;
+    font-family   : "Lexend-Regular";
+    font-size     : 14px;
     padding-bottom: 10px;
-    
+
 }
 
 .filter__container--selectedFilters {
@@ -77,17 +77,17 @@
 }
 
 .galleryItem--grid {
-    flex-basis: unset !important;
+    flex-basis : unset !important;
     padding-top: 0;
 
 }
 
 .filterPopupTitle {
-    display: inline-flex;
-    align-items: center;
-    text-align: center;
-    font-size: 0px;
-    font-family: "Lexend-Regular";
+    display       : inline-flex;
+    align-items   : center;
+    text-align    : center;
+    font-size     : 0px;
+    font-family   : "Lexend-Regular";
     text-transform: initial;
 }
 
@@ -96,32 +96,32 @@
 }
 
 .filterPopupArrowIcon :global(.vtex-search-result-3-x-caretIcon) {
-    display: block;
-    width: 12px;
-    height: 12px;
+    display     : block;
+    width       : 12px;
+    height      : 12px;
     padding-left: 5.5px;
 }
 
 .filterPopupArrowIcon {
-    padding-left: 0;
+    padding-left : 0;
     padding-right: 0px;
 }
 
 .filterPopupTitle::before {
-    content: url(/arquivos/oder--by.svg);
+    content      : url(/arquivos/oder--by.svg);
     padding-right: 5.5px;
 }
 
 .orderByButton {
-    padding-left: 14px;
-    padding-right: 14px;
-    padding-top: 12px;
-    height: 40px;
-    width: 147px;
-    padding-bottom: 6px;
-    border-radius: 40px;
+    padding-left    : 14px;
+    padding-right   : 14px;
+    padding-top     : 12px;
+    height          : 40px;
+    width           : 147px;
+    padding-bottom  : 6px;
+    border-radius   : 40px;
     background-color: rgba(231, 231, 231, 1);
-    border: 1px solid black;
+    border          : 1px solid black;
 }
 
 .filter__container--priceRange :global(.vtex-slider__selector) {
@@ -137,7 +137,7 @@
 }
 
 .filter__container :global(.vtex-checkbox__box-wrapper) {
-    border: 1px solid #1D2734;
+    border       : 1px solid #1D2734;
     border-radius: 3px;
 }
 
@@ -156,31 +156,31 @@
 }
 
 .buttonShowMore :global(.vtex-button) {
-    border-color: #1D2734;
-    border-radius: 40px;
+    border-color    : #1D2734;
+    border-radius   : 40px;
     background-color: #1D2734;
-    text-transform: initial;
-    text-align: center;
-    width: 150px;
+    text-transform  : initial;
+    text-align      : center;
+    width           : 150px;
 }
 
-.buttonShowMore :global(.vtex-button) :global(.vtex-button__label){
-    font-size: 14px;
+.buttonShowMore :global(.vtex-button) :global(.vtex-button__label) {
+    font-size  : 14px;
     font-family: "Lexend-Regular";
 }
 
 .buttonShowMore :global(.vtex-button)::after {
-    content: url(/arquivos/mpa-plus--line.svg);
+    content      : url(/arquivos/mpa-plus--line.svg);
     padding-right: 10px;
 }
 
 .orderByText {
-    display: block;
-    content: "Ordenar por"; 
-    color: #1D2734;
-    width: 72px;
-    font-size: 12px;
-    font-family: "Lexend-Regular";
+    display       : block;
+    content       : "Ordenar por";
+    color         : #1D2734;
+    width         : 72px;
+    font-size     : 12px;
+    font-family   : "Lexend-Regular";
     text-transform: initial;
 }
 
@@ -188,13 +188,13 @@
     font-size: 0;
 }
 
-.filtersWrapperMobile :global(.vtex-search-result-3-x-filterPopupTitle)::after{
-    content: "Filtros";
+.filtersWrapperMobile :global(.vtex-search-result-3-x-filterPopupTitle)::after {
+    content  : "Filtros";
     font-size: 12px;
 }
 
-.filtersWrapperMobile :global(.vtex-search-result-3-x-filterPopupTitle)::before{
-    content: url("/arquivos/filter--by.svg");
+.filtersWrapperMobile :global(.vtex-search-result-3-x-filterPopupTitle)::before {
+    content      : url("/arquivos/filter--by.svg");
     padding-right: 5.5px;
 }
 
@@ -203,27 +203,27 @@
 }
 
 .filterPopupButton {
-    padding-left: 14px;
-    padding-right: 14px;
-    padding-top: 12px;
-    height: 40px;
-    width: 110px;
-    border-radius: 40px;
+    padding-left    : 14px;
+    padding-right   : 14px;
+    padding-top     : 12px;
+    height          : 40px;
+    width           : 110px;
+    border-radius   : 40px;
     background-color: rgba(231, 231, 231, 1);
-    border: 1px solid black;
+    border          : 1px solid black;
 }
 
 .orderByOptionItem {
-    font-size: 12px;
+    font-size  : 12px;
     font-family: "Lexend-Light";
-    color: #1D2734;
+    color      : #1D2734;
 }
 
 .orderByOptionItem--selected {
     background-color: rgba(255, 131, 36, 0.2);
 }
 
-@media screen and (min-width: 360px  ) and (max-width:640px){
+@media screen and (min-width: 360px) and (max-width:640px) {
     .galleryTitle--layout {
         padding-left: 16px;
     }

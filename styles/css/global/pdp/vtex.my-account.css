@@ -1,11 +1,11 @@
-:global(.vtex-product-specifications-1-x-specificationValue--last) :global(ul){
-    list-style: none;
-    font-size: 14px;
-    font-family: "Lexend-Light";
+:global(.vtex-product-specifications-1-x-specificationValue--last) :global(ul) {
+    list-style  : none;
+    font-size   : 14px;
+    font-family : "Lexend-Light";
     padding-left: 72px;
-    margin: 16px 0;
-    color: #1D2734;
-    
+    margin      : 16px 0;
+    color       : #1D2734;
+
 }
 
 @media screen and (min-width: 1280px) {
@@ -20,35 +20,35 @@
 }
 
 @media screen and (min-width: 640px) and (max-width: 1280px) {
-    :global(.vtex-product-specifications-1-x-specificationValue--last) :global(ul){
+    :global(.vtex-product-specifications-1-x-specificationValue--last) :global(ul) {
         padding-right: 75px;
     }
 }
 
 :global(.vtex-product-specifications-1-x-specificationValue--last) :global(ul) :global(li):nth-child(odd) {
     background-color: #E7E7E7;
-    height: 48px;
-    align-items: center;
-    display: flex;
-    padding-left: 24px;
+    height          : 48px;
+    align-items     : center;
+    display         : flex;
+    padding-left    : 24px;
 }
 
 :global(.vtex-product-specifications-1-x-specificationValue--last) :global(ul) :global(li):nth-child(even) {
     background-color: #FFFFFF;
-    height: 48px;
-    align-items: center;
-    display: flex;
-    padding-left: 24px;
+    height          : 48px;
+    align-items     : center;
+    display         : flex;
+    padding-left    : 24px;
 }
 
 :global(.vtex-product-specifications-1-x-specificationValue--last) :global(ul) :global(li):first-child {
-    border-top-left-radius: 12px; 
-    border-top-right-radius: 12px; 
+    border-top-left-radius : 12px;
+    border-top-right-radius: 12px;
 }
 
 :global(.vtex-product-specifications-1-x-specificationValue--last) :global(ul) :global(li):last-child {
-    border-bottom-left-radius: 12px; 
-    border-bottom-right-radius: 12px; 
+    border-bottom-left-radius : 12px;
+    border-bottom-right-radius: 12px;
 }
 
 @media screen and (min-width: 360px) and (max-width: 360px) {
@@ -79,27 +79,27 @@
     }
 }
 
-:global(.vtex-numeric-stepper__plus-button ) {
-    height: 46px !important;
-    width: 40px !important;
+:global(.vtex-numeric-stepper__plus-button) {
+    height          : 46px !important;
+    width           : 40px !important;
     background-color: #1D2734;
-    border-radius: 4px, 0px, 0px, 4px;
+    border-radius   : 4px, 0px, 0px, 4px;
 }
 
-:global(.vtex-numeric-stepper__minus-button ) {
-    height: 46px !important;
-    width: 40px !important;
+:global(.vtex-numeric-stepper__minus-button) {
+    height          : 46px !important;
+    width           : 40px !important;
     background-color: #1D2734;
-    border-radius: 4px, 0px, 0px, 4px;
+    border-radius   : 4px, 0px, 0px, 4px;
 }
 
 :global(.vtex-numeric-stepper__plus-button__text) {
-    color: #fff;
+    color    : #fff;
     font-size: 12px;
 }
 
 :global(.vtex-numeric-stepper__minus-button__text) {
-    color: #fff;
+    color    : #fff;
     font-size: 12px;
 }
 
@@ -107,16 +107,36 @@
 
 :global(.vtex-flex-layout-0-x-flexRowContent--highlights--row) :global(div):first-child {
     background-color: rgba(255, 131, 36, 0.2);
-    border-radius: 4px;
-    color: rgba(255, 131, 36, 1);
-    margin-right: 8px;
+    border-radius   : 4px;
+    color           : rgba(255, 131, 36, 1);
+    margin-right    : 8px;
 
 }
 
 :global(.vtex-flex-layout-0-x-flexRowContent--highlights--row) :global(div):last-child {
     background-color: rgba(233, 255, 234, 1);
-    border-radius: 4px;
-    color: rgba(29, 39, 52, 1);
-    margin-right: 8px;
+    border-radius   : 4px;
+    color           : rgba(29, 39, 52, 1);
+    margin-right    : 8px;
 
+}
+
+:global(.vtex-flex-layout-0-x-flexRowContent--price--row--pdp) :global(.vtex-flex-layout-0-x-stretchChildrenWidth) :global(.containerPrice) {
+    display: flex;
+    align-items: center;
+}
+
+:global(.vtex-flex-layout-0-x-flexRowContent--price--row--pdp) :global(.vtex-flex-layout-0-x-stretchChildrenWidth) :global(.containerPrice) :global(.sellingPrice) {
+    padding-right: 16px;
+    font-size: 24px;
+    font-family: 'Lexend-SemiBold';
+    color: #1D2734;
+}
+
+:global(.vtex-flex-layout-0-x-flexRowContent--price--row--pdp) :global(.vtex-flex-layout-0-x-stretchChildrenWidth) :global(.containerPrice) :global(.listPrice) {
+    font-size: 14px;
+    font-family: 'Lexend-Regular';
+    color: rgba(29, 39, 52, 0.4);
+    text-decoration:line-through;
+    align-items: center;
 }

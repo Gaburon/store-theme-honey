@@ -1,10 +1,10 @@
 .quantitySelectorStepper:global(.vtex-numeric-stepper__plus-button) {
-    width: 40px !important;
-    height: 46px !important;
+    width           : 40px !important;
+    height          : 46px !important;
     background-color: #1D2734;
 }
 
 .quantitySelectorContainer--quantity-selector {
-    margin-bottom: 0;
+    margin-bottom  : 0;
     justify-content: center;
 }

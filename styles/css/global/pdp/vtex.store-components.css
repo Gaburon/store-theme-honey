@@ -7,11 +7,11 @@
 }
 
 .carouselThumbBorder {
-    width: 90px;
-    height: 76px;
-    border: 1px solid;
+    width        : 90px;
+    height       : 76px;
+    border       : 1px solid;
     border-radius: 4px;
-    border-color: #E7E7E7;
+    border-color : #E7E7E7;
 }
 
 .currencyLiteral {
@@ -19,13 +19,13 @@
 }
 
 .thumbImg {
-    width: 90px;
+    width : 90px;
     height: 76px;
 }
 
-@media screen and (min-width: 1024px ){
+@media screen and (min-width: 1024px) {
     .productImage {
-        width: 515px;
+        width : 515px;
         height: 650px;
     }
 }
@@ -33,23 +33,23 @@
 
 .productImage {
 
-    border: 1px solid;
+    border       : 1px solid;
     border-radius: 4px;
-    border-color: #E7E7E7;
+    border-color : #E7E7E7;
 }
 
 .productBrand {
-    font-size: 16px;
+    font-size  : 16px;
     font-family: "Lexend-Light";
 }
 
 .listPrice {
-    font-size: 14px;
+    font-size  : 14px;
     font-family: "Lexend-Regular";
 }
 
 .listPriceLabel {
-    font-size: 14px;
+    font-size  : 14px;
     font-family: "Lexend-Regular";
 }
 
@@ -58,8 +58,8 @@
 }
 
 .sellingPrice {
-    font-size: 24px;
-    font-family: "Lexend-SemiBold";
+    font-size    : 24px;
+    font-family  : "Lexend-SemiBold";
     padding-right: 0;
 }
 
@@ -72,37 +72,37 @@
 }
 
 .sellingPriceLabel::before {
-    content: "Now";
-    font-size: 24px;
-    font-family: "Lexend-SemiBold";
+    content      : "Now";
+    font-size    : 24px;
+    font-family  : "Lexend-SemiBold";
     padding-right: 5px;
 }
 
 
 .skuSelectorInternalBox {
-    width: 108.07px;
-    height: 40px;
+    width        : 108.07px;
+    height       : 40px;
     border-radius: 4px;
 
 }
 
 .frameAround {
-    border-color: #1D2734;
+    border-color : #1D2734;
     border-radius: 4px;
-    z-index: 10;
-    bottom: -2px;
-    top: -2px;
-    left: -1px;
-    right: -1px;
+    z-index      : 10;
+    bottom       : -2px;
+    top          : -2px;
+    left         : -1px;
+    right        : -1px;
 }
 
 .valueWrapper {
-    font-size: 14px;
+    font-size  : 14px;
     font-family: "Lexend-Light";
 }
 
-.skuSelectorContainer{
-    display: grid;
+.skuSelectorContainer {
+    display       : grid;
     grid-auto-rows: auto;
 }
 
@@ -110,35 +110,35 @@
     grid-row: 2;
 }
 
-.carouselGaleryThumbs{
+.carouselGaleryThumbs {
     display: block;
 }
 
 .shareLabel {
-    margin-top: 16px;
+    margin-top : 16px;
     font-family: Lexend-SemiBold;
-    font-size: 0px;
+    font-size  : 0px;
     line-height: 16px;
-    color: #1D2734;
+    color      : #1D2734;
 }
 
 .shareLabel::before {
-    content: "Share";
+    content  : "Share";
     font-size: 16px;
 }
 
 .skuSelectorName {
     font-family: Lexend-SemiBold;
-    font-size: 16px;
+    font-size  : 16px;
     line-height: 16.8px;
-    color: #1D2734;
+    color      : #1D2734;
 }
 
 .skuSelectorItemImage {
-    width: 64px;
-    height: 64px;
+    width          : 64px;
+    height         : 64px;
     justify-content: center;
-    display: flex;
+    display        : flex;
 }
 
 
@@ -147,11 +147,11 @@
 }
 
 .skuSelectorItemImage .skuSelectorInternalBox {
-    width: 40px;
+    width : 40px;
     height: 40px;
 }
 
-@media screen and (min-width: 360px  ) and (max-width:640px){
+@media screen and (min-width: 360px) and (max-width:640px) {
     .skuSelectorInternalBox {
         width: 77px;
     }

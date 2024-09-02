@@ -4,25 +4,25 @@
 
 .description {
     font-family: "Lexend-Regular";
-    font-size: 14px;
-    color: rgba(29, 39, 52, 0.6);
-    text-align: left;
+    font-size  : 14px;
+    color      : rgba(29, 39, 52, 0.6);
+    text-align : left;
 }
 
 .sellingPriceContainer {
-    text-align: left;
-    font-size: 24px;
+    text-align : left;
+    font-size  : 24px;
     font-family: "Lexend-SemiBold";
 }
 
 .nameContainer {
     justify-content: unset;
-    text-align: left;
+    text-align     : left;
 }
 
 .brandName {
     font-family: Lexend-Regular;
     line-height: 14px;
-    font-size: 16px;
-    color: rgba(29, 39, 52, 0.6);
+    font-size  : 16px;
+    color      : rgba(29, 39, 52, 0.6);
 }

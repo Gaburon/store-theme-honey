@@ -1,7 +1,7 @@
 .menuContainer--menu-home {
-    text-align: center;
+    text-align  : center;
     padding-left: 56px;
-    gap: 0px;
+    gap         : 0px;
 }
 
 .menuItem {
@@ -14,46 +14,46 @@
 }
 
 .styledLinkContainer {
-    margin: 0;
+    margin : 0;
     padding: 0;
 }
 
 .styledLinkContent {
-    display: block;
-    margin: 0 auto;
-    border: 0 0 1px 0;
-    font-size: 12px;
+    display    : block;
+    margin     : 0 auto;
+    border     : 0 0 1px 0;
+    font-size  : 12px;
     font-family: "Lexend-Light";
-    color: rgba(29, 39, 52, 1);
-    padding: 0;
+    color      : rgba(29, 39, 52, 1);
+    padding    : 0;
 }
 
 
 
-.submenuContainer{
-    background-color:#FFE6D3;
+.submenuContainer {
+    background-color: #FFE6D3;
 }
 
-.submenuContainerTitle{
+.submenuContainerTitle {
     display: none;
 }
 
-.styledLinkText{
+.styledLinkText {
     font-family: Lexend-SemiBold;
-    font-size: 14px;
+    font-size  : 14px;
     line-height: 17px;
 }
 
-.styledLinkText--mega__menu--desktop{
+.styledLinkText--mega__menu--desktop {
     font-family: Lexend-Light;
-    font-size: 14px;
+    font-size  : 14px;
     line-height: 15px;
 }
 
-.seeAllLinkContainer{
+.seeAllLinkContainer {
     display: none;
 }
 
-.caretIcon--mega__menu--desktop{
+.caretIcon--mega__menu--desktop {
     display: none;
 }

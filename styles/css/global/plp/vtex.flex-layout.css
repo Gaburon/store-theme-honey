@@ -3,7 +3,7 @@
 }
 
 .flexColChild--name-price-plp :global(.vtex-product-summary-2-x-nameContainer) {
-    padding: 0;
+    padding        : 0;
     justify-content: unset;
 }
 
@@ -18,23 +18,23 @@
 
 .flexCol--name-price-plp {
     padding-left: 9px;
-    text-align: left;
-    height: 97px;
+    text-align  : left;
+    height      : 97px;
 }
 
 
 .flexCol--image-plp :global(.vtex-product-summary-2-x-imageContainer) {
-    width: 135px;
+    width : 135px;
     height: 106.3px;
 }
 
 .flexCol--image-plp :global(.vtex-product-summary-2-x-imageNormal) {
-    width: 135px;
+    width : 135px;
     height: 106.3px;
 }
 
 .flexColChild--name-price-plp :global(.vtex-product-price-1-x-sellingPrice) {
-    font-size: 20px;
+    font-size  : 20px;
     line-height: 20px;
 }
 
@@ -45,13 +45,13 @@
 .flexCol--name-price-plp :global(.vtex-product-summary-2-x-brandName--name-plp) {
     font-family: Lexend-Regular;
     line-height: 12px;
-    font-size: 12px;
-    color: rgba(29, 39, 52, 0.6);
-    
+    font-size  : 12px;
+    color      : rgba(29, 39, 52, 0.6);
+
 }
 
 .flexCol--name-price-plp :global(.vtex-product-summary-2-x-nameWrapper--name-plp) {
-    height: 39px;
+    height       : 39px;
     text-overflow: ellipsis;
 }
 
@@ -67,7 +67,7 @@
     padding-left: 52px;
 }
 
-@media screen and (min-width: 360px  ) and (max-width:640px){
+@media screen and (min-width: 360px) and (max-width:640px) {
     .container {
         padding-left: 20px;
     }
